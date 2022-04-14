@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+body {
+    /* background: linear-gradient(-45deg, #ee7752, #ff0000, #2358d5, #23a6d5, #23d5ab, #2358d5); */
+    background: linear-gradient(-45deg, #010332, #100328, #29011C, #004338, #00251f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    padding: 10px;    
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
