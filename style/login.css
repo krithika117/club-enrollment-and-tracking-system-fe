@@ -1,6 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
 
 *,
 *:before,
@@ -67,20 +66,21 @@ body {
 form {
     height: 480px;
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.13);
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     padding: 50px 35px;
 }
 
 form * {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     outline: none;
     border: none;
@@ -98,13 +98,14 @@ label {
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
+    
 }
 
 input {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -114,13 +115,14 @@ input {
 
 ::placeholder {
     color: #e5e5e5;
+    
 }
 
 button {
     margin-top: 50px;
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
@@ -130,6 +132,7 @@ button {
 
 button:hover {
     background-color: #d1cccc;
+    color: rgb(46, 46, 46);
 }
 
 @media screen and (max-width: 430px) {
@@ -143,7 +146,7 @@ button:hover {
     }
 
     .shape:last-child {
-        background: linear-gradient(-45deg, #3f0c02, #561002, #c62707, #ff512f, #f09819);
+        background: linear-gradient(-45deg, #320a01, #6a1302, #ff512f, #f09819);
         background-size: 400% 400%;
         font-weight: 100;
         animation: gradient 15s ease infinite;
