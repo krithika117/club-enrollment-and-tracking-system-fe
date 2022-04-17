@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+form * {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    border: none;
+}
+
+#regForm {
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    margin: 100px auto;
+    font-family: 'Montserrat';
+    padding: 40px;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 50px 35px;
+}
+
+.select {
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input,
+select {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 7.5px;
+    right: 0;
+    padding: 1em;
+    background: rgb(94, 94, 94);
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+    color: #323232;
+}
+
+::placeholder {
+    color: #e5e5e5;
+
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d1cccc;
+    color: rgb(46, 46, 46);
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
