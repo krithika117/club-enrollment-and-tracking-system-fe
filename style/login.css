@@ -30,22 +30,47 @@ body {
     border-radius: 50%;
 }
 
-.shape:first-child {
+
+.shape:nth-child(1) {
     background: linear-gradient(-45deg, #23a2f6, #1845ad, #010332, #100328);
+    background-size: 200% 200%;
+    font-weight: 100;
+    animation: gradient 15s ease infinite;
+    border-radius: 35% 65% 70% 30% / 65% 65% 35% 35% ;
+    left: -400px;
+    top: 140px;
+}
+
+.shape:nth-child(2) {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(-45deg, #3f0c02, #561002, #c62707, #ff512f, #f09819);
     background-size: 400% 400%;
     font-weight: 100;
     animation: gradient 15s ease infinite;
-    left: -80px;
+    border-radius: 35% 65% 70% 30% / 65% 65% 35% 35% ;
+    left: -50px;
     top: -80px;
 }
 
-.shape:last-child {
+.shape:nth-child(3) {
     background: linear-gradient(-45deg, #3f0c02, #561002, #c62707, #ff512f, #f09819);
     background-size: 400% 400%;
     font-weight: 100;
     animation: gradient 15s ease infinite;
     right: -80px;
     bottom: -80px;
+    border-radius: 35% 65% 70% 30% / 65% 65% 35% 35% ;
+}
+
+.shape:nth-child(4) {
+    background: linear-gradient(-45deg, #23a2f6, #1845ad, #010332, #100328);
+    background-size: 200% 200%;
+    font-weight: 100;
+    animation: gradient 15s ease infinite;
+    border-radius: 35% 65% 70% 30% / 65% 65% 35% 35% ;
+    right: -400px;
+    top: -100px;
 }
 
 @keyframes gradient {
@@ -74,8 +99,8 @@ form {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 50px 35px;
 }
 
@@ -98,7 +123,7 @@ label {
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
-    
+
 }
 
 input {
@@ -115,7 +140,7 @@ input {
 
 ::placeholder {
     color: #e5e5e5;
-    
+
 }
 
 button {
@@ -136,21 +161,48 @@ button:hover {
 }
 
 @media screen and (max-width: 430px) {
-    .shape:first-child {
+    .shape:nth-child(1) {
         background: linear-gradient(-45deg, #23a2f6, #1845ad, #010332, #100328);
         background-size: 400% 400%;
         font-weight: 100;
         animation: gradient 15s ease infinite;
-        left: 0%;
-        top: 10%;
+        left: 10%;
+        top: 20%;
+        height: 100px;
+        
+        width: 100px;
     }
 
-    .shape:last-child {
+    .shape:nth-child(2) {
+        background: linear-gradient(-45deg, #23a2f6, #1845ad, #010332, #100328);
+        background-size: 400% 400%;
+        font-weight: 100;
+        animation: gradient 15s ease infinite;
+        height: 200px;
+        width: 200px;
+        top: 90%;
+        left: 80%
+    }
+
+    .shape:nth-child(3) {
+        background: linear-gradient(-45deg, #320a01, #6a1302, #ff512f, #f09819);
+        background-size: 400% 400%;
+        font-weight: 100;
+        animation: gradient 15s ease infinite;
+        left: 0%;
+        height: 150px;
+        width: 150px;
+        top: 70%;
+    }
+
+    .shape:nth-child(4) {
         background: linear-gradient(-45deg, #320a01, #6a1302, #ff512f, #f09819);
         background-size: 400% 400%;
         font-weight: 100;
         animation: gradient 15s ease infinite;
         right: -20%;
-        bottom: -30%;
+        top: 30%;
+        height: 100px;
+        width: 100px;
     }
 }
