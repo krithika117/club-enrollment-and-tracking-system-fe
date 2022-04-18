@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="../style/form.css">
 </head>
 
-<body> <div class="background">
+<body>
+  <div class="background">
     <div class="shape"></div>
     <div class="shape"></div>
     <div class="shape"></div>
     <div class="shape"></div>
-</div>
+  </div>
   <form id="regForm">
     <!-- basic details -->
     <div class="tab ">
@@ -29,49 +30,51 @@
       Female<input type="radio" id="female" /> -->
 
       <label for="phoneNumber">Phone Number</label>
-      <input type="text" id="phoneNumber" size="10" />
+      <input type="text" placeholder="Phone Number" id="phoneNumber" size="10" />
 
       <label for="email">Email</label>
-      <input type="email" id="email" />
+      <input type="email" placeholder="Email" id="email" />
 
       <label for="rollNo">Roll No.</label>
-      <input type="text" id="rollNo" size="7" />
+      <input type="text" placeholder="Roll No." id="rollNo" size="7" />
 
       <label for="regNo">Register No.</label>
-      <input type="text" id="regNo" size="12" />
+      <input type="text" placeholder="Register No." id="regNo" size="12" />
 
       <label for="department">Department</label>
-     <div class="select">
-      <select>
-        <option value="CSE">CSE</option>
-        <option value="ECE">ECE</option>
-        <option value="EEE">EEE</option>
-        <option value="IT">IT</option>
-        <option value="Mech">Mech</option>
-      </select>
-    </div>
+      <div class="select">
+        <select>
+          <option value="" disabled selected>Select Department</option>
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="IT">IT</option>
+          <option value="Mech">Mech</option>
+        </select>
+      </div>
       <label for="yearOfStudy">Year of Study</label>
       <div class="select">
-      <select>
-        <option value="I">I</option>
-        <option value="II">II</option>
-        <option value="III">III</option>
-        <option value="IV">IV</option>
-      </select>
-</div>
+        <select>
+          <option value="" disabled selected>Select Year</option>
+          <option value="I">I</option>
+          <option value="II">II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+        </select>
+      </div>
 
     </div>
     <!-- service club choice -->
     <div class="tab ">
       <label for="serviceClub">Service Club</label>
       <div class="select">
-      <select>
-        <option value="NCC">NCC</option>
-        <option value="NSS">NSS</option>
-        <option value="YRC">YRC</option>
-        <option value="Rotaract">Rotaract</option>
-        <option value="NSO">NSO</option>
-      </select>
+        <select>
+          <option value="NCC">NCC</option>
+          <option value="NSS">NSS</option>
+          <option value="YRC">YRC</option>
+          <option value="Rotaract">Rotaract</option>
+          <option value="NSO">NSO</option>
+        </select>
       </div>
       <!-- Vacancy check we need to write some code -->
     </div>

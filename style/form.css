@@ -41,10 +41,6 @@ form * {
     display: flex;
 }
 
-
-
-
-
 h1 {
     text-align: center;
 }
@@ -64,6 +60,17 @@ select {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
     padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+option {
+    height: 50px;
+    width: 100%;
+    background: rgb(70, 68, 68);
+    border-radius: 3px;
+    padding: 20px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
@@ -93,7 +100,7 @@ select {
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
-    background-color: #ffdddd;
+    background-color: #ffdddd6d;
 }
 
 /* Hide all steps by default: */
@@ -140,5 +147,5 @@ button:hover {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-    background-color: #04AA6D;
+    background-color: #04aa6d55;
 }
