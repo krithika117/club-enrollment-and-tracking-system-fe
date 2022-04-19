@@ -38,7 +38,7 @@ body {
     width: 0px;
     opacity: .8;
     background-color: white;
-    box-shadow: #b46001 0px 0px 20px 2px;
+    box-shadow: #d56102 0px 0px 20px 2px;
     opacity: 0;
     top: 140vh;
     bottom: 0px;
@@ -455,7 +455,6 @@ form * {
     width: 50%;
     min-width: 300px;
     border-radius: 10px;
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -492,6 +491,17 @@ select {
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px  rgba(78, 75, 75) inset;
+    -webkit-text-fill-color: white !important;
+
+    
+
 }
 
 option {
@@ -538,7 +548,7 @@ input.invalid {
 }
 
 button {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
@@ -560,12 +570,12 @@ button:hover {
 
 /* Make circles that indicate the steps of the form: */
 .step {
-    height: 15px;
+    height: 5px;
     width: 15px;
     margin: 0 2px;
     background-color: #bbbbbb;
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
     display: inline-block;
     opacity: 0.5;
 }
