@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     margin: 0;
     /* height: 100vh; */
     font-weight: 100;
@@ -38,9 +38,9 @@ body {
     width: 0px;
     opacity: .8;
     background-color: white;
-    box-shadow: #d56102 0px 0px 20px 2px;
+    box-shadow: #d53002 0px 0px 20px 2px;
     opacity: 0;
-    top: 140vh;
+    top: 180vh;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -491,16 +491,17 @@ select {
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
-    
+
 }
+
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px  rgba(78, 75, 75) inset;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(78, 75, 75) inset;
     -webkit-text-fill-color: white !important;
 
-    
+
 
 }
 
@@ -538,7 +539,8 @@ option {
 }
 
 /* Mark input boxes that gets an error on validation: */
-input.invalid {
+input.invalid,
+select:required:invalid {
     background-color: #ffdddd6d;
 }
 

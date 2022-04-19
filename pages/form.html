@@ -13,9 +13,9 @@
   <div class='light x1'></div>
   <div class='light1 x2'></div>
   <div class='light x3'></div>
-  <div class='light1 x4'></div>
-  <div class='light x5'></div>
-  <div class='light1 x6'></div>
+  <div class='light x4'></div>
+  <div class='light1 x5'></div>
+  <div class='light x6'></div>
   <div class='light x7'></div>
   <div class='light1 x8'></div>
   <div class='light x9'></div>
@@ -35,7 +35,7 @@
       Female<input type="radio" id="female" /> -->
 
       <label for="phoneNumber">Phone Number</label>
-      <input type="text" placeholder="Phone Number" id="phoneNumber" size="10" />
+      <input type="text" placeholder="ex. 9876543210" id="phoneNumber" size="10" />
 
       <label for="email">Email</label>
       <input type="email" placeholder="Email" id="email" />
@@ -44,12 +44,12 @@
       <input type="text" placeholder="Roll No." id="rollNo" size="7" />
 
       <label for="regNo">Register No.</label>
-      <input type="text" placeholder="Register No." id="regNo" size="12" />
+      <input type="text" placeholder="Register No. if applicable" id="regNo" size="12" />
 
       <label for="department">Department</label>
       <div class="select">
         <select>
-          <option value="" disabled selected>Select Department</option>
+          <option value="" selected hidden disabled>Select Department</option>
           <option value="CSE">CSE</option>
           <option value="ECE">ECE</option>
           <option value="EEE">EEE</option>
@@ -60,7 +60,7 @@
       <label for="yearOfStudy">Year of Study</label>
       <div class="select">
         <select>
-          <option value="" disabled selected>Select Year</option>
+          <option value="" disabled hidden selected>Select Year</option>
           <option value="I">I</option>
           <option value="II">II</option>
           <option value="III">III</option>
@@ -87,32 +87,32 @@
     <div class="tab ">
       <label for="technicalClub1">Technical Club</label>
       <div class="select">
-      <select>
-        <option value="Pattarai">Pattarai</option>
-        <option value="IIC">IIC</option>
-        <option value="BEAT">BEAT</option>
-        <option value="Turbonites">Rotaract</option>
-        <option value="MAD">MAD Club</option>
-        <option value="ECEClub">ECE Club</option>
-      </select>
+        <select>
+          <option value="Pattarai">Pattarai</option>
+          <option value="IIC">IIC</option>
+          <option value="BEAT">BEAT</option>
+          <option value="Turbonites">Rotaract</option>
+          <option value="MAD">MAD Club</option>
+          <option value="ECEClub">ECE Club</option>
+        </select>
       </div>
 
       <label for="technicalClub2">Technical Club</label>
       <div class="select">
-      <select>
-        <option value="Pattarai">Pattarai</option>
-        <option value="IIC">IIC</option>
-        <option value="BEAT">BEAT</option>
-        <option value="Turbonites">Rotaract</option>
-        <option value="MAD">MAD Club</option>
-        <option value="ECEClub">ECE Club</option>
-      </select>
-    </div>
+        <select>
+          <option value="Pattarai">Pattarai</option>
+          <option value="IIC">IIC</option>
+          <option value="BEAT">BEAT</option>
+          <option value="Turbonites">Rotaract</option>
+          <option value="MAD">MAD Club</option>
+          <option value="ECEClub">ECE Club</option>
+        </select>
+      </div>
     </div>
     <div style="overflow:auto;">
       <!-- <div style="float:right;"> -->
-        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
       <!-- </div> -->
     </div>
     <!-- Circles which indicates the steps of the form: -->
