@@ -22,7 +22,7 @@ body {
 .light {
     position: absolute;
     width: 0px;
-    opacity: .65;
+    opacity: .7;
     background-color: white;
     box-shadow: #0642c2 0px 0px 20px 2px;
     opacity: 0;
@@ -36,7 +36,7 @@ body {
 .light1 {
     position: absolute;
     width: 0px;
-    opacity: .65;
+    opacity: .7;
     background-color: white;
     box-shadow: #914f03 0px 0px 20px 2px;
     opacity: 0;
