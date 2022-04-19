@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
+  <title>Enrollment Form</title>
   <link rel="stylesheet" href="../style/form.css">
 </head>
 
@@ -86,6 +86,7 @@
     <!-- tech club choice -->
     <div class="tab ">
       <label for="technicalClub1">Technical Club</label>
+      <div class="select">
       <select>
         <option value="Pattarai">Pattarai</option>
         <option value="IIC">IIC</option>
@@ -94,7 +95,10 @@
         <option value="MAD">MAD Club</option>
         <option value="ECEClub">ECE Club</option>
       </select>
+      </div>
+
       <label for="technicalClub2">Technical Club</label>
+      <div class="select">
       <select>
         <option value="Pattarai">Pattarai</option>
         <option value="IIC">IIC</option>
@@ -104,11 +108,12 @@
         <option value="ECEClub">ECE Club</option>
       </select>
     </div>
+    </div>
     <div style="overflow:auto;">
-      <div style="float:right;">
+      <!-- <div style="float:right;"> -->
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
         <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-      </div>
+      <!-- </div> -->
     </div>
     <!-- Circles which indicates the steps of the form: -->
     <div style="text-align:center;margin-top:40px;">
