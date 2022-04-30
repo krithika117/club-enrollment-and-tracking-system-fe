@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="../style/login.css">
+    <?php include "dependencies.php" ?>
 </head>
 
 <body>
-    <div class="background">
+    <!-- <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
         <div class="shape"></div>
         <div class="shape"></div>
-    </div>
+    </div> -->
 
     <form>
         <h3>Sign in</h3>

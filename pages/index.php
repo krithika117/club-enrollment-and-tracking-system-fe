@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--divinectorweb.com-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php include "dependencies.php" ?>
+	<meta charset="UTF-8">
+	<title>Testimonial Carousel using bootstrap</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
+	<?php include "dependencies.php" ?>
+    <link href="../style/slider.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/style.css">
-    <script src="../script/index.js" defer></script>
 </head>
-
 <body>
-    <!-- Service Clubs -->
-    <!-- Multiply next class to get more cards -->
-    <div class="container-fluid px-3 px-sm-5 my-5 text-center">
-        <h4 class="mb-5 font-weight-bold">Service Clubs</h4>
-        <div class="owl-carousel owl-theme">
-            <div class="item first prev">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/gazoShk.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">Marielle Haag</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item show">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/oW8Wpwi.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">Ximena Vegara</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item next">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/ndQx2Rg.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">John Paul</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item next">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/ndQx2Rg.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">John Paul</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item next">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/T5aOhwh.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">William Doe</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section id="home">
+    <h1>Club Enrollment and Tracking System</h1>
+    </section>
+	<div class="wrapper">
+        <h3>Service Clubs</h3>
+		<div class="container">
+			<div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+					<li data-slide-to="1" data-target="#carousel-example-generic"></li>
+					<li data-slide-to="2" data-target="#carousel-example-generic"></li>
+					<li data-slide-to="3" data-target="#carousel-example-generic"></li>
+					<li data-slide-to="4" data-target="#carousel-example-generic"></li>
+				</ol><!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="1.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+                    <div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+                    <div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="3.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+				</div><!-- Controls -->
+				 <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
+			</div>
+		</div>
+	</div>
 
-    <!-- Service Clubs -->
-    <!-- Multiply next class to get more cards -->
-    <div class="container-fluid px-3 px-sm-5 my-5 text-center">
-        <h4 class="mb-5 font-weight-bold">Service Clubs</h4>
-        <div class="owl-carousel owl-theme">
-            <div class="item1 first1 prev1">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/gazoShk.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">Marielle Haag</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item1 show1">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/oW8Wpwi.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">Ximena Vegara</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item1 next1">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/ndQx2Rg.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">John Paul</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item1 next1">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/ndQx2Rg.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">John Paul</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item1 next1">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center"> <img alt="text" src="https://i.imgur.com/T5aOhwh.jpg"
-                            class="img-fluid profile-pic mb-4 mt-3"> </div>
-                    <h6 class="mb-3 mt-2">William Doe</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="wrapper">
+    <h3>Technical Clubs</h3>
+		<div class="container">
+			<div class="carousel slide" data-ride="carousel" id="carousel-example-generic-1">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-example-generic-1"></li>
+					<li data-slide-to="1" data-target="#carousel-example-generic-1"></li>
+					<li data-slide-to="2" data-target="#carousel-example-generic-1"></li>
+					<li data-slide-to="3" data-target="#carousel-example-generic-1"></li>
+					<li data-slide-to="4" data-target="#carousel-example-generic-1"></li>
+				</ol><!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="1.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+                    <div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+                    <div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="2.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="3.jpg"></div>
+						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
+							<h3>Client's Name</h3>
+							<h4>Their Designation</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate doloremque magnam sequi.</p>
+						</div>
+					</div>
+				</div><!-- Controls -->
+				 <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic-1" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" data-slide="next" href="#carousel-example-generic-1" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
+			</div>
+		</div>
+	</div>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
 </body>
-
 </html>

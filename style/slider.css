@@ -1,8 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),url('../dist/images/bg1.svg');
-    background-position:center;
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)), url('../dist/images/bg1.svg');
+    background-position: top;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -55,6 +55,7 @@ h3 {
     margin-bottom: 15px;
     margin-top: 25px;
     text-shadow: none;
+    padding: 10px;
 }
 
 .carousel-caption h4 {
@@ -73,6 +74,7 @@ h3 {
 .carousel-indicators li {
     background-color: rgb(132, 130, 130);
     width: 30px;
+    padding: 3px;
     border: rgb(132, 130, 130);
 }
 
@@ -88,4 +90,32 @@ h3 {
 .carousel-indicators {
     bottom: 10px;
 }
+/* section{
+    height: 100vh;
+    width: auto;
+} */
+section #home, h1 {
+    display: block;
+    /* width: 50%; */
+    /* height: 50%; */
+    margin:45vh 0;
+    align-items: center;
+    text-align: center!important;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto 
+}
 
+@media screen and (max-width: 900px) {
+    section #home, h1 {
+        display: block;
+        /* width: 50%; */
+        /* height: 50%; */
+        margin:50vh 0;
+        align-items: center;
+        text-align: center!important;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto 
+    }
+}
