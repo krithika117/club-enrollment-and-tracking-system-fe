@@ -19,18 +19,20 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 <style>
-::-webkit-scrollbar {
-    width: 5px;
-    border-radius:5px;
-}
-::-webkit-scrollbar-track {
-    background: #000000;
-}
-::-webkit-scrollbar-thumb {
-    background: #022c5f96;
-}
+    ::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 5px;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #022c5f96;
-}
+    ::-webkit-scrollbar-track {
+        background: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #022c5f96;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #022c5f96;
+    }
 </style>
