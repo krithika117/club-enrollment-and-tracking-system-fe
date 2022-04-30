@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enrollment Form</title>
+  
   <link rel="stylesheet" href="../style/form.css">
 </head>
 
 <body>
-  <div class='light x1'></div>
+  <!-- <div class='light x1'></div>
   <div class='light1 x2'></div>
   <div class='light x3'></div>
   <div class='light x4'></div>
@@ -18,7 +19,7 @@
   <div class='light x6'></div>
   <div class='light x7'></div>
   <div class='light1 x8'></div>
-  <div class='light x9'></div>
+  <div class='light x9'></div> -->
 
   <form id="regForm">
     <h1>Enrollment Form</h1>
