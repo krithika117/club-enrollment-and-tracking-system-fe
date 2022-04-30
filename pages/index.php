@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
-	<?php include "dependencies.php" ?>
+	<?php include "external.php" ?>
     <link href="../style/slider.css" rel="stylesheet">
 
 </head>
