@@ -112,6 +112,7 @@ form * {
 }
 
 form h3 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 100;
     line-height: 42px;
@@ -139,18 +140,19 @@ input {
 
 ::placeholder {
     color: #e5e5e5;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
-    margin-top: 50px;
+    margin-top: 40px!important;
+    font-family: 'Montserrat', sans-serif!important;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 25px;
+    border-radius: 15px!important;
     cursor: pointer;
 }
 

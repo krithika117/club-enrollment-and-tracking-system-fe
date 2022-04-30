@@ -14,6 +14,8 @@
 <body>
     <section id="home">
     <h1>Club Enrollment and Tracking System</h1>
+    <button>Click here to enroll</button>
+    <button>Get club suggestion</button>
     </section>
 	<div class="wrapper">
         <h3>Service Clubs</h3>
