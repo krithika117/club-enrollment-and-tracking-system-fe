@@ -3,7 +3,7 @@
 <!--divinectorweb.com-->
 <head>
 	<meta charset="UTF-8">
-	<title>Testimonial Carousel using bootstrap</title>
+	<title>Attribuer | Home</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
@@ -11,11 +11,12 @@
     <link href="../style/slider.css" rel="stylesheet">
 
 </head>
-<body>
-    <section id="home">
+<body >
+	
+    <section id="home" >
     <h1>Club Enrollment and Tracking System</h1>
-    <button>Click here to enroll</button>
-    <button>Get club suggestion</button>
+    <button class="glass">Click here to enroll</button>
+    <button class="glass">Get club suggestion</button>
     </section>
 	<div class="wrapper">
         <h3>Service Clubs</h3>
@@ -29,7 +30,7 @@
 					<li data-slide-to="3" data-target="#carousel-example-generic"></li>
 					<li data-slide-to="4" data-target="#carousel-example-generic"></li>
 				</ol><!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="1.jpg"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
@@ -88,7 +89,7 @@
 					<li data-slide-to="3" data-target="#carousel-example-generic-1"></li>
 					<li data-slide-to="4" data-target="#carousel-example-generic-1"></li>
 				</ol><!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="1.jpg"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
