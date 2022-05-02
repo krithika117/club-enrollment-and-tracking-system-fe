@@ -1,0 +1,161 @@
+
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    transition: all 0.7s;
+    z-index: 9;
+}
+
+.header .wrap {
+    /* width: 1140px; */
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.header .logo a,
+.header .logo a img {
+    display: block;
+}
+
+.header .logo img {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* .header .menu ul {
+    display: flex;
+}
+
+.header .menu a {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.header .menu a:hover {
+    color: deepskyblue;
+} */
+
+.header .sidemenu-toggler {
+    position: absolute;
+    width: 40px;
+    padding: 6px;
+    top: 23px;
+    right: 40px;
+}
+
+.header .sidemenu-toggler > span {
+    display: block;
+    background-color: white;
+    height: 2px;
+}
+
+.header .sidemenu-toggler > span:nth-child(2) {
+    margin: 4px 0 4px auto;
+    width: 75%;
+    transition: 0.3s all;
+}
+
+.header .sidemenu-toggler > span:nth-child(3) {
+    margin-left: auto;
+    width: 50%;
+    transition: 0.6s all;
+}
+
+.header .sidemenu-toggler:hover > span:nth-child(2),
+.header .sidemenu-toggler:hover > span:nth-child(3){
+    width: 100%;
+}
+
+.header .sidemenu{
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: rgba(42,44,46,0.27);
+    box-shadow: 0 8px 32px 0 rgba(11,11,11,0.37);
+    backdrop-filter: blur(34px);
+    border: 1px solid rgba(255,255,255,0.18);
+    width: 53%;
+    height: 100vh;
+    z-index: 999;
+    padding: 4rem;
+    color: white;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.header .sidemenu.active{
+    transform: translate3d(0,0,0);
+}
+
+.header .sidemenu .close{
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    right:20px;
+    top:24px;
+}
+
+.header .sidemenu .close::before,
+.header .sidemenu .close::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 28px;
+    width: 2px;
+    background: white;
+}
+
+.header .sidemenu .close::before{
+    transform: rotate(45deg);
+}
+
+.header .sidemenu .close::after{
+    transform: rotate(-45deg);
+}
+
+.header .sidemenu nav ul{
+    padding-top: 30px;
+}
+
+.header .sidemenu nav li, footer{
+    padding: 15px;
+    margin: 15px ;
+}
+
+.header .sidemenu nav a{
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 15px 0;
+}

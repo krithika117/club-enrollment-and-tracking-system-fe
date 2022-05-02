@@ -7,16 +7,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
-	<?php include "external.php" ?>
+	<?php include "navbar.php" ?>
+	<?php include "../dist/components/external.php" ?>
+	
     <link href="../style/slider.css" rel="stylesheet">
-
+	
 </head>
 <body >
+
+    <section id="hoe" >
+    <h1>Club Enrollment and Tracking System<br>
+		<button class = "button glass"><a href = "login.php">Click here to login</a></button>
+		<button class = "button glass"><a href = "login.php"> Try our sorting hat</a></button>
+		
+	</h1>
 	
-    <section id="home" >
-    <h1>Club Enrollment and Tracking System</h1>
-    <button class="glass">Click here to enroll</button>
-    <button class="glass">Get club suggestion</button>
+    <!-- <button class="glass">Click here to enroll</button>
+    <button class="glass">Get club suggestion</button> -->
     </section>
 	<div class="wrapper">
         <h3>Service Clubs</h3>

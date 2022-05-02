@@ -8,12 +8,12 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),url('../dist/images/bg2.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)), url('../dist/images/bg2.svg');
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-  
+
     /* height: 100vh; */
     font-weight: 100;
     /* background: #000; */
@@ -461,12 +461,14 @@ form * {
     min-width: 300px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13px);
-    -webkit-backdrop-filter: blur(13px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+
     padding: 50px 35px;
+
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    /* border-radius: 50%; */
+
 }
 
 .select {
@@ -490,7 +492,11 @@ select {
     display: block;
     height: 50px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border: none;
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -523,10 +529,10 @@ option {
 .select::after {
     content: '\25BC';
     position: absolute;
-    top: 7.5px;
+    top: 8.5px;
     right: 0;
     padding: 1em;
-    background: rgb(94, 94, 94);
+    background: rgb(70, 68, 68);
     transition: .25s all ease;
     pointer-events: none;
 }
