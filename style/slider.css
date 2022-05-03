@@ -6,7 +6,8 @@ body {
     background-size: cover;
     color: #ffffff;
 }
-.glass{
+
+.glass {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -17,12 +18,13 @@ body {
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
 }
+
 button {
     font-size: 15px;
-    margin-top: 15px ;
-    margin-left: 10px ;
+    margin-top: 15px;
+    margin-left: 10px;
     padding: 12px 25px !important;
-    margin-right: 10px ;
+    margin-right: 10px;
     align-items: center;
     justify-content: center;
     display: inline;
@@ -96,8 +98,8 @@ h3 {
 .carousel-indicators li {
     background-color: rgb(132, 130, 130);
     width: 30px;
-    height:4px;
-    margin:3px;
+    height: 4px;
+    margin: 3px;
     padding: 3px;
     border: rgb(132, 130, 130);
 }
@@ -115,17 +117,18 @@ h3 {
     bottom: 10px;
 }
 
-section{
+section {
     /* height: 100vh; */
     width: auto;
     margin: 28vh 0 30vh 0;
 }
+
 #home {
     display: block;
     font-size: 18px;
     /* width: 50%; */
     /* height: 50%; */
-    
+
     align-items: center !important;
     text-align: center !important;
     justify-content: center !important;
@@ -157,7 +160,8 @@ h1 {
         /* background-size: cover; */
         color: #ffffff;
     }
-    section #home{
+
+    section #home {
         margin: 28vh 0 30vh 0;
         display: block;
         /* width: 50%; */
@@ -170,6 +174,7 @@ h1 {
         margin-left: auto;
         margin-right: auto
     }
+
     h1 {
 
         align-items: center;
