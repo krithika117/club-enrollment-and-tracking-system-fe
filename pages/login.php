@@ -25,9 +25,9 @@
         <input type="text" placeholder="Username" id="username">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+        <input type="password" class="toggle-password" placeholder="Password" id="password">
         <button>Log In</button>
-        
+
     </form>
 
 </body>
