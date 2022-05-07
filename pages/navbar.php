@@ -37,7 +37,7 @@
                 <a href="javascript:void(0);" class="close"></a>
                 <nav>
                     <ul>
-                        <li><a href="login.php">Sign In</a></li>
+                        <li><a href="create-account.php">Sign In</a></li>
                         <li><a href="faculty-view.php">View Members</a></li>
                         <li><a href="form.php">Form</a></li>
                         <li><a href="">Allotment</a></li>

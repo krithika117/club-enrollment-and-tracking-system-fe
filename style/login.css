@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-/* 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
     background-image: url('../dist/images/bg2.svg');
@@ -88,13 +88,24 @@ body {
 
 } */
 
-form {
-    height: 480px;
-    width: 400px;
-    position: fixed;
-    transform: translate(-50%, -50%);
+#form {
+    
     top: 50%;
     left: 50%;
+    margin: 10px auto;
+    font-family: 'Montserrat';
+    padding: 40px;
+    width: 40%;
+    min-width: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 20px 35px;
+
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    
     border-radius: 10px;
     background-color: rgba(42, 44, 46, 0.27);
     box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
@@ -105,18 +116,18 @@ form {
     padding: 50px 35px;
 }
 
-form * {
+#form * {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     outline: none;
     border: none;
 }
 
-form h3 {
+#form h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 100;
-    line-height: 42px;
+    line-height: 32px;
     text-align: center;
 }
 
@@ -127,7 +138,7 @@ label {
     font-weight: 500;
 }
 
-input {
+input, select {
     display: block;
     height: 50px;
     width: 100%;
@@ -137,6 +148,48 @@ input {
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+}
+option {
+    height: 50px;
+    width: 100%;
+    background: rgb(70, 68, 68);
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0.5px;
+    right: 0.5px;
+    padding: 1em;
+    background: rgb(67, 67, 67);
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+    color: #323232;
+}
+
+::placeholder {
+    color: #e5e5e5;
+
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid,
+select:required:invalid {
+    background-color: #ffdddd6d;
+}
+.select {
+    position: relative;
+    display: flex;
 }
 
 ::placeholder {

@@ -20,7 +20,7 @@
 	<section id="hoe">
 		<h1>Club Enrollment and Tracking System<br>
 			<button class="button glass"><a href="login.php">Click here to login</a></button>
-			<button class="button glass"><a href="login.php"> Try our sorting hat</a></button>
+			<button class="button glass"><a href="create-account.php"> Try our sorting hat</a></button>
 
 		</h1>
 

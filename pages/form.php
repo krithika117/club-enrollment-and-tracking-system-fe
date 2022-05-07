@@ -26,7 +26,7 @@
     <h1>Enrollment Form</h1>
     <!-- basic details -->
     <div class="tab ">
-      <label for="firstName">First Name</label>
+    <label for="firstName">First Name</label>
       <input type="text" placeholder="First Name" id="firstName" />
 
       <label for="lastName">Last Name</label>
@@ -69,6 +69,12 @@
           <option value="IV">IV</option>
         </select>
       </div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" class="toggle-password" placeholder="Password" id="password">
+
 
     </div>
     <!-- service club choice -->
