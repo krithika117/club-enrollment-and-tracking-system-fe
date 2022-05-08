@@ -9,7 +9,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
 	<?php include "navbar.php" ?>
-	<?php include "../dist/components/external.php" ?>
+	<?php include "external.php" ?>
 
 	<link href="../style/slider.css" rel="stylesheet">
 
@@ -42,7 +42,7 @@
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="1.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -53,7 +53,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -64,7 +64,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -75,7 +75,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -86,7 +86,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="3.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -120,7 +120,7 @@
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="1.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -131,7 +131,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -142,7 +142,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -153,7 +153,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="2.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="3.jpg"></div>
+								src=""></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Client's Name</h3>
 							<h4>Their Designation</h4>

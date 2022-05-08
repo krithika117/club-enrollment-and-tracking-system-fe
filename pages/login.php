@@ -7,17 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style/login.css">
+
     <?php include "navbar.php" ?>
-    <?php include "../dist/components/external.php" ?>
-    
-    <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-auth-compat.js"></script>
-    
 
 
 </head>
 
 <body>
+
     <!-- // <div class="background">
         // <div class="shape"></div>
         // <div class="shape"></div>
@@ -25,21 +22,31 @@
         // <div class="shape"></div>
         // </div> -->
 
-    <div id="form">
+    <form id="form" onsubmit="login()">
         <h3>Login</h3>
 
 
         <label for="email">Email</label>
-        <input type="email" placeholder="Email" id="email" />
+        <input type="email" placeholder="Email" id="email" required="" />
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
-        
-         <button onclick="login()">Log In</button>
+        <input type="password" placeholder="Password" id="password" required="">
 
-</div>
+        <button type="submit">Log In</button>
+        <p id="message-error"></p>
+
+    </form>
 
 </body>
+
+<?php include "external.php" ?>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+
+<script src="../script/config.js"></script>
+
 <script src="../script/login.js"></script>
-   
+
 </html>

@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=\, initial-scale=1.0">
   <title>Document</title>
   <?php include "navbar.php" ?>
-  <?php include "../dist/components/external.php" ?>
+  <?php include "external.php" ?>
 
-  </script>
+  <script src="../script/auth-check.js"></script>
   <link rel="stylesheet" href="../style/faculty-view.css">
 </head>
 

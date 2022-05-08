@@ -37,10 +37,10 @@
                 <a href="javascript:void(0);" class="close"></a>
                 <nav>
                     <ul>
-                        <li><a href="create-account.php">Sign In</a></li>
+                        <li><a href="login.php">Sign In</a></li>
                         <li><a href="faculty-view.php">View Members</a></li>
                         <li><a href="form.php">Form</a></li>
-                        <li><a href="">Allotment</a></li>
+                        <li><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
                 </nav>
                 <footer>2022 © Attribuer</footer>
@@ -48,6 +48,7 @@
         </header>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
     <script>
         $(document).ready(function () {
             $(".sidemenu-toggler").click(function () {
@@ -57,6 +58,10 @@
                 $(".sidemenu").removeClass("active");
             });
         });
+
+        function logout() {
+            firebase.auth().signOut()
+        }
     </script>
 </body>
 

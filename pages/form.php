@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enrollment Form</title>
+  
   <?php include "navbar.php" ?>
-  <?php include "../dist/components/external.php" ?>
+  
   <link rel="stylesheet" href="../style/form.css">
 </head>
 
@@ -21,7 +22,7 @@
   <div class='light x7'></div>
   <div class='light1 x8'></div>
   <div class='light x9'></div> -->
-
+<h1 id="user"></h1><br>
   <form id="regForm">
     <h1>Enrollment Form</h1>
     <!-- basic details -->
@@ -133,6 +134,11 @@
   </form>
 
 </body>
-<script src="../script/form.js"></script>
 
+<?php include "external.php" ?>
+  
+<script src="../script/config.js"></script>
+
+<script src="../script/form.js"></script>
+<script src="../script/auth-check.js"></script>
 </html>

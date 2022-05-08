@@ -1,48 +1,39 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyBp14u4j3xmFnb705ZTJ9Ax65tt_VkEELc",
-    authDomain: "attribuer-d1cf0.firebaseapp.com",
-    projectId: "attribuer-d1cf0",
-    storageBucket: "attribuer-d1cf0.appspot.com",
-    messagingSenderId: "484926800191",
-    appId: "1:484926800191:web:1e721fad46a6a20cdcd38a",
-    measurementId: "G-VJCLPHV24Z"
-};
+document.getElementById("form").addEventListener("submit",(event)=>{
+    event.preventDefault()
+})
 
-firebase.initializeApp(firebaseConfig);
-// Initialize variables
-const auth = firebase.auth()
+firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+        location.replace("form.php")
+    }
+})
 
-var email, password;
-//   function validate_email(email) {
-//     expression = /^[^@]+@\w+(\.\w+)+\w$/
-//     if (expression.test(email) == true) {
-//       // Email is good
-//       return true
-//     } else {
-//       // Email is not good
-//       return false
-//     }
-//   }
-
-function login() {
-    // Get all our input fields
-    email = document.getElementById('email').value;
-    password = document.getElementById('password').value;
-
-    auth.signInWithEmailAndPassword(email, password)
-        .then(function () {
-            // Declare user variable
-            var user = auth.currentUser
-
-            // DOne
-            alert('User Logged In!!')
-
-        })
-        .catch(function (error) {
-            // Firebase will use this to alert of its errors
-            var error_code = error.code
-            var error_message = error.message
-
-            alert(error_message)
-        })
+function login(){
+    const email = document.getElementById("email").value
+    const password = document.getElementById("password").value
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .catch((error)=>{
+        console.log(error.message)
+        document.getElementById("message-error").innerHTML = error.message
+    })
 }
+
+// function signUp(){
+//     const email = document.getElementById("email").value
+//     const password = document.getElementById("password").value
+//     firebase.auth().createUserWithEmailAndPassword(email, password)
+//     .catch((error) => {
+//         document.getElementById("error").innerHTML = error.message
+//     });
+// }
+
+// function forgotPass(){
+//     const email = document.getElementById("email").value
+//     firebase.auth().sendPasswordResetEmail(email)
+//     .then(() => {
+//         alert("Reset link sent to your email id")
+//     })
+//     .catch((error) => {
+//         document.getElementById("error").innerHTML = error.message
+//     });
+// }
