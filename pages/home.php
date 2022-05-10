@@ -144,10 +144,10 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   </div>
 
   <div class="wrapper-admin d-none">
-    <h1 id="user2"></h1>
+    <h1 id="user2">Welcome!</h1>
     <div class="container">
-      Thank you for using Attribuer.<br>
-      Please check your mail for the enrollment confirmation.
+      This is Attribuer, LICET's Club Enrollment and Teacking System<br>
+      Visit the Members section to view student list.
     </div>
   </div>
   </div>
