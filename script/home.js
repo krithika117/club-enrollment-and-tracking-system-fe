@@ -2,7 +2,7 @@ firebase.auth().onAuthStateChanged((user) => {
   if (!user) {
     location.replace("index.php")
   } else {
-    document.getElementById("user").innerHTML = "Hello, " + user.email.split('@')[0];
+    // document.getElementById("user").innerHTML = "Hello, " + user.email.split('@')[0];
     
   }
 })
@@ -96,11 +96,11 @@ $(document).ready(function () {
     var email = firebase.auth().currentUser.email
     var rollNo = $('#rollNo').val();
     var regNo = $('#regNo').val();
-    var department = $("#department :selected").text();
-    var yearOfStudy = $("#yearOfStudy :selected").text();
-    var serviceClubChoice = $("#serviceClubChoice :selected").text();
-    var techClubChoice1 = $("#techClubChoice1 :selected").text();
-    var techClubChoice2 = $("#techClubChoice2 :selected").text();
+    var department = $("#department :selected").val();
+    var yearOfStudy = $("#yearOfStudy :selected").val();
+    var serviceClubChoice = $("#serviceClubChoice :selected").val();
+    var techClubChoice1 = $("#techClubChoice1 :selected").val();
+    var techClubChoice2 = $("#techClubChoice2 :selected").val();
 
     localStorage.name = firstName;
 

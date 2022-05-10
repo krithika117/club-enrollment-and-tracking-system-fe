@@ -56,6 +56,8 @@ function login(){
     .then((userCredential) => {
         // Signed in
         window.user = userCredential.user;
+        localStorage.email = firebase.auth().currentUser.email;
+        window.email = firebase.auth().currentUser.email;
            })
     .catch((error)=>{
         document.getElementById("error").innerHTML = error.message

@@ -5,16 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enrollment Form</title>
+  <title>Home</title>
   <!-- header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 
-  <!-- <?php include "navbar.php"   
-  ?>  -->
+  <?php include "navbar.php"?> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
   <link rel="stylesheet" href="../style/home.css">
 </head>
 
@@ -109,8 +106,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- <label for="techClubChoice2">Technical Club</label> -->
     <div class="select form-control">
       <select id="techClubChoice2">
-      <option value="" selected hidden disabled>&nbsp;Select Club</option>
-      <option value="Nil">&nbsp;NA</option>
+        <option value="" selected hidden disabled>&nbsp;Select Club</option>
+        <option value="Nil">&nbsp;NA</option>
         <option value="Pattarai">&nbsp;Pattarai</option>
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
@@ -138,24 +135,22 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   </div>
 
   <div class="wrapper d-none">
-  <h1 id="user1"></h1>
-		<div class="container">
-    Thank you for using Attribuer.<br>
-    Please check your mail for the enrollment confirmation.
-			</div>
-		</div>
-	</div>
+    <h1 id="user1"></h1>
+    <div class="container">
+      Thank you for using Attribuer.<br>
+      Please check your mail for the enrollment confirmation.
+    </div>
+  </div>
+  </div>
 
   <div class="wrapper-admin d-none">
-		<h1 id="user2"></h1>
-		<div class="container">
-    Thank you for using Attribuer.<br>
-    Please check your mail for the enrollment confirmation.
-			</div>
-		</div>
-	</div>
-
-
+    <h1 id="user2"></h1>
+    <div class="container">
+      Thank you for using Attribuer.<br>
+      Please check your mail for the enrollment confirmation.
+    </div>
+  </div>
+  </div>
 </body>
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->

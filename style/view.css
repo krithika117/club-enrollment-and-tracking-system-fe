@@ -5,8 +5,8 @@
     box-sizing: border-box;
     color: #ffffff;
     font-family: 'Montserrat';
-    
-     /* font-family:var(--bs-font-sans-serif); */
+
+    /* font-family:var(--bs-font-sans-serif); */
 }
 
 body {
@@ -22,10 +22,21 @@ body {
 
 h2 {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
-#table {
+#search_filter,
+option {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    height: 60px;
+    font: 20px;
+    border: none;
+    color: white;
+}
+
+#myTable {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     outline: none;
@@ -35,12 +46,12 @@ h2 {
     left: 50%;
     margin: 100px auto;
     font-family: 'Montserrat';
-    padding: 40px;
-    width: 80%;
+    /* padding: 40px; */
+    width: 100%;
     min-width: 300px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
- 
+    font: 10px;
     padding: 50px 35px;
 
     backdrop-filter: blur(16px) saturate(180%);

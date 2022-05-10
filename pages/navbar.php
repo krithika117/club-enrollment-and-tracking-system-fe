@@ -41,7 +41,7 @@
                         <li id="user"></li>
                         <!-- <a href="login.php">Sign In</a> -->
                         <li id="signIn" class="d-none"><a href="login.php">Sign In</a></li>
-                        <li id="fac" class="d-none"><a href="faculty-view.php">View Members</a></li>
+                        <li id="fac" class="d-none"><a href="view.php">View Members</a></li>
                         <li id="listForm" class="d-none"><a href="home.php">Form</a></li>
                         <li><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
