@@ -42,10 +42,9 @@
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+								src="../dist/images/clublogos/NCC.png"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>NCC</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
@@ -53,10 +52,10 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+								src="../dist/images/clublogos/NSS.png">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>NSS</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
@@ -64,10 +63,11 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+								src="../dist/images/clublogos/Rotaract.png">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>Rotaract Club of LICET</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
@@ -75,10 +75,10 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+								src="../dist/images/clublogos/LEAF.png"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>LEAF</h3>
+							<!--  -->
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
@@ -86,10 +86,11 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+								src="../dist/images/clublogos/YRC.png">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>YRC</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
@@ -119,55 +120,55 @@
 				</ol><!-- Wrapper for slides -->
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="../dist/images/clublogos/BEAT.png">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>BEAT</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>Club Name</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>Club Name</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>Club Name</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src=""></div>
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Client's Name</h3>
-							<h4>Their Designation</h4>
+							<h3>Club Name</h3>
+
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
 								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
 								doloremque magnam sequi.</p>
