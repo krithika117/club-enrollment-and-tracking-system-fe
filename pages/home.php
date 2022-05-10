@@ -15,7 +15,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="../style/form.css">
+  <link rel="stylesheet" href="../style/home.css">
 </head>
 
 <body>
@@ -138,15 +138,22 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   </div>
 
   <div class="wrapper d-none">
-		<h1>Hello, <span id="user1"></span></h1>
+  <h1 id="user1"></h1>
 		<div class="container">
-			
     Thank you for using Attribuer.<br>
     Please check your mail for the enrollment confirmation.
 			</div>
 		</div>
 	</div>
 
+  <div class="wrapper-admin d-none">
+		<h1 id="user2"></h1>
+		<div class="container">
+    Thank you for using Attribuer.<br>
+    Please check your mail for the enrollment confirmation.
+			</div>
+		</div>
+	</div>
 
 
 </body>
@@ -159,6 +166,6 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 
 <script src="../script/config.js"></script>
 <script src="../script/auth-check.js"></script>
-<script src="../script/form.js"></script>
+<script src="../script/home.js"></script>
 
 </html>

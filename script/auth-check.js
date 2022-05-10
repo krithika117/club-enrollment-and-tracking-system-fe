@@ -26,26 +26,42 @@ $(document).ready(() => {
           },
 
           success: function (response) {
-            console.log(response)
-            console.log(response.message)
+              console.log(response)
+              console.log(response.message)
 
-            if (response.message == "exists") {
-              console.log('exist')
-              document.getElementById('user1').innerHTML +=email.split('@')[0];
-              document.querySelector('#regForm').classList.add('d-none');
-              document.querySelector('#listForm').classList.add('d-none');
-              document.querySelector('#fac').classList.add('d-none');
-              document.querySelector('.wrapper').classList.remove('d-none');
-              
+              // Admin or Student based on isAdmin
+              if (response.message == "exists") {
+                document.getElementById('user1').innerHTML += email.split('@')[0];
+                // Student
+                if (response.isAdmin == '0') {
+                  console.log('exist')
+                  document.getElementById('user1').innerHTML += email.split('@')[0];
+                  document.querySelector('#regForm').classList.add('d-none');
+                  document.querySelector('#listForm').classList.add('d-none');
+                  document.querySelector('#fac').classList.add('d-none');
+                  document.querySelector('.wrapper').classList.remove('d-none');
+                }
 
-            } else if (response.message == "clear") {
-              console.log('clear')
-              
-              document.querySelector('#regForm').classList.remove('d-none');
-              document.querySelector('.wrapper').classList.add('d-none');
+                // Admin
+                if (response.isAdmin == '1') {
+                  console.log('exist')
+                  // document.getElementById('user1').innerHTML += email.split('@')[0];
+                  document.getElementById("user2").innerHTML = "Hello, " + user.email.split('@')[0];
+                  document.querySelector('#regForm').classList.add('d-none');
+                  document.querySelector('#listForm').classList.add('d-none');
+                  document.querySelector('#fac').classList.remove('d-none');
+                  document.querySelector('.wrapper-admin').classList.remove('d-none');
+                }
+
+
+              } else if (response.message == "clear") {
+                console.log('clear')
+                document.querySelector('#regForm').classList.remove('d-none');
+                document.querySelector('.wrapper').classList.add('d-none');
+              }
             }
 
-          },
+            ,
           // statusCode: {
           //     400: function () {
           //         $('#loading').hide();

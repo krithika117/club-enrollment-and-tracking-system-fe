@@ -2,7 +2,8 @@ firebase.auth().onAuthStateChanged((user) => {
   if (!user) {
     location.replace("index.php")
   } else {
-    document.getElementById("user").innerHTML = "Hello, " + user.email
+    document.getElementById("user").innerHTML = "Hello, " + user.email.split('@')[0];
+    
   }
 })
 
@@ -144,7 +145,7 @@ $(document).ready(function () {
             // $('#loading').hide();
             // $('#msg').html('<span style="color: green;">You are registered successfully</span>');
             console.log('done!')
-            location.replace('form.php')
+            location.replace('home.php')
 
 
           },

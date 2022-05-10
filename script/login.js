@@ -5,7 +5,7 @@
 // firebase.auth().onAuthStateChanged((user)=>{
 //     if(user){
 //         console.log(user.uid)
-//         location.replace("form.php")
+//         location.replace("home.php")
 //     }
 // })
 
@@ -45,7 +45,7 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
 })
 firebase.auth().onAuthStateChanged((user)=>{
     if(user){
-        location.replace("form.php")
+        location.replace("home.php")
     }
 })
 
