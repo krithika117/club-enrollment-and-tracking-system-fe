@@ -443,7 +443,7 @@ body {
 } */
 
 
-form * {
+#regForm * {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     outline: none;
@@ -529,7 +529,7 @@ option {
 .select::after {
     content: '\25BC';
     position: absolute;
-    top: 8.5px;
+    top: 0.5px;
     right: 0;
     padding: 1em;
     background: rgb(70, 68, 68);
@@ -559,14 +559,14 @@ select:required:invalid {
 }
 
 button {
-    margin-top: 30px;
+    margin-top: 30px!important;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     padding: 15px;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 

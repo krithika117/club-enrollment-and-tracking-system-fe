@@ -22,15 +22,15 @@
         // <div class="shape"></div>
         // </div> -->
 
-    <form id="form" onsubmit="login()">
+    <form onsubmit="login()" id="loginForm">
         <h3>Login</h3>
 
 
         <label for="email">Email</label>
-        <input type="email" placeholder="Email" id="email" required="" />
+        <input type="email" placeholder="Email" id="email" autocomplete="off" required="" />
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" required="">
+        <input type="password" placeholder="Password" id="password" autocomplete="off" required="">
 
         <button type="submit">Log In</button>
         <p id="message-error"></p>
@@ -40,12 +40,12 @@
 </body>
 
 <?php include "external.php" ?>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script> -->
 
 
-<script src="../script/config.js"></script>
+
 
 <script src="../script/login.js"></script>
 

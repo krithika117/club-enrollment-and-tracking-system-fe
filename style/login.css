@@ -88,7 +88,7 @@ body {
 
 } */
 
-#form {
+#loginForm {
     
     top: 50%;
     left: 50%;
@@ -116,14 +116,14 @@ body {
     padding: 50px 35px;
 }
 
-#form * {
+#loginForm * {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     outline: none;
     border: none;
 }
 
-#form h3 {
+#loginForm h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 100;
