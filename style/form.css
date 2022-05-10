@@ -451,19 +451,17 @@ body {
 }
 
 #regForm {
-    background-color: #ffffff;
+    background-color: #808080;
     top: 50%;
     left: 50%;
-    margin: 100px auto;
+    margin: 50px auto;
     font-family: 'Montserrat';
-    padding: 40px;
+    /* padding: 40px; */
     width: 50%;
     min-width: 300px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-
+    background: rgba(143, 143, 143, 0.2);
     padding: 50px 35px;
-
     background-color: rgba(255, 255, 255, 0.06);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -471,13 +469,16 @@ body {
 
 }
 
-.select {
+/* .select {
     position: relative;
     display: flex;
-}
+    margin-top: 10px;
+} */
 
 h1 {
+    font-size: 35px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 label {
@@ -487,22 +488,39 @@ label {
     font-weight: 500;
 }
 
+.form-control {
+    margin-top: 20px;
+    padding: 5px;
+    color: white;
+}
+
 input,
-select {
+select,
+.select,
+.form-control {
     display: block;
     height: 50px;
     width: 100%;
-    /* background: rgba(255, 255, 255, 0.2); */
+
+    /* background: rgba(192, 190, 190, 0.2); */
     background-color: rgba(255, 255, 255, 0.06);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border: none;
     border-radius: 3px;
-    padding: 0 10px;
+    padding: 0;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
 
+}
+
+input,
+input .form-control,
+input:active,
+input:focus {
+    padding: 10px !important;
+    background: rgba(225, 224, 224, 0.2) !important;
 }
 
 input:-webkit-autofill,
@@ -515,15 +533,16 @@ input:-webkit-autofill:active {
 }
 
 option {
-    height: 50px;
+    height: 100px;
     width: 100%;
     background: rgb(70, 68, 68);
     border-radius: 3px;
-    padding: 20px;
-    margin-top: 8px;
+    padding: 20px !important;
+    margin-left: 8px !important;
     font-size: 14px;
     font-weight: 300;
 }
+ 
 
 /* Arrow */
 .select::after {
@@ -537,14 +556,16 @@ option {
     pointer-events: none;
 }
 
+.select::before{
+    padding-left: 2px;
+}
 /* Transition */
 .select:hover::after {
     color: #323232;
 }
 
 ::placeholder {
-    color: #e5e5e5;
-
+    color: #ffffff !important;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -558,20 +579,20 @@ select:required:invalid {
     display: none;
 }
 
-button {
-    margin-top: 30px!important;
+#signupSubmit {
+    margin-top: 30px !important;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d1cccc;
+    background-color: #b5b4b4;
     color: rgb(46, 46, 46);
 }
 

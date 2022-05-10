@@ -37,7 +37,9 @@
                 <a href="javascript:void(0);" class="close"></a>
                 <nav>
                     <ul>
-                        <li><a href="login.php">Sign In</a></li>
+                        <!-- <li><a href="login.php">Sign In</a></li> -->
+                        <li id="user"></li>
+                        <!-- <a href="login.php">Sign In</a> -->
                         <li><a href="faculty-view.php">View Members</a></li>
                         <li><a href="form.php">Form</a></li>
                         <li><a href="" onclick="javascript:logout()">Sign out</a></li>
