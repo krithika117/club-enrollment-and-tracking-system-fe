@@ -1,15 +1,14 @@
-    
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-<script src="../script/config.js"></script>
-<!--  -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="../script/config.js"></script>
+    <!--  -->
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
-<!-- 
+    <!-- 
     
     <script src="welcome.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -52,9 +51,8 @@
             background: #022c5f96;
         }
     </style>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
-    
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>

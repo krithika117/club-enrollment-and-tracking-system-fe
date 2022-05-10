@@ -31,11 +31,15 @@ $(document).ready(() => {
 
             if (response.message == "exists") {
               console.log('exist')
+              document.getElementById('user1').innerHTML +=email.split('@')[0];
               document.querySelector('#regForm').classList.add('d-none');
+              document.querySelector('.wrapper').classList.remove('d-none');
 
             } else if (response.message == "clear") {
               console.log('clear')
+              
               document.querySelector('#regForm').classList.remove('d-none');
+              document.querySelector('.wrapper').classList.add('d-none');
             }
 
           },

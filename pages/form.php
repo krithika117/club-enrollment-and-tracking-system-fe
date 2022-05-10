@@ -81,7 +81,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- <label for="serviceClubChoice">Service Club</label> -->
     <div class="select form-control">
       <select id="serviceClubChoice">
-      <option value="" selected hidden disabled>&nbsp;Select Club</option>
+        <option value="" selected hidden disabled>&nbsp;Select Club</option>
         <option value="NCC">&nbsp;NCC</option>
         <option value="NSS">&nbsp;NSS</option>
         <option value="YRC">&nbsp;YRC</option>
@@ -96,7 +96,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- <label for="techClubChoice1">Technical Club</label> -->
     <div class="select form-control">
       <select id="techClubChoice1">
-      <option value="" selected hidden disabled>&nbsp;Select Club</option>
+        <option value="" selected hidden disabled>&nbsp;Select Club</option>
         <option value="Pattarai">&nbsp;Pattarai</option>
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
@@ -135,6 +135,18 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
       <span class="step"></span>
     </div> -->
   </div>
+
+  <div class="wrapper d-none">
+		<h1>Hello, <span id="user1"></span></h1>
+		<div class="container">
+			
+    Thank you for using Attribuer.<br>
+    Please check your mail for the enrollment confirmation.
+			</div>
+		</div>
+	</div>
+
+
 
 </body>
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
