@@ -40,8 +40,9 @@
                         <!-- <li><a href="login.php">Sign In</a></li> -->
                         <li id="user"></li>
                         <!-- <a href="login.php">Sign In</a> -->
-                        <li><a href="faculty-view.php">View Members</a></li>
-                        <li><a href="form.php">Form</a></li>
+                        <li id="fac" class="d-none"><a href="faculty-view.php">Sign In</a></li>
+                        <li id="fac" class="d-none"><a href="faculty-view.php">View Members</a></li>
+                        <li id="listForm" class="d-none"><a href="form.php">Form</a></li>
                         <li><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
                 </nav>

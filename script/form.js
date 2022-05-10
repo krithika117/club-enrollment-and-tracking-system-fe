@@ -144,6 +144,7 @@ $(document).ready(function () {
             // $('#loading').hide();
             // $('#msg').html('<span style="color: green;">You are registered successfully</span>');
             console.log('done!')
+            location.replace('form.php')
 
 
           },

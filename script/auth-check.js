@@ -33,7 +33,10 @@ $(document).ready(() => {
               console.log('exist')
               document.getElementById('user1').innerHTML +=email.split('@')[0];
               document.querySelector('#regForm').classList.add('d-none');
+              document.querySelector('#listForm').classList.add('d-none');
+              document.querySelector('#fac').classList.add('d-none');
               document.querySelector('.wrapper').classList.remove('d-none');
+              
 
             } else if (response.message == "clear") {
               console.log('clear')

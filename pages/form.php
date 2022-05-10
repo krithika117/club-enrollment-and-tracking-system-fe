@@ -109,7 +109,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- <label for="techClubChoice2">Technical Club</label> -->
     <div class="select form-control">
       <select id="techClubChoice2">
-        <option value="Nil">&nbsp;Nil</option>
+      <option value="" selected hidden disabled>&nbsp;Select Club</option>
+      <option value="Nil">&nbsp;NA</option>
         <option value="Pattarai">&nbsp;Pattarai</option>
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
