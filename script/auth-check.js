@@ -41,7 +41,6 @@ $(document).ready(() => {
                   document.querySelector('#listForm').classList.add('d-none');
                   document.querySelector('#fac').classList.add('d-none');
                   document.querySelector('.wrapper').classList.remove('d-none');
-                  
                 }
 
                 // Admin
@@ -49,10 +48,19 @@ $(document).ready(() => {
                   //console.log('exist')
                   // document.getElementById('user1').innerHTML += email.split('@')[0];
                   // document.getElementById("user2").innerHTML = "Hello, " + user.email.split('@')[0];
-                  document.querySelector('#fac').classList.remove('d-none');
-                  document.querySelector('.wrapper-admin').classList.remove('d-none');
                   document.querySelector('#regForm').classList.add('d-none');
+                  document.querySelector('.wrapper-admin').classList.remove('d-none');
+                  document.querySelector('#fac').classList.remove('d-none');
+                  // else{
+
+                  // }
+                  
+                  
                   document.querySelector('#listForm').classList.add('d-none');
+                  // document.querySelector('#fac').classList.remove('d-none');
+                  // Admin vs. Faculty changes
+                  console.log('hi')
+                  
                 }
 
 

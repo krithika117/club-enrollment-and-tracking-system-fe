@@ -37,6 +37,11 @@ option {
     color: white;
 }
 
+.d-none {
+    display: none!important;
+  }
+  
+
 #myTable {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);

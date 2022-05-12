@@ -13,6 +13,13 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 })
 
+if((email.split('@')[0])=='admin'){
+    document.querySelector('#dept_filter').classList.remove('d-none');
+  }
+  else if((email.split('@')[0])!='admin'){
+    document.querySelector('#dept_filter').classList.add('d-none');
+  } 
+
 function logout() {
     firebase.auth().signOut()
     localStorage.email = ''
