@@ -65,6 +65,7 @@
         function logout() {
             firebase.auth().signOut()
             location.replace('index.php')
+            localStorage.email = ''
         }
     </script>
 </body>

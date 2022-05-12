@@ -25,13 +25,14 @@ h2 {
     padding: 30px;
 }
 
-#search_filter,
+#dept_filter,
+#year_filter,
 option {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
-    height: 60px;
-    font: 20px!important;
+    height: 40px!important;
+    font: 30px!important;
     border: none;
     color: white;
 }
@@ -64,5 +65,5 @@ option {
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-    background-color: rgba(39, 38, 38, 0.61);
+    background-color: rgba(4, 7, 11, 0.75);
 }

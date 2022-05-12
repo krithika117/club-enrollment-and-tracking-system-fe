@@ -10,6 +10,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function logout() {
   firebase.auth().signOut()
+  localStorage.email = ''
 }
 
 // var currentTab = 0; // Current tab is set to be the first tab (0)
