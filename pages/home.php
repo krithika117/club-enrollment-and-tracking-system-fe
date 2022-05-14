@@ -16,15 +16,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 </head>
 
 <body>
-  <!-- <div class='light x1'></div>
-  <div class='light1 x2'></div>
-  <div class='light x3'></div>
-  <div class='light x4'></div>
-  <div class='light1 x5'></div>
-  <div class='light x6'></div>
-  <div class='light x7'></div>
-  <div class='light1 x8'></div>
-  <div class='light x9'></div> -->
+  
   <h1 id="user"></h1><br>
   <div id="regForm" class="d-none">
     <h1>Enrollment Form</h1>

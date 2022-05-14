@@ -2,8 +2,10 @@ firebase.auth().onAuthStateChanged((user) => {
   if (!user) {
     location.replace("index.php")
   } else {
-    // document.getElementById("user").innerHTML = "Hello, " + user.email.split('@')[0];
-    
+    email = firebase.auth().currentUser.email;
+    document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0];
+    document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0];
+
   }
 })
 

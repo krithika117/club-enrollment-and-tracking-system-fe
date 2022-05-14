@@ -45,8 +45,8 @@
             <th>Department</th>
             <th>Year of Study</th>
             <th>Service Club</th>
-            <th>Technical Club - 1</th>
-            <th>Technical Club - 2</th>
+            <th>Technical Club 1</th>
+            <th>Technical Club 2</th>
           </tr>
         </thead>
         <tbody></tbody>

@@ -1,3 +1,9 @@
+function logout() {
+  firebase.auth().signOut()
+  localStorage.email = ''
+}
+
+
 $(document).ready(() => {
   //console.log('in2')
   firebase.auth().onAuthStateChanged((user) => {
@@ -31,12 +37,18 @@ $(document).ready(() => {
 
               // Admin or Student based on isAdmin
               if (response.message == "exists") {
-                // document.getElementById('user1').innerHTML = "Hello, "+email.split('@')[0];
+
                 // Student
                 if (response.isAdmin == '0') {
                   //console.log('exist')
                   // document.getElementById('user1').innerHTML += email.split('@')[0];
-                  if((window.location.href.split('/').pop())=='view.php'){location.replace="home.php";}
+                  if ((location.href.split('/').pop()) == 'view.php') {
+                    logout();
+                  }
+                  if ((location.href.split('/').pop()) == 'edit-members.php') {
+                    logout();
+                  }
+
                   document.querySelector('#regForm').classList.add('d-none');
                   document.querySelector('#listForm').classList.add('d-none');
                   document.querySelector('#fac').classList.add('d-none');
@@ -45,22 +57,31 @@ $(document).ready(() => {
 
                 // Admin
                 if (response.isAdmin == '1') {
+                  if ((email.split('@')[0]) != "admin") {
+                    if ((location.href.split('/').pop()) == 'edit-members.php') {
+                      console.log('im workin')
+                      logout();
+                    }
+                  }
                   //console.log('exist')
                   // document.getElementById('user1').innerHTML += email.split('@')[0];
                   // document.getElementById("user2").innerHTML = "Hello, " + user.email.split('@')[0];
                   document.querySelector('#regForm').classList.add('d-none');
-                  document.querySelector('.wrapper-admin').classList.remove('d-none');
                   document.querySelector('#fac').classList.remove('d-none');
+                  document.querySelector('.wrapper-admin').classList.remove('d-none');
+
+
                   // else{
 
                   // }
-                  
-                  
+
+
                   document.querySelector('#listForm').classList.add('d-none');
                   // document.querySelector('#fac').classList.remove('d-none');
                   // Admin vs. Faculty changes
                   console.log('hi')
-                  
+
+
                 }
 
 

@@ -42,6 +42,7 @@
                         <!-- <a href="login.php">Sign In</a> -->
                         <li id="signIn" class="d-none"><a href="login.php">Sign In</a></li>
                         <li id="fac" class="d-none"><a href="view.php">View Members</a></li>
+                        <li id="adminonly" class="d-none"><a href="edit-members.php">Edit Members</a></li>
                         <li id="listForm" class="d-none"><a href="home.php">Form</a></li>
                         <li><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
@@ -67,6 +68,14 @@
             location.replace('index.php')
             localStorage.email = ''
         }
+
+        // window.addEventListener('beforeunload', function (e) {
+        //     e.preventDefault();
+        //     // e.returnValue = '';
+        //     logout();
+        //     console.log('I worked')
+        // });
+
     </script>
 </body>
 

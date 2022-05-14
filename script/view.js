@@ -8,17 +8,18 @@ firebase.auth().onAuthStateChanged((user) => {
         location.replace("index.php")
 
     } else {
-        // document.getElementById("user").innerHTML = "Hello, " + user.email.split('@')[0];
+        if ((email.split('@')[0]) == "admin") {
+            document.querySelector('#dept_filter').classList.remove('d-none');
+            document.querySelector('#adminonly').classList.remove('d-none');
+            document.querySelector('#fac').classList.remove('d-none');
+        } else {
+            document.querySelector('#dept_filter').classList.add('d-none');
+        }
+
 
     }
 })
 
-if((email.split('@')[0])=='admin'){
-    document.querySelector('#dept_filter').classList.remove('d-none');
-  }
-  else if((email.split('@')[0])!='admin'){
-    document.querySelector('#dept_filter').classList.add('d-none');
-  } 
 
 function logout() {
     firebase.auth().signOut()
@@ -66,7 +67,6 @@ $(document).ready(function () {
     }
 
     function load_admin_data(query1 = 'all', query2 = 'all') {
-
         var server = "http://127.0.0.1:5000";
         $.ajax({
             method: "POST",
