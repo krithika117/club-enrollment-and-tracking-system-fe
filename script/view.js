@@ -20,7 +20,6 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 })
 
-
 function logout() {
     firebase.auth().signOut()
     localStorage.email = ''
@@ -38,7 +37,7 @@ $(document).ready(function () {
             url: server + "/fetchrecords",
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
-                'query': query,
+                'query2': query,
                 'email': email
             }),
             dataType: 'json',
@@ -109,10 +108,10 @@ $(document).ready(function () {
 
         var query1 = $('#hidden_value1').val();
         var query2 = $('#hidden_value2').val();
-        if (query1 || query2) {
+        if (query1 && query2) {
             load_admin_data(query1, query2);
         } else {
-            load_fac_data(query1);
+            load_fac_data(query2);
         }
 
     });
