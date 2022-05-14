@@ -52,7 +52,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
         <option value="ECE">&nbsp;ECE</option>
         <option value="EEE">&nbsp;EEE</option>
         <option value="IT">&nbsp;IT</option>
-        <option value="Mech">&nbsp;Mech</option>
+        <option value="MECH">&nbsp;MECH</option>
       </select>
     </div>
     <!-- <label for="yearOfStudy">Year of Study</label> -->
@@ -127,7 +127,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   </div>
 
   <div class="wrapper d-none">
-    <h1 id="user1"></h1>
+    <h2 id="user1"></h2>
     <div class="container">
       Thank you for using Attribuer.<br>
       Please check your mail for the enrollment confirmation.
@@ -136,7 +136,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
   </div>
 
   <div class="wrapper-admin d-none">
-    <h1 id="user2">Welcome!</h1>
+    <h2 id="user2">Welcome!</h2>
     <div class="container">
       This is Attribuer, LICET's Club Enrollment and Teacking System<br>
       Visit the Members section to view student list.

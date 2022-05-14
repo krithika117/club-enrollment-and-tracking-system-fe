@@ -58,7 +58,8 @@ $(document).ready(function () {
             .response[i]
             .techClubChoice1 + '</td><td>' + data.response[i]
             .techClubChoice2 +
-            '</td></tr>');
+            '</td><td><a class="edit" title="Edit" data-toggle="tooltip" id="' + data.response[i].email + '"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a>'+
+                     '<a title="Delete" class="delete" data-toggle="tooltip"  id="' + data.response[i].email + '"><i class="fa fa-trash-o"></i></a></td></tr>');
           $('tbody').append(row);
           console.log('done')
         }
@@ -103,19 +104,6 @@ $(document).ready(function () {
     var techClubChoice2 = $("#techClubChoice2 :selected").val();
 
     localStorage.name = firstName;
-
-    console.log(firstName)
-    console.log(lastName)
-    console.log(phoneNumber)
-    console.log(email)
-    console.log(rollNo)
-    console.log(regNo)
-    console.log(department)
-    console.log(yearOfStudy)
-    console.log(serviceClubChoice)
-    console.log(techClubChoice1)
-    console.log(techClubChoice2)
-
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/i;
 
     if (email != "") {
@@ -146,8 +134,6 @@ $(document).ready(function () {
             // $('#msg').html('<span style="color: green;">You are registered successfully</span>');
             console.log('done!')
             location.replace('view.php')
-
-
           },
           statusCode: {
             400: function () {
@@ -169,31 +155,34 @@ $(document).ready(function () {
       $('#msg').html('<span style="color: red;">All fields are required</span>');
     }
   });
-  // $('#insert_form').on("submit", function (event) {
-  //     var server = "http://127.0.0.1:5000";
-  //     event.preventDefault();
-  //     if ($('#name').val() == "") {
-  //         alert("Name is required");
-  //     } else if ($('#address').val() == '') {
-  //         alert("Address is required");
-  //     } else if ($('#designation').val() == '') {
-  //         alert("Designation is required");
-  //     } else {
-  //         $.ajax({
-  //             url: server + "/insert",
-  //             method: "POST",
-  //             data: $('#insert_form').serialize(),
-  //             beforeSend: function () {
-  //                 $('#insert').val("Inserting");
-  //             },
-  //             success: function (data) {
-  //                 $('#add_data_Modal').modal('hide');
-  //                 if (data == 'success') {
-  //                     window.location.href = "/";
-  //                 }
-  //             }
-  //         });
-  //     }
-  // });
+
+  $(document).on("click", '.delete', function (e) {
+    e.preventDefault();
+    // var firstName = $('#firstName').val();
+    // $(this).parents("tr").remove();
+    // $(".add-new").removeAttr("disabled");
+    var emailDeletion = $(this).attr("id");
+    console.log(emailDeletion);
+    // var string = id;
+    var server = "http://127.0.0.1:5000";
+    alert("Are you sure you wanna delete?");
+    $.ajax({
+      method: "POST",
+      url: server + "/delete_user",
+      contentType: 'application/json;charset=UTF-8',
+      data: JSON.stringify({
+        'emailDeletion': emailDeletion,
+      }),
+      dataType: 'json',
+      success: function (data) {
+        // alert("Deleted");
+        location.replace('edit-members.php')
+      },
+      error: function (err) {
+        console.log(err);
+      }
+    })
+
+  });
 
 });
