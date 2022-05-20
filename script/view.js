@@ -31,14 +31,15 @@ $(document).ready(function () {
     // Load Faculty Data
     function load_fac_data(query = 'all') {
         console.log(query)
+
         var server = "http://127.0.0.1:5000";
         $.ajax({
             method: "POST",
-            url: server + "/fetchrecords",
+            url: server + "/fetchrecords/dept",
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
                 'query2': query,
-                'email': email
+                'email': email,
             }),
             dataType: 'json',
             success: function (data) {
@@ -69,12 +70,50 @@ $(document).ready(function () {
         var server = "http://127.0.0.1:5000";
         $.ajax({
             method: "POST",
-            url: server + "/fetchrecords",
+            url: server + "/fetchrecords/admin",
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
                 'query1': query1,
                 'query2': query2,
+                'email': email
+            }),
+            dataType: 'json',
+            success: function (data) {
+                console.log(data.response)
+                $('tbody').empty();
+                for (var i = 0; i <= data.response.length; i++) {
+                    var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
+                        data.response[i]
+                        .department + '</td><td>' + data.response[i].yearOfStudy +
+                        '</td><td>' +
+                        data.response[i].serviceClubChoice + '</td><td>' + data
+                        .response[i]
+                        .techClubChoice1 + '</td><td>' + data.response[i]
+                        .techClubChoice2 +
+                        '</td></tr>');
+                    $('tbody').append(row);
+                    console.log('done')
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert('Error: ' + textStatus + ' - ' + errorThrown);
+            }
+
+        });
+    }
+
+    function load_club_data(query = 'all') {
+        console.log(query)
+        var club = email.split('@')[0].toUpperCase();
+        var server = "http://127.0.0.1:5000";
+        $.ajax({
+            method: "POST",
+            url: server + "/fetchrecords/club",
+            contentType: 'application/json;charset=UTF-8',
+            data: JSON.stringify({
+                'query2': query,
                 'email': email,
+                'club': club,
             }),
             dataType: 'json',
             success: function (data) {
@@ -108,10 +147,12 @@ $(document).ready(function () {
 
         var query1 = $('#hidden_value1').val();
         var query2 = $('#hidden_value2').val();
-        if (query1 && query2) {
-            load_admin_data(query1, query2);
-        } else {
+        if (localStorage.stat == '1') {
             load_fac_data(query2);
+        } else if (localStorage.stat == '3') {
+            load_admin_data(query1, query2);
+        } else if (localStorage.stat == '2') {
+            load_club_data(query2);
         }
 
     });

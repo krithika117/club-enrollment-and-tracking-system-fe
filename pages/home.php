@@ -10,13 +10,13 @@
 header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 
-  <?php include "navbar.php"?> 
+  <?php include "navbar.php"?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../style/home.css">
 </head>
 
 <body>
-  
+
   <h1 id="user"></h1><br>
   <div id="regForm" class="d-none">
     <h1>Enrollment Form</h1>
@@ -74,7 +74,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
         <option value="NCC">&nbsp;NCC</option>
         <option value="NSS">&nbsp;NSS</option>
         <option value="YRC">&nbsp;YRC</option>
-        <option value="Rotaract">&nbsp;Rotaract</option>
+        <option value="ROTARACT">&nbsp;Rotaract</option>
         <option value="NSO">&nbsp;NSO</option>
       </select>
     </div>
@@ -86,12 +86,13 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <div class="select form-control">
       <select id="techClubChoice1">
         <option value="" selected hidden disabled>&nbsp;Select Club</option>
-        <option value="Pattarai">&nbsp;Pattarai</option>
+        <option value="Nil">&nbsp;NA</option>
+        <option value="PATTARAI">&nbsp;Pattarai</option>
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
-        <option value="Turbonites">&nbsp;Rotaract</option>
+        <option value="TURBONITES">&nbsp;TURBONITES</option>
         <option value="MAD">&nbsp;MAD Club</option>
-        <option value="ECEClub">&nbsp;ECE Club</option>
+        <option value="ECECLUB">&nbsp;ECE Club</option>
       </select>
       <!-- </div> -->
     </div>
@@ -100,12 +101,12 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
       <select id="techClubChoice2">
         <option value="" selected hidden disabled>&nbsp;Select Club</option>
         <option value="Nil">&nbsp;NA</option>
-        <option value="Pattarai">&nbsp;Pattarai</option>
+        <option value="PATTARAI">&nbsp;Pattarai</option>
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
-        <option value="Turbonites">&nbsp;Rotaract</option>
+        <option value="TURBONITES">&nbsp;TURBONITES</option>
         <option value="MAD">&nbsp;MAD Club</option>
-        <option value="ECEClub">&nbsp;ECE Club</option>
+        <option value="ECECLUB">&nbsp;ECE Club</option>
       </select>
     </div>
 

@@ -33,11 +33,9 @@ $(document).ready(() => {
 
           success: function (response) {
               //console.log(response)
-              //console.log(response.message)
-
+              localStorage.stat = response.isAdmin;
               // Admin or Student based on isAdmin
               if (response.message == "exists") {
-
                 // Student
                 if (response.isAdmin == '0') {
                   //console.log('exist')
@@ -56,7 +54,7 @@ $(document).ready(() => {
                 }
 
                 // Admin
-                if (response.isAdmin == '1') {
+                if (response.isAdmin == '1' || response.isAdmin == '2' ||response.isAdmin =='3') {
                   if ((email.split('@')[0]) != "admin") {
                     if ((location.href.split('/').pop()) == 'edit-members.php') {
                       console.log('im workin')
@@ -69,26 +67,24 @@ $(document).ready(() => {
                   document.querySelector('#regForm').classList.add('d-none');
                   document.querySelector('#fac').classList.remove('d-none');
                   document.querySelector('.wrapper-admin').classList.remove('d-none');
-
-
-                  // else{
-
-                  // }
-
-
                   document.querySelector('#listForm').classList.add('d-none');
                   // document.querySelector('#fac').classList.remove('d-none');
                   // Admin vs. Faculty changes
                   console.log('hi')
-
-
                 }
 
 
               } else if (response.message == "clear") {
                 //console.log('clear')
+                if ((location.href.split('/').pop()) == 'view.php') {
+                  logout();
+                }
+                if ((location.href.split('/').pop()) == 'edit-members.php') {
+                  logout();
+                }
                 document.querySelector('#regForm').classList.remove('d-none');
                 document.querySelector('.wrapper').classList.add('d-none');
+
               }
             }
 

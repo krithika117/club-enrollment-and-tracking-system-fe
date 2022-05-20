@@ -39,27 +39,27 @@
 // //     });
 // // }
 
-document.getElementById("loginForm").addEventListener("submit",(event)=>{
+document.getElementById("loginForm").addEventListener("submit", (event) => {
     event.preventDefault()
 
 })
-firebase.auth().onAuthStateChanged((user)=>{
-    if(user){
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
         location.replace("home.php")
     }
 })
 
-function login(){
+function login() {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
-    firebase.auth().signInWithEmailAndPassword(email, password) 
-    .then((userCredential) => {
-        // Signed in
-        window.user = userCredential.user;
-        localStorage.email = firebase.auth().currentUser.email;
-        window.email = firebase.auth().currentUser.email;
-           })
-    .catch((error)=>{
-        document.getElementById("error").innerHTML = error.message
-    })
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            // Signed in
+            window.user = userCredential.user;
+            localStorage.email = firebase.auth().currentUser.email;
+            window.email = firebase.auth().currentUser.email;
+        })
+        .catch((error) => {
+            document.getElementById("message-error").innerHTML = error.message
+        })
 }

@@ -9,7 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" /> -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
 
@@ -48,7 +49,8 @@
         <div class="table-responsive">
             <table id="myTable" class="table table-hover dark ">
                 <br />
-                <button type="button" data-toggle="modal" data-target="#add_data_Modal" class="btn"><i class="fa fa-user-plus"></i> Add
+                <button type="button" data-toggle="modal" data-target="#add_data_Modal" class="btn"><i
+                        class="fa fa-user-plus"></i> Add
                     Students</button><br />
                 <thead>
                     <tr>
@@ -73,7 +75,8 @@
          <div class="modal-dialog">
               <div class="modal-content">
                    <div class="modal-header">
-                        <h4 class="modal-title">Add Student</h4>    <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Add Student</h4>    <button type="button" class="close"
+                        data-dismiss="modal">×</button>
                        </div>
                    <div class="modal-body">
                         <div id="insert_form">
@@ -93,7 +96,7 @@
                         <!-- <label for="phoneNumber">Phone Number</label> -->
                         <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber"
                             size="10" />
-                            <input type="email" class="form-control" placeholder="Email" id="email" />
+                        <input type="email" class="form-control" placeholder="Email" id="email" />
                         <!-- 
       <label for="email">Email</label>
       <input type="email" class="form-control" placeholder="Email" id="email" /> -->

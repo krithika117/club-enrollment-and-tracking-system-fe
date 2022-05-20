@@ -58,14 +58,14 @@ $(document).ready(function () {
             .response[i]
             .techClubChoice1 + '</td><td>' + data.response[i]
             .techClubChoice2 +
-            '</td><td><a class="edit" title="Edit" data-toggle="tooltip" id="' + data.response[i].email + '"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a>'+
-                     '<a title="Delete" class="delete" data-toggle="tooltip"  id="' + data.response[i].email + '"><i class="fa fa-trash-o"></i></a></td></tr>');
+            '</td><td><a class="edit" title="Edit" data-toggle="tooltip" id="' + data.response[i].email + '"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a>' +
+            '<a title="Delete" class="delete" data-toggle="tooltip"  id="' + data.response[i].email + '"><i class="fa fa-trash-o"></i></a></td></tr>');
           $('tbody').append(row);
           console.log('done')
         }
       },
       error: function (jqXHR, textStatus, errorThrown) {
-        alert('Error: ' + textStatus + ' - ' + errorThrown);
+        console.log('Error: ' + textStatus + ' - ' + errorThrown);
       }
 
     });
