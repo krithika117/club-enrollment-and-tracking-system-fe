@@ -38,7 +38,7 @@ $(document).ready(function () {
     $.ajax({
 
       method: "POST",
-      url: server + "/fetchrecords",
+      url: server + "/fetchrecords/admin",
       contentType: 'application/json;charset=UTF-8',
       data: JSON.stringify({
         'query1': query1,
@@ -58,8 +58,9 @@ $(document).ready(function () {
             .response[i]
             .techClubChoice1 + '</td><td>' + data.response[i]
             .techClubChoice2 +
-            '</td><td><a class="edit" title="Edit" data-toggle="tooltip" id="' + data.response[i].email + '"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a>' +
+            '</td><td>' +
             '<a title="Delete" class="delete" data-toggle="tooltip"  id="' + data.response[i].email + '"><i class="fa fa-trash-o"></i></a></td></tr>');
+            // <a class="edit" title="Edit" data-toggle="tooltip" id="' + data.response[i].email + '"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a>
           $('tbody').append(row);
           console.log('done')
         }
@@ -78,14 +79,15 @@ $(document).ready(function () {
 
     var query1 = $('#hidden_value1').val();
     var query2 = $('#hidden_value2').val();
-
-    if (query1 || query2) {
-      load_admin_data(query1, query2);
-    } else {
-      load_fac_data(query1);
+    if (localStorage.stat == '1') {
+        load_fac_data(query2);
+    } else if (localStorage.stat == '3') {
+        load_admin_data(query1, query2);
+    } else if (localStorage.stat == '2') {
+        load_club_data(query2);
     }
 
-  });
+});
 
   $('#signupSubmit').on('click', function (e) {
     e.preventDefault();

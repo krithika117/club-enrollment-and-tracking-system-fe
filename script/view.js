@@ -24,9 +24,13 @@ function logout() {
     firebase.auth().signOut()
     localStorage.email = ''
 }
+function prompt_val(){
+    $('tbody').append('Please use the filter to view data.');
+}
 
 email = localStorage.email;
 $(document).ready(function () {
+    // prompt_val();
     load_admin_data();
     // Load Faculty Data
     function load_fac_data(query = 'all') {

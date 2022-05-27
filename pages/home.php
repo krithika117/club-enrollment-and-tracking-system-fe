@@ -19,7 +19,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 
   <h1 id="user"></h1><br>
   <div id="regForm" class="d-none">
-    <h1>Enrollment Form</h1>
+    <h1>Enrollment Form</h1><br>
     <!-- basic details -->
     <!-- <div class="tab "> -->
     <!-- <label for="firstName">First Name</label> -->

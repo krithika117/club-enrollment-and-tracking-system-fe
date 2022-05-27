@@ -138,7 +138,7 @@
                                 <option value="NCC">&nbsp;NCC</option>
                                 <option value="NSS">&nbsp;NSS</option>
                                 <option value="YRC">&nbsp;YRC</option>
-                                <option value="Rotaract">&nbsp;Rotaract</option>
+                                <option value="ROTARACT">&nbsp;Rotaract</option>
                                 <option value="NSO">&nbsp;NSO</option>
                             </select>
                         </div>
@@ -164,12 +164,12 @@
                             <select id="techClubChoice2">
                                 <option value="" selected hidden disabled>&nbsp;Select Club</option>
                                 <option value="Nil">&nbsp;NA</option>
-                                <option value="Pattarai">&nbsp;Pattarai</option>
+                                <option value="PATTARAI">&nbsp;Pattarai</option>
                                 <option value="IIC">&nbsp;IIC</option>
                                 <option value="BEAT">&nbsp;BEAT</option>
-                                <option value="Turbonites">&nbsp;Rotaract</option>
+                                <option value="TURBONITES">&nbsp;TURBONITES</option>
                                 <option value="MAD">&nbsp;MAD Club</option>
-                                <option value="ECEClub">&nbsp;ECE Club</option>
+                                <option value="ECECLUB">&nbsp;ECE Club</option>
                             </select>
                         </div>
 
