@@ -60,6 +60,12 @@ $(document).ready(() => {
                       console.log('im workin')
                       logout();
                     }
+                    if(response.isAdmin!='2'){
+                      if (((location.href.split('/').pop()) == 'update-attendance.php')||((location.href.split('/').pop()) == 'take-attendance.php'||((location.href.split('/').pop()) == 'eventlist.php'))) {
+                        console.log('im workin')
+                        logout();
+                      }
+                    }
                   }
                   //console.log('exist')
                   // document.getElementById('user1').innerHTML += email.split('@')[0];
