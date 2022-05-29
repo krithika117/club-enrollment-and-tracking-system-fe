@@ -138,7 +138,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data) {
                 console.log('done!')
-                location.replace('take-attendance.php')
+                location.replace('eventlist.php')
                 alert('updated');
             },
             statusCode: {
