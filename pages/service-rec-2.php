@@ -9,172 +9,319 @@
   <?php include "navbar.php" ?>
   <link rel="stylesheet" href="../style/rec.css">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <style>
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      font-family: Verdana, sans-serif;
-      margin: 0;
-    }
-
-    .container {
-      margin-top: 5rem;
-      margin-left:auto;
-      margin-right:auto;
-      display: block;
-      align-items: center;
-      text-align: center !important;
-      justify-content: center;
-      
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-      position: relative;
-      background: #f1f1f1f1;
-    }
-
-    /* Slides */
-    .mySlides {
-
-      display: none;
-      padding: 80px;
-      text-align: center;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -30px;
-      padding: 16px;
-      color: #888;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      position: absolute;
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-    }
-
-    /* The dot/bullet/indicator container */
-    .dot-container {
-      text-align: center;
-      padding: 20px;
-      background: #ddd;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-
-    /* Add a background color to the active dot/circle */
-    .active,
-    .dot:hover {
-      background-color: #717171;
-    }
-
-    /* Add an italic font style to all quotes */
-    q {
-      font-style: italic;
-    }
-
-    /* Add a blue color to the author */
-    .author {
-      color: cornflowerblue;
-    }
-  </style>
+  <script src="../script/tech-rec.js" defer></script>
+  
 </head>
 
 <body>
   <div class="container">
-    <div class="slideshow-container">
+  <h1>Which Service Club Fits you best?</h1>
+    <div class="restart-button">
+      <button id="restart">↻ Reset Quiz</button>
+    </div>
 
-      <div class="mySlides">
-        <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-        <p class="author">- John Keats</p>
-      </div>
 
-      <div class="mySlides">
-        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-        <p class="author">- Ernest Hemingway</p>
-      </div>
+    <!-- <div class="slideshow-container"> -->
 
-      <div class="mySlides">
-        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-        <p class="author">- Thomas A. Edison</p>
-      </div>
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q1" class="clear">↻</button></h2> -->
+        <div class="question">
 
-      <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
-      <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="answer-choice">
+            <button id="q1a1">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbass.jpg?v=1597270130301"
+            alt="bass"
+          /> -->
+              <div class="desc">Bass</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q1a2">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fvocal.jp2?v=1597261677869"
+            alt="vocals"
+          /> -->
+              <div class="desc">Vocals</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q1a3">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpiano.jp2?v=1597261584113"
+            alt="piano"
+          /> -->
+              <div class="desc">Piano</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q1a4">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
+            alt="guitar"
+          /> -->
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q1a5">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
+            alt="guitar"
+          /> -->
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+
+        </div>
 
     </div>
 
-    <div class="dot-container d-none">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q2" class="clear">↻</button></h2> -->
+        <div class="question">
+          <div class="answer-choice">
+            <button id="q2a1">
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q2a2">
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q2a3">
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q2a4">
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q2a5">
+              <div class="desc">Guitar</div>
+            </button>
+          </div>
+        </div>
     </div>
+
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q3" class="clear">↻</button></h2> -->
+        <div class="question">
+          <div class="answer-choice">
+            <button id="q3a1">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Ffire.jpg?v=1597299667685"
+            alt="fire"
+          /> -->
+              <div class="desc">Fire</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q3a2">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fair.jpg?v=1597299901769"
+            alt="air"
+          /> -->
+              <div class="desc">Air</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q3a3">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwater.jpg?v=1597299934501"
+            alt="water"
+          /> -->
+              <div class="desc">Water</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q3a4">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
+            alt="earth"
+          /> -->
+              <div class="desc">Earth</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q3a5">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
+            alt="earth"
+          /> -->
+              <div class="desc">Earth</div>
+            </button>
+          </div>
+        </div>
+    </div>
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q4" class="clear">↻</button></h2> -->
+        <div class="question">
+          <div class="answer-choice">
+            <button id="q4a1">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbright-colours.png?v=1597328002113"
+            alt="bright colours"
+          /> -->
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q4a2">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fmuted-colours.png?v=1597328231356"
+            alt="muted colours"
+          /> -->
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q4a3">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fcool-colours.png?v=1597328091906"
+            alt="cool-toned colours"
+          /> -->
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q4a4">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
+            alt="warm-toned colours"
+          /> -->
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q4a5">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
+            alt="warm-toned colours"
+          /> -->
+            </button>
+          </div>
+        </div>
+    </div>
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q5" class="clear">↻</button></h2> -->
+        <div class="question">
+          <div class="answer-choice">
+            <button id="q5a1">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpartying.jpg?v=1597331695599"
+            alt="partying"
+          /> -->
+              <div class="desc">Attending Parties</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q5a2">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fstudying.jpg?v=1597331730558"
+            alt="studying/working"
+          /> -->
+              <div class="desc">Studying/Working</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q5a3">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwatchingmovie.jp2?v=1597331749164"
+            alt="watching a movie"
+          /> -->
+              <div class="desc">Watching a movie</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q5a4">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
+            alt="On a road trip"
+          /> -->
+              <div class="desc">On a road trip</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q5a5">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
+            alt="On a road trip"
+          /> -->
+              <div class="desc">On a road trip</div>
+            </button>
+          </div>
+        </div>
+
+    </div>
+    <div class="mySlides">
+      <h2>Which instrument sound do you prefer?
+        <!-- <button id="clear-q6" class="clear">↻</button></h2> -->
+        <div class="question">
+          <div class="answer-choice">
+            <button id="q6a1">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Ffamily.jpg?v=1597335437713"
+            alt="friends/family"
+          /> -->
+              <div class="desc">Friends/Family</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q6a2">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fmyself.jpg?v=1597335424260"
+            alt="myself"
+          /> -->
+              <div class="desc">Myself</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q6a3">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fmy%20partner.jpg?v=1597335376667"
+            alt="my partner"
+          /> -->
+              <div class="desc">My partner</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q6a4">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fnewpeople.jpg?v=1597335393683"
+            alt="new people"
+          /> -->
+              <div class="desc">New people</div>
+            </button>
+          </div>
+          <div class="answer-choice">
+            <button id="q6a5">
+              <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fnewpeople.jpg?v=1597335393683"
+            alt="new people"
+          /> -->
+              <div class="desc">New people</div>
+            </button>
+          </div>
+        </div>
+    </div>
+    <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
   </div>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n >= slides.length) {
-        // slideIndex = 1
-        document.querySelector('.next').classList.add('d-none');
-
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+  <div class="dot-container d-none">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+  
 
 </body>
 

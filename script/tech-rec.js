@@ -1,3 +1,35 @@
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n >= slides.length) {
+        // slideIndex = 1
+        document.querySelector('.next').classList.add('d-none');
+
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    // for (i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex - 1].style.display = "block";
+    // dots[slideIndex - 1].className += " active";
+}
 //Global Variables
 //Variables to track each possible quiz outcome.
 var questionCount = 0;
@@ -309,6 +341,7 @@ function updateResult() {
 }
 
 function refresh() {
+    // location.replace("tech-rec.php");
     // swal("Your result is...", "success");
     var questionCount = 0;
     var nssScore = 0;
@@ -351,4 +384,8 @@ function refresh() {
     document.getElementById("q6a3").disabled = false;
     document.getElementById("q6a4").disabled = false;
     document.getElementById("q6a5").disabled = false;
+
+    // slideIndex = 1;
+    showSlides(slideIndex = 1);
+
 }
