@@ -31,9 +31,10 @@
                     <ul>
                         <li id="user"></li>
                         <li id="signIn"><a href="login.php">Sign In</a></li>
+                        <li id="homeNav"><a href="home.php">Home</a></li>
                         <li id="viewMembers" class="d-none"><a href="view.php">View Members</a></li>
                         <li id="editMembers" class="d-none"><a href="edit-members.php">Edit Members</a></li>
-                        <li id="recom"><a href="service-rec.php">Recommender</a></li>
+                        <li id="recom"><a href="rec.php">Recommender</a></li>
                         <li id="createEvents" class="d-none"><a href="eventlist.php">Create Events</a></li>
                         <li id="viewAtt" class="d-none"><a href="update-attendance.php">View/Update Attendance</a></li>
                         <li id="quit"><a href="" onclick="javascript:logout()">Sign out</a></li>

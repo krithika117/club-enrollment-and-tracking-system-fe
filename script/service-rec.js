@@ -1,3 +1,35 @@
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n >= slides.length) {
+        // slideIndex = 1
+        document.querySelector('.next').classList.add('d-none');
+
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    // for (i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex - 1].style.display = "block";
+    // dots[slideIndex - 1].className += " active";
+}
 //Global Variables
 //Variables to track each possible quiz outcome.
 var questionCount = 0;
@@ -232,83 +264,211 @@ function yrc() {
 
 function updateResult() {
     if ((nssScore == 2 && nccScore == 2) && (rotaractScore == 2 || leafScore == 2)) {
-        swal("We recommend", "Your result is... any Billie Eilish Song!</i>", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if ((rotaractScore == 2 && leafScore == 2) && (nssScore == 2 || nccScore == 2)) {
-        swal("We recommend", "Your result is... any Billie Eilish Song!</i>", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
 
     //Pair scoring {ncc,nss,rot,yrc,leaf}
     //NSS Combos
     else if (nssScore == 3 && nccScore == 3) {
-        swal("We recommend", "bad guy and when the party's over!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (nssScore == 3 && rotaractScore == 3) {
-        swal("We recommend", "bad guy and rotaract!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (nssScore == 3 && leafScore == 3) {
-        swal("We recommend", "bad guy and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (nssScore == 3 && yrcScore == 3) {
-        swal("We recommend", "bad guy and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
     //NCC Combos
     else if (nccScore == 3 && rotaractScore == 3) {
-        swal("We recommend", "when the party's over and rotaract!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (nccScore == 3 && yrcScore == 3) {
-        swal("We recommend", "when the party's over and rotaract!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (nccScore == 3 && leafScore == 3) {
-        swal("We recommend", "when the party's over and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
     //Rotaract combos
     else if (rotaractScore == 3 && yrcScore == 3) {
-        swal("We recommend", "rotaract and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (rotaractScore == 3 && leafScore == 3) {
-        swal("We recommend", "rotaract and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
     //yrc combos
     else if (yrcScore == 3 && leafScore == 3) {
-        swal("We recommend", "rotaract and leaf!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
 
     //Individual scoring
     else if (nssScore >= 3) {
         // swal("Your result is... bad guy!","success");
-        swal("We Recommend", "NSS", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
 
     } else if (nccScore >= 3) {
-        // swal("Your result is... when the party's over!","success");
-        swal("We Recommend", "NCC", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
 
     } else if (rotaractScore >= 3) {
         // swal("Your result is... rotaract ft. Khalid!</i>","success");
-        swal("We Recommend", "Rotaract Club of LICET", "success");
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
+        // swal("We Recommend", "Rotaract Club of LICET", "success");
         refresh();
     } else if (leafScore >= 3) {
-        swal("We Recommend", "LEAF", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else if (yrcScore >= 3) {
-        swal("We Recommend", "YRC", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     } else {
-        swal("Hmm... ", "try again!", "success");
-        refresh();
+        swal({
+            title: "We Recommend",
+            text: "NSS",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
     }
 
     // refresh();
 }
 
 function refresh() {
+
     // swal("Your result is...", "success");
     var questionCount = 0;
     var nssScore = 0;
@@ -351,4 +511,9 @@ function refresh() {
     document.getElementById("q6a3").disabled = false;
     document.getElementById("q6a4").disabled = false;
     document.getElementById("q6a5").disabled = false;
+
+    // slideIndex = 1;
+    showSlides(slideIndex = 1);
+    location.replace("service-recommender.php");
+
 }

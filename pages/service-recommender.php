@@ -9,13 +9,13 @@
   <?php include "navbar.php" ?>
   <link rel="stylesheet" href="../style/rec.css">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="../script/tech-rec.js" defer></script>
-  
+  <script src="../script/service-rec.js" defer></script>
+
 </head>
 
 <body>
   <div class="container">
-  <h1>Which Service Club Fits you best?</h1>
+    <h1>Which Technical Club Fits you best?</h1>
     <div class="restart-button">
       <button id="restart">↻ Reset Quiz</button>
     </div>
@@ -321,7 +321,7 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
   </div>
-  
+
 
 </body>
 

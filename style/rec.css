@@ -1,82 +1,84 @@
 /* CSS files add styling rules to your content */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+body {
   
-  }
-  
-  body {
-    font-family: 'Nunito', sans-serif;
-    background: url("../dist/images/bgv.svg");
-    background-position: top;
-    background-size: cover;
-  
-  }
-  /* .container{
+  background: url("../dist/images/bgv.svg");
+  background-position: top;
+  background-size: cover;
+
+}
+
+/* .container{
     left:50%;
     text-align: center;
     padding:20px;
   } */
-  
-  h1 {
-    display: flex;
-    color: #ffffff;
-    justify-content: center;
-    padding: 30px;
-    /* border-bottom: 2px solid #620be5; */
-  }
-  
-  h2 {
-    color: #ffffff;
-    margin-top: 2em;
-  }
-  
-  /* .question {
+
+h1 {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  padding: 30px;
+  /* border-bottom: 2px solid #620be5; */
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+/* .question {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   } */
-  
-  
-  .answer-choice button {
-    width:40%;
-    color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: rgba(103, 105, 107, 0.461);
-    box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
-  }
-  
-  button {
-    font-size: 15px;
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 12px 25px !important;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    display: inline;
-    font-family: 'Nunito', sans-serif !important;
-    border-radius: 15px !important;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #7f7e7e;
-    /* color: rgb(46, 46, 46); */
-  }
-  
-  
- 
-  
-  
-  /* button:active {
+
+
+.answer-choice button {
+  width: 40%;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgba(103, 105, 107, 0.461);
+  box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
+}
+
+button {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 12px 25px !important;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  font-family: 'Nunito', sans-serif !important;
+  border-radius: 15px !important;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7f7e7e;
+  /* color: rgb(46, 46, 46); */
+}
+
+
+
+
+
+/* button:active {
     background-color: green;
     box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
     backdrop-filter: blur(16px) saturate(180%);
@@ -88,18 +90,19 @@
     cursor: none;
     pointer-events: none;
   } */
-  
-  #restart {
-    background-color: rgba(110, 70, 228, 0.461) !important;
-    height: 50px;
-    color: white;
-    padding: 0,  !important;
-  }
-  #restart:hover{
-    background-color: rgba(86, 55, 181, 0.461) !important;
-  }
-  
-  /* button:disabled {
+
+#restart {
+  background-color: rgba(110, 70, 228, 0.461) !important;
+  height: 50px;
+  color: white;
+  padding: 0,  !important;
+}
+
+#restart:hover {
+  background-color: rgba(86, 55, 181, 0.461) !important;
+}
+
+/* button:disabled {
     background-color: rgba(178, 185, 191, 0.461);
     box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
     backdrop-filter: blur(16px) saturate(180%);
@@ -109,8 +112,8 @@
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
   } */
-  
-  /* .answer-choice p {
+
+/* .answer-choice p {
     display: flex;
     height: 170px;
     width: 170px;
@@ -121,124 +124,141 @@
     font-size: 20px;
     font-family: 'Questrial';
   } */
-  
-  button:disabled {
-    background-color: rgba(110, 70, 228, 0.461);
-    box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
-    cursor: none;
-    pointer-events: none;
-  }
 
-  #restart {
-    background-color: #5c6b73;
-    border: none;
-    color: white;
-    padding: 15px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    /* justify-items: right; */
-  }
-  
-  /* div.desc {
+button:disabled {
+  background-color: rgba(110, 70, 228, 0.461);
+  box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
+  cursor: none;
+  pointer-events: none;
+}
+
+#restart {
+  background-color: #5c6b73;
+  border: none;
+  color: white;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* justify-items: right; */
+}
+
+/* div.desc {
     padding: 15px;
     text-align: center;
     font-family: 'Questrial';
     font-size: 16px;
   } */
 
-    .container {
-      margin-bottom: 5rem;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      align-items: center;
-      text-align: center !important;
-      justify-content: center;
-    }
+.container {
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  text-align: center !important;
+  justify-content: center;
+}
 
-    /* Slideshow container */
-    .slideshow-container {
-      position: relative;
-      background: #f1f1f1f1;
-    }
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
 
-    /* Slides */
-    .mySlides {
-      display: none;
-      /* padding: 30px; */
-      text-align: center;
-    }
+/* Slides */
+.mySlides {
+  display: none;
+  /* padding: 30px; */
+  text-align: center;
+}
 
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -30px;
-      padding: 16px;
-      color: #888;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-    /* Position the "next button" to the right */
-    .next {
-      position: absolute;
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-    }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: rgba(184, 184, 184, 0.8);
+  /* color: white; */
+  text-decoration: none;
+}
 
-    /* The dot/bullet/indicator container */
-    .dot-container {
-      text-align: center;
-      padding: 20px;
-      background: #ddd;
-    }
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
 
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
+.choice {
+  padding: 3rem !important;
+  width: 14rem;
+  background-color: rgba(103, 105, 107, 0.461);
+  box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(53, 53, 53, 0.936);
+}
 
-    /* Add a background color to the active dot/circle */
-    .active,
-    .dot:hover {
-      background-color: #717171;
-    }
+.choice:hover {
+  background-color: rgba(103, 105, 107, 0.461);
+}
 
-    /* Add an italic font style to all quotes */
-    q {
-      font-style: italic;
-    }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-    /* Add a blue color to the author */
-    .author {
-      color: cornflowerblue;
-    }
-  
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}

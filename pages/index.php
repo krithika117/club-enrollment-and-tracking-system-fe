@@ -67,9 +67,15 @@
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Rotaract Club of LICET</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>
+								Rotaract is a service club for young people ages 18 to 30 who are dedicated to finding
+								innovative solutions to the world’s most pressing challenges while developing leadership
+								skills and making friends from around the world. Rotaract clubs decide how to organize
+								and run their own clubs, manage their funds, and plan and carry out activities and
+								service projects that are important to their communities. Rotary clubs that sponsor
+								Rotaract clubs offer guidance and support and work with Rotaractors as partners in
+								service.
+							</p>
 						</div>
 					</div>
 					<div class="item">
@@ -119,7 +125,8 @@
 				</ol><!-- Wrapper for slides -->
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="../dist/images/clublogos/BEAT.png">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
+								src="../dist/images/clublogos/BEAT.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>BEAT</h3>
