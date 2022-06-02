@@ -16,9 +16,9 @@
 <body>
     <div class="container">
 <h1>Recommender</h1>
-<a href="service-recommender.php"><button class="clubchoice choice btn btn-primary">Service Club choice</button></a>
+<a href="service-recommender.php"><button class="clubchoice choice btn btn-primary">Service Club Recommender</button></a>
 <br>
-<a href="tech-recommender.php"><button class="clubchoice choice btn btn-primary">Technical Club choice</button></a>
+<a href="tech-recommender.php"><button class="clubchoice choice btn btn-primary">Technical Club Recommender</button></a>
 </div>
 </body>
 

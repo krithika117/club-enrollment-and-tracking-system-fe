@@ -44,9 +44,10 @@
 								src="../dist/images/clublogos/NCC.png"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>NCC</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>National Cadet Corps is the youth wing of the Indian Armed Forces with its headquarters
+								in New Delhi, India. It is open to school and college students on voluntary bases as a
+								Tri-Services Organization, comprising the Army, Navy and Air Wing, engaged in grooming
+								the youth of the country into disciplined and patriotic citizens.</p>
 						</div>
 					</div>
 					<div class="item">
@@ -55,9 +56,10 @@
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>NSS</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>The Government of India, Ministry of Youth Affairs and Sports, NSS Regional Center,
+								Chennai, has given approval to start one NSS Unit (Self Financing Unit). The unit is
+								allowed to start function from the academic year 2015 – 16. Some of the programmes
+								organized by NSS Unit in SEM.</p>
 						</div>
 					</div>
 					<div class="item">
@@ -84,9 +86,11 @@
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>LEAF</h3>
 							<!--  -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>The mission of this club is to promote green campus. The activities of the club includes
+								collecting the waste materials and recycling them. Normally Apple is not grown in
+								tropical climates. Hybrid tree bank foundation has developed an apple seed that will
+								grow even in tropical climate. We proudly inform you that we are the first institution
+								in South India to plant the tree.</p>
 						</div>
 					</div>
 					<div class="item">
@@ -96,9 +100,12 @@
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>YRC</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>Through Youth Red Cross, the students are molded as engineers with humane dispositions
+								which leads to the betterment of the society.
+								Through Youth Red Cross, whose parent institution is Indian Red Cross Society (IRCS),
+								young volunteers make a significant change towards enhancing the Quality of life of
+								people, nurturing nature and making earth a better place
+							</p>
 						</div>
 					</div>
 				</div><!-- Controls -->
@@ -131,31 +138,33 @@
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>BEAT</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>The entrepreneurship cell of LICET (BEAT – Building Entrepreneurship Among Techies) is a
+								student – run body that aims at instilling the spirit of entrepreneurship among the
+								students. The core objective of BEAT is to help the students to realize the importance
+								and the power of entrepreneurship through workshops, guest lectures, innovative games
+								and competitions. </p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Club Name</h3>
+							<h3>IIC</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>The India International Centre is a non-official organisation situated in New Delhi,
+								India. Membership of the IIC includes artists, academicians, senior government
+								officials, judges, jurists, parliamentarians, doctors, ministers, governors, social
+								activists, journalists and persons from other domains.
+							</p>
 						</div>
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Club Name</h3>
+							<h3>MAD Club</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>MAD – Make A Difference club was formed in the year 2018 to empower students with innovation and entrepreneurship qualities. Also to promote inquisitiveness among the students and inculcate scientific temper among them. Our page follows the objective of bridging the gap between academic and extracurricular activities by exposing students to real-world situations.</p>
 						</div>
 					</div>
 					<div class="item">
