@@ -20,7 +20,7 @@
 	<section id="home">
 		<h1>Club Enrollment and Tracking System<br>
 			<button class="button glass"><a href="login.php">Click here to login</a></button>
-			<button class="button glass"><a href="service-rec.php"> Recommender</a></button>
+			<button class="button glass"><a href="rec.php">Recommender</a></button>
 		</h1>
 
 		<!-- <button class="glass">Click here to enroll</button>
@@ -146,7 +146,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
+								src="../dist/images/clublogos/iic.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>IIC</h3>
@@ -159,34 +160,44 @@
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
+								src="../dist/images/clublogos/mad.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>MAD Club</h3>
 
-							<p>MAD – Make A Difference club was formed in the year 2018 to empower students with innovation and entrepreneurship qualities. Also to promote inquisitiveness among the students and inculcate scientific temper among them. Our page follows the objective of bridging the gap between academic and extracurricular activities by exposing students to real-world situations.</p>
+							<p>MAD – Make A Difference club was formed in the year 2018 to empower students with
+								innovation and entrepreneurship qualities. Also to promote inquisitiveness among the
+								students and inculcate scientific temper among them. Our page follows the objective of
+								bridging the gap between academic and extracurricular activities by exposing students to
+								real-world situations.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
+								src="../dist/images/clublogos/turb.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Club Name</h3>
+							<h3>Team Turbonites</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>Team Turbonites, the automotive hub of Licet, is an independent student organization from
+								various disciplines, who design and fabricate various automotives for state and national
+								level competitions. The team has now entered the 7th year of its existence and has
+								already collected several feathers in its cap and repeatedly brought laurels to the
+								institute.</p>
 						</div>
 					</div>
 					<div class="item">
-						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt="" src="">
+						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
+								src="../dist/images/clublogos/ece.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
-							<h3>Club Name</h3>
+							<h3>Electronics Club</h3>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae id rerum
-								dolorum temporibus accusamus similique. Saepe cum omnis nisi praesentium voluptate
-								doloremque magnam sequi.</p>
+							<p>The Electronics Club aims to provide students a platform and resources to gain practical
+								skills and realize projects. It strives to teach and help students acquire new skills in
+								an era of rapidly evolving technology. It believes in coming up with projects that are
+								innovative and tackle real life problems.</p>
 						</div>
 					</div>
 				</div><!-- Controls -->
