@@ -39,13 +39,24 @@
 // //     });
 // // }
 
+function logout() {
+    // firebase.auth().signOut()
+    // sessionStorage.email = '';
+    // sessionStorage.stat = ''
+    sessionStorage.clear()
+    // location.replace("login.php")
+  }
+
 document.getElementById("loginForm").addEventListener("submit", (event) => {
     event.preventDefault()
 
 })
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-        location.replace("home.php")
+        // login()
+    }
+    else{
+        logout()
     }
 })
 
@@ -56,8 +67,9 @@ function login() {
         .then((userCredential) => {
             // Signed in
             window.user = userCredential.user;
-            localStorage.email = firebase.auth().currentUser.email;
+            sessionStorage.email = firebase.auth().currentUser.email;
             window.email = firebase.auth().currentUser.email;
+            location.replace("home.php")
         })
         .catch((error) => {
             document.getElementById("message-error").innerHTML = error.message

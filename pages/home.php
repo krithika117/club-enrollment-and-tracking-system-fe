@@ -6,10 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <!-- header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
-
   <?php include "navbar.php"?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../style/home.css">
@@ -18,31 +14,20 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
 <body>
 
   <h1 id="user"></h1><br>
-  <div id="regForm" class="d-none">
+  <form id="regForm" class="d-none" method="POST">
     <h1>Enrollment Form</h1><br>
-    <!-- basic details -->
-    <!-- <div class="tab "> -->
-    <!-- <label for="firstName">First Name</label> -->
-    <input type="text" class="form-control" placeholder="First Name" id="firstName" />
-
-    <!-- <label for="lastName">Last Name</label> -->
-    <input type="text" class="form-control" placeholder="Last Name" id="lastName" />
-
-    <!-- <label for="gender">Gender</label><br>
-      Male<input type="radio" id="male" />
-      Female<input type="radio" id="female" /> -->
-
-    <!-- <label for="phoneNumber">Phone Number</label> -->
-    <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber" size="10" />
+    <input type="text" class="form-control" placeholder="First Name" id="firstName" required="">
+    <input type="text" class="form-control" placeholder="Last Name" id="lastName" required="">
+    <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber" size="10" required="">
     <!-- 
       <label for="email">Email</label>
-      <input type="email" class="form-control" placeholder="Email" id="email" /> -->
+      <input type="email" class="form-control" placeholder="Email" id="email" required=""/> -->
 
     <!-- <label for="rollNo">Roll No.</label> -->
-    <input type="text" class="form-control" placeholder="Roll No." id="rollNo" size="7" />
+    <input type="text" class="form-control" placeholder="Roll No." id="rollNo" size="7" required="">
 
     <!-- <label for="regNo">Register No.</label> -->
-    <input type="text" class="form-control" placeholder="Register No. if applicable" id="regNo" size="12" />
+    <input type="text" class="form-control" placeholder="Register No. if applicable" id="regNo" size="12" required="">
 
     <!-- <label for="department">Department</label> -->
     <div class="select form-control">
@@ -82,12 +67,12 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- </div> -->
     <!-- tech club choice -->
     <!-- <div class="tab "> -->
-    <!-- <label for="techClubChoice1">Technical Club</label> -->
+    <!-- <label for="techClubChoice1">Technical Clubwelcom</label> -->
     <div class="select form-control">
       <select id="techClubChoice1">
-        <option value="" selected hidden disabled>&nbsp;Select Club</option>
-        <option value="Nil">&nbsp;NA</option>
-        <option value="PATTARAI">&nbsp;Pattarai</option>
+        <option value="" selected hidden disabled>&nbsp;Select Technical Club 1</option>
+        <!-- <option value="Nil">&nbsp;NA</option> -->
+        <!-- <option value="PATTARAI">&nbsp;Pattarai</option> -->
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
         <option value="TURBONITES">&nbsp;TURBONITES</option>
@@ -99,9 +84,9 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <!-- <label for="techClubChoice2">Technical Club</label> -->
     <div class="select form-control">
       <select id="techClubChoice2">
-        <option value="" selected hidden disabled>&nbsp;Select Club</option>
-        <option value="Nil">&nbsp;NA</option>
-        <option value="PATTARAI">&nbsp;Pattarai</option>
+        <option value="" selected hidden disabled>&nbsp;Select Technical Club 2 (Optional)</option>
+        <option value="Nil">&nbsp;Nil</option>
+        <!-- <option value="PATTARAI">&nbsp;Pattarai</option> -->
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
         <option value="TURBONITES">&nbsp;TURBONITES</option>
@@ -114,7 +99,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
       <!-- <div style="float:right;"> -->
       <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
-      <input type="button" id="signupSubmit" class="btn-info" value="Submit">
+      <!-- <input type="button" id="signupSubmit" class="btn-info" value="Submit"> -->
+      <button type="submit" id="signupSubmit" class="btn-info">Submit</button>
 
       <!-- </div> -->
     </div>
@@ -125,7 +111,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
       <span class="step"></span>
       <span class="step"></span>
     </div> -->
-  </div>
+</form>
 
   <div class="wrapper d-none">
     <h2 id="user1"></h2>
@@ -140,7 +126,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'); -->
     <h2 id="user2">Welcome!</h2>
     <div class="container">
       This is Attribuer, LICET's Club Enrollment and Teacking System<br>
-      Visit the Members section to view student list.
+      Visit the Members section to view student list.<br>
+      <button class="button btn-primary" ><a href="view.php">Student List</a></button>
     </div>
   </div>
   </div>

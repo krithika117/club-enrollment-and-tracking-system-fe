@@ -1,17 +1,31 @@
-var email = localStorage.email;
+firebase.auth().onAuthStateChanged((user) => {
+    if (!user || sessionStorage.length == 0) {
+        logout()
+    }
+})
+
+function logout() {
+    firebase.auth().signOut()
+    sessionStorage.email = '';
+    sessionStorage.stat = ''
+    sessionStorage.clear()
+    location.replace("login.php")
+}
+
+
+var email = sessionStorage.email;
 console.log(email)
 
 // var email;
 // email = firebase.auth().currentUser.email;
 firebase.auth().onAuthStateChanged((user) => {
     if (!user) {
-        location.replace("index.php")
+        logout();
+        location.replace("login.php")
 
     } else {
         if ((email.split('@')[0]) == "admin") {
             document.querySelector('#dept_filter').classList.remove('d-none');
-            document.querySelector('#adminonly').classList.remove('d-none');
-            document.querySelector('#fac').classList.remove('d-none');
         } else {
             document.querySelector('#dept_filter').classList.add('d-none');
         }
@@ -20,18 +34,15 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 })
 
-function logout() {
-    firebase.auth().signOut()
-    localStorage.email = ''
-}
-function prompt_val(){
-    $('tbody').append('Please use the filter to view data.');
+
+function prompt_val() {
+    $('#prompt').append("<img src='../dist/images/img.svg'><br>Please use the filter to view data.");
 }
 
-email = localStorage.email;
+email = sessionStorage.email;
 $(document).ready(function () {
     // prompt_val();
-    load_admin_data();
+    prompt_val();
     // Load Faculty Data
     function load_fac_data(query = 'all') {
         console.log(query)
@@ -47,20 +58,28 @@ $(document).ready(function () {
             }),
             dataType: 'json',
             success: function (data) {
+
                 console.log(data.response)
                 $('tbody').empty();
-                for (var i = 0; i <= data.response.length; i++) {
-                    var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
-                        data.response[i]
-                        .department + '</td><td>' + data.response[i].yearOfStudy +
-                        '</td><td>' +
-                        data.response[i].serviceClubChoice + '</td><td>' + data
-                        .response[i]
-                        .techClubChoice1 + '</td><td>' + data.response[i]
-                        .techClubChoice2 +
-                        '</td></tr>');
-                    $('tbody').append(row);
-                    console.log('done')
+                if (data.response.length == 0) {
+                    document.querySelector('#prompt').classList.remove('d-none');
+                    $('#prompt').empty();
+                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No records found, please try another query.");
+                } else {
+                    document.querySelector('#prompt').classList.add('d-none');
+                    for (var i = 0; i < data.response.length; i++) {
+                        var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
+                            data.response[i]
+                            .department + '</td><td>' + data.response[i].yearOfStudy +
+                            '</td><td>' +
+                            data.response[i].serviceClubChoice + '</td><td>' + data
+                            .response[i]
+                            .techClubChoice1 + '</td><td>' + data.response[i]
+                            .techClubChoice2 +
+                            '</td></tr>');
+                        $('tbody').append(row);
+                        console.log('done')
+                    }
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -83,20 +102,29 @@ $(document).ready(function () {
             }),
             dataType: 'json',
             success: function (data) {
-                console.log(data.response)
+
+                // console.log(data.response)
+                // console.log(data.response.length)
                 $('tbody').empty();
-                for (var i = 0; i <= data.response.length; i++) {
-                    var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
-                        data.response[i]
-                        .department + '</td><td>' + data.response[i].yearOfStudy +
-                        '</td><td>' +
-                        data.response[i].serviceClubChoice + '</td><td>' + data
-                        .response[i]
-                        .techClubChoice1 + '</td><td>' + data.response[i]
-                        .techClubChoice2 +
-                        '</td></tr>');
-                    $('tbody').append(row);
-                    console.log('done')
+                if (data.response.length == 0) {
+                    document.querySelector('#prompt').classList.remove('d-none');
+                    $('#prompt').empty();
+                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No data found, please try another query.");
+                } else {
+                    document.querySelector('#prompt').classList.add('d-none');
+                    for (var i = 0; i < data.response.length; i++) {
+                        var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
+                            data.response[i]
+                            .department + '</td><td>' + data.response[i].yearOfStudy +
+                            '</td><td>' +
+                            data.response[i].serviceClubChoice + '</td><td>' + data
+                            .response[i]
+                            .techClubChoice1 + '</td><td>' + data.response[i]
+                            .techClubChoice2 +
+                            '</td></tr>');
+                        $('tbody').append(row);
+                        console.log('done')
+                    }
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -107,6 +135,7 @@ $(document).ready(function () {
     }
 
     function load_club_data(query = 'all') {
+        document.querySelector('#prompt').classList.add('d-none');
         console.log(query)
         var club = email.split('@')[0].toUpperCase();
         var server = "http://127.0.0.1:5000";
@@ -121,24 +150,30 @@ $(document).ready(function () {
             }),
             dataType: 'json',
             success: function (data) {
-                console.log(data.response)
                 $('tbody').empty();
-                for (var i = 0; i <= data.response.length; i++) {
-                    var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
-                        data.response[i]
-                        .department + '</td><td>' + data.response[i].yearOfStudy +
-                        '</td><td>' +
-                        data.response[i].serviceClubChoice + '</td><td>' + data
-                        .response[i]
-                        .techClubChoice1 + '</td><td>' + data.response[i]
-                        .techClubChoice2 +
-                        '</td></tr>');
-                    $('tbody').append(row);
-                    console.log('done')
+                if (data.response.length == 0) {
+                    document.querySelector('#prompt').classList.remove('d-none');
+                    $('#prompt').empty();
+                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No records found, please try another query.");
+                } else {
+                    document.querySelector('#prompt').classList.add('d-none');
+                    for (var i = 0; i < data.response.length; i++) {
+                        var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
+                            data.response[i]
+                            .department + '</td><td>' + data.response[i].yearOfStudy +
+                            '</td><td>' +
+                            data.response[i].serviceClubChoice + '</td><td>' + data
+                            .response[i]
+                            .techClubChoice1 + '</td><td>' + data.response[i]
+                            .techClubChoice2 +
+                            '</td></tr>');
+                        $('tbody').append(row);
+                        console.log('done')
+                    }
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                alert('Error: ' + textStatus + ' - ' + errorThrown);
+                console.log('Error: ' + textStatus + ' - ' + errorThrown);
             }
 
         });
@@ -151,11 +186,11 @@ $(document).ready(function () {
 
         var query1 = $('#hidden_value1').val();
         var query2 = $('#hidden_value2').val();
-        if (localStorage.stat == '1') {
+        if (sessionStorage.stat == '1') {
             load_fac_data(query2);
-        } else if (localStorage.stat == '3') {
+        } else if (sessionStorage.stat == '3') {
             load_admin_data(query1, query2);
-        } else if (localStorage.stat == '2') {
+        } else if (sessionStorage.stat == '2') {
             load_club_data(query2);
         }
 

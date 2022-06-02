@@ -5,14 +5,15 @@ firebase.auth().onAuthStateChanged((user) => {
     email = firebase.auth().currentUser.email;
     document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0];
     document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0];
-
   }
 })
 
 
 function logout() {
   firebase.auth().signOut()
-  localStorage.email = ''
+  sessionStorage.email = ''
+  sessionStorage.stat = ''
+  sessionStorage.clear()
 }
 
 
@@ -33,26 +34,29 @@ $(document).ready(function () {
     var techClubChoice1 = $("#techClubChoice1 :selected").val();
     var techClubChoice2 = $("#techClubChoice2 :selected").val();
 
-    localStorage.name = firstName;
+    sessionStorage.name = firstName;
 
-    console.log(firstName)
-    console.log(lastName)
-    console.log(phoneNumber)
-    console.log(email)
-    console.log(rollNo)
-    console.log(regNo)
-    console.log(department)
-    console.log(yearOfStudy)
-    console.log(serviceClubChoice)
-    console.log(techClubChoice1)
-    console.log(techClubChoice2)
-
+    // console.log(firstName)
+    // console.log(lastName)
+    // console.log(phoneNumber)
+    // console.log(email)
+    // console.log(rollNo)
+    // console.log(regNo)
+    // console.log(department)
+    // console.log(yearOfStudy)
+    // console.log(serviceClubChoice)
+    // console.log(techClubChoice1)
+    // console.log(techClubChoice2)
+    
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/i;
 
     if (email != "") {
       if (!regex.test(email)) {
         $('#msg').html('<span style="color: red;">Invalid email address</span>');
-      } else {
+      } else if (email== "" || firstName== "" || lastName== "" || phoneNumber== "" || rollNo== "" || department== "" || yearOfStudy== "" || serviceClubChoice== "" || techClubChoice1== "" ) {
+        alert("Please fill all details.");
+      }
+      else {
         $.ajax({
           method: "POST",
           url: server + '/register',

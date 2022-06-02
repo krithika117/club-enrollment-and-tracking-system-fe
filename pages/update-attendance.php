@@ -12,7 +12,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
 
     <?php include "navbar.php" ?>
-    <link rel="stylesheet" href="../style/edit-members.css">
+    <link rel="stylesheet" href="../style/attendance.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
         <br /><button id="btnSearch">Click</button> -->
 
         <div style="overflow:auto;">
-            <input type="button" id="eventUpdate" class="btn-info" value="Submit">
+            <input type="button" id="eventUpdate" class="btn-primary" value="Submit">
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>

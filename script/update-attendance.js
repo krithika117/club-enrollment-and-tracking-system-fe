@@ -1,25 +1,27 @@
 firebase.auth().onAuthStateChanged((user) => {
     if (!user) {
-      location.replace("index.php")
+        logout();
+      location.replace("login.php")
     }
     
   })
   
   function logout() {
     firebase.auth().signOut()
-    localStorage.email = '';
-    localStorage.stat=''
+    sessionStorage.email = '';
+    sessionStorage.stat = ''
+    sessionStorage.clear()
+    location.replace("login.php")
   }
   
-  if(localStorage.stat!='2'){
+  if(sessionStorage.stat!='2'){
     logout();
-    location.replace("index.php");
+  
 }
-
 
 $(document).ready(function () {
     // var email = "nss@gmail.com";
-    var email = localStorage.email;
+    var email = sessionStorage.email;
     var club = email.split('@')[0].toUpperCase();
     var server = "http://127.0.0.1:5000";
     $.ajax({

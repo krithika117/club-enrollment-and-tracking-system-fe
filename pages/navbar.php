@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--  -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/navbar.css">
@@ -16,17 +16,9 @@
     <main class="main">
         <header class="header">
             <div class="wrap d-flex">
-                <h1 class="logo">
-                    <a href=""><img src="../dist/images/licet.png" alt=""></a>
-                </h1>
-                <!-- <nav class="menu">
-                    <ul>
-                        <li><a href="">Sign In</a></li>
-                        <li><a href="">View Members</a></li>
-                        <li><a href="">Form</a></li>
-                        <li><a href="">Allotment</a></li>
-                    </ul>
-                </nav> -->
+                <h2 class="logo">
+                    <a href="index.php"><img src="../dist/images/licet.png" alt=""></a>
+                </h2>
             </div>
             <a href="javascript:void(0);" class="sidemenu-toggler">
                 <span></span>
@@ -37,14 +29,14 @@
                 <a href="javascript:void(0);" class="close"></a>
                 <nav>
                     <ul>
-                        <!-- <li><a href="login.php">Sign In</a></li> -->
                         <li id="user"></li>
-                        <!-- <a href="login.php">Sign In</a> -->
-                        <li id="signIn" class="d-none"><a href="login.php">Sign In</a></li>
-                        <li id="fac" class="d-none"><a href="view.php">View Members</a></li>
-                        <li id="adminonly" class="d-none"><a href="edit-members.php">Edit Members</a></li>
-                        <li id="listForm" class="d-none"><a href="home.php">Form</a></li>
-                        <li><a href="" onclick="javascript:logout()">Sign out</a></li>
+                        <li id="signIn"><a href="login.php">Sign In</a></li>
+                        <li id="viewMembers" class="d-none"><a href="view.php">View Members</a></li>
+                        <li id="editMembers" class="d-none"><a href="edit-members.php">Edit Members</a></li>
+                        <li id="recom"><a href="service-rec.php">Recommender</a></li>
+                        <li id="createEvents" class="d-none"><a href="eventlist.php">Create Events</a></li>
+                        <li id="viewAtt" class="d-none"><a href="update-attendance.php">View/Update Attendance</a></li>
+                        <li id="quit"><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
                 </nav>
                 <footer>2022 © Attribuer</footer>
@@ -52,31 +44,9 @@
         </header>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../script/navbar.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".sidemenu-toggler").click(function () {
-                $(".sidemenu").addClass("active");
-            });
-            $(".close").click(function () {
-                $(".sidemenu").removeClass("active");
-            });
-        });
-
-        function logout() {
-            firebase.auth().signOut()
-            location.replace('index.php')
-            localStorage.email = ''
-        }
-
-        // window.addEventListener('beforeunload', function (e) {
-        //     e.preventDefault();
-        //     // e.returnValue = '';
-        //     logout();
-        //     console.log('I worked')
-        // });
-
-    </script>
+    
 </body>
 
 </html>

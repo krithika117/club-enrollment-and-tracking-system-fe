@@ -1,3 +1,27 @@
+firebase.auth().onAuthStateChanged((user) => {
+    if (!user) {
+        logout()
+        location.replace("login.php")
+    }
+
+})
+function logout() {
+    firebase.auth().signOut()
+    sessionStorage.email = '';
+    sessionStorage.stat = ''
+    sessionStorage.clear()
+    location.replace("login.php")
+}
+
+if (sessionStorage.stat != '2') {
+    logout();
+    location.replace("login.php");
+    sessionStorage.email = ''
+    sessionStorage.stat = ''
+    sessionStorage.clear()
+}
+
+
 $(document).ready(function () {
     load_club_data();
 
@@ -6,7 +30,7 @@ $(document).ready(function () {
 
     function load_club_data(query = "all") {
         console.log(query)
-        var email = localStorage.email;
+        var email = sessionStorage.email;
         var club = email.split('@')[0].toUpperCase();
         var server = "http://127.0.0.1:5000";
         $.ajax({
@@ -50,7 +74,7 @@ $(document).ready(function () {
 
         var eventName = $('#eventName').val();
         var date = $('#date').val();
-        var email = localStorage.email;
+        var email = sessionStorage.email;
         var club = email.split('@')[0].toUpperCase();
 
         var data1 = $("table tbody tr").map(function (i, row) {
@@ -61,7 +85,7 @@ $(document).ready(function () {
                 regNo: data1.eq(1).text().trim(),
                 department: data1.eq(2).text().trim(),
                 yearOfStudy: data1.eq(3).text().trim(),
-                eventName: eventName,       
+                eventName: eventName,
                 date: date,
                 club: club,
                 attendance: data1.eq(4).find("input").val()
@@ -78,7 +102,7 @@ $(document).ready(function () {
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
                 'data': data1,
-                'eventName': eventName,       
+                'eventName': eventName,
                 'date': date,
                 'club': club
 

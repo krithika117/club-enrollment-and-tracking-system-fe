@@ -1,6 +1,9 @@
 function logout() {
   firebase.auth().signOut()
-  localStorage.email = ''
+  sessionStorage.email = '';
+  sessionStorage.stat = ''
+  sessionStorage.clear()
+  location.replace("login.php")
 }
 
 
@@ -12,12 +15,7 @@ $(document).ready(() => {
       //console.log('in')
       window.user = user;
       var server = "http://127.0.0.1:5000";
-      // $(document).ready(function () {
-      // $('#loading').show();
-      // var name = $('#fullname').val();
-      // var email = $('#email').val();
       var email = firebase.auth().currentUser.email
-      //console.log(firebase.auth().currentUser.email)
 
       if (email != "") {
 
@@ -28,65 +26,87 @@ $(document).ready(() => {
           data: {
             // 'name': name,
             'email': email,
+            // 'stat': sessionStorage.stat;
             // 'password': pwd
           },
 
           success: function (response) {
               //console.log(response)
-              localStorage.stat = response.isAdmin;
-              // Admin or Student based on isAdmin
+              sessionStorage.stat = response.isAdmin;
+              sessionStorage.email = response.email;
               if (response.message == "exists") {
-                // Student
-                if (response.isAdmin == '0') {
-                  //console.log('exist')
-                  // document.getElementById('user1').innerHTML += email.split('@')[0];
-                  if ((location.href.split('/').pop()) == 'view.php') {
+                if (response.isAdmin == '0') { //If student
+                  if (((location.href.split('/').pop()) == 'view.php') || ((location.href.split('/').pop()) == 'edit-members.php') || ((location.href.split('/').pop()) == 'eventlist.php') || ((location.href.split('/').pop()) == 'take-attendance.php') || ((location.href.split('/').pop()) == 'update-attendance.php')) {
                     logout();
+                    sessionStorage.email = ''
+                    sessionStorage.stat = ''
+                    sessionStorage.clear()
                   }
-                  if ((location.href.split('/').pop()) == 'edit-members.php') {
-                    logout();
-                  }
+                  // if ((location.href.split('/').pop()) == 'edit-members.php') {
+                  //   logout();
+                  //   sessionStorage.email = ''
+                  //   sessionStorage.stat = ''
+                  //   sessionStorage.clear()
+                  // }
 
                   document.querySelector('#regForm').classList.add('d-none');
-                  document.querySelector('#listForm').classList.add('d-none');
-                  document.querySelector('#fac').classList.add('d-none');
+                  // document.querySelector('#listForm').classList.add('d-none');
+                  // document.querySelector('#fac').classList.add('d-none');
                   document.querySelector('.wrapper').classList.remove('d-none');
                 }
 
                 // Admin
-                if (response.isAdmin == '1' || response.isAdmin == '2' ||response.isAdmin =='3') {
+                if (response.isAdmin == '1' || response.isAdmin == '2' || response.isAdmin == '3') {
+
                   if ((email.split('@')[0]) != "admin") {
+
                     if ((location.href.split('/').pop()) == 'edit-members.php') {
                       console.log('im workin')
                       logout();
+                      sessionStorage.email = ''
+                      sessionStorage.stat = ''
+                      sessionStorage.clear()
                     }
-                    if(response.isAdmin!='2'){
-                      if (((location.href.split('/').pop()) == 'update-attendance.php')||((location.href.split('/').pop()) == 'take-attendance.php'||((location.href.split('/').pop()) == 'eventlist.php'))) {
+                    if (response.isAdmin != '2') {
+                      if (((location.href.split('/').pop()) == 'update-attendance.php') || ((location.href.split('/').pop()) == 'take-attendance.php' || ((location.href.split('/').pop()) == 'eventlist.php'))) {
                         console.log('im workin')
                         logout();
+                        sessionStorage.email = ''
+                        sessionStorage.stat = ''
+                        sessionStorage.clear()
                       }
                     }
                   }
-                  //console.log('exist')
-                  // document.getElementById('user1').innerHTML += email.split('@')[0];
-                  // document.getElementById("user2").innerHTML = "Hello, " + user.email.split('@')[0];
-                  document.querySelector('#regForm').classList.add('d-none');
-                  document.querySelector('#fac').classList.remove('d-none');
-                  document.querySelector('.wrapper-admin').classList.remove('d-none');
-                  document.querySelector('#listForm').classList.add('d-none');
-                  // document.querySelector('#fac').classList.remove('d-none');
-                  // Admin vs. Faculty changes
-                  console.log('hi')
+                  if ((location.href.split('/').pop()) == 'home.php') {
+                    document.querySelector('#regForm').classList.add('d-none');
+                    // document.querySelector('#fac').classList.remove('d-none');
+                    document.querySelector('.wrapper-admin').classList.remove('d-none');
+                    // document.querySelector('#listForm').classList.add('d-none');
+
+                    console.log('hi')
+                  }
                 }
 
 
               } else if (response.message == "clear") {
                 //console.log('clear')
-                if ((location.href.split('/').pop()) == 'view.php') {
+                // if ((location.href.split('/').pop()) == 'view.php') {
+                //   logout();
+                //   sessionStorage.email = ''
+                //   sessionStorage.stat = ''
+                //   sessionStorage.clear()
+                // }
+                // if ((location.href.split('/').pop()) == 'edit-members.php') {
+                //   logout();
+                //   sessionStorage.email = ''
+                //   sessionStorage.stat = ''
+                //   sessionStorage.clear()
+                // }
+                if (((location.href.split('/').pop()) == 'view.php') || ((location.href.split('/').pop()) == 'edit-members.php') || ((location.href.split('/').pop()) == 'eventlist.php') || ((location.href.split('/').pop()) == 'take-attendance.php') || ((location.href.split('/').pop()) == 'update-attendance.php')) {
                   logout();
-                }
-                if ((location.href.split('/').pop()) == 'edit-members.php') {
-                  logout();
+                  sessionStorage.email = ''
+                  sessionStorage.stat = ''
+                  sessionStorage.clear()
                 }
                 document.querySelector('#regForm').classList.remove('d-none');
                 document.querySelector('.wrapper').classList.add('d-none');

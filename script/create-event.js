@@ -1,19 +1,24 @@
 firebase.auth().onAuthStateChanged((user) => {
     if (!user) {
-      location.replace("index.php")
+        logout()
+        location.replace("login.php")
     }
-    
-  })
-  
-  function logout() {
+
+})
+
+function logout() {
     firebase.auth().signOut()
-    localStorage.email = '';
-    localStorage.stat=''
-  }
-  
-  if(localStorage.stat!='2'){
+    sessionStorage.email = '';
+    sessionStorage.stat = '';
+    sessionStorage.clear()
+}
+
+if (sessionStorage.stat != '2') {
     logout();
-    location.replace("index.php");
+    location.replace("login.php");
+    sessionStorage.email = '';
+    sessionStorage.stat = '';
+    sessionStorage.clear()
 }
 
 $(document).ready(function () {
@@ -21,7 +26,7 @@ $(document).ready(function () {
 
     function load_event_data() {
         // console.log(query)
-        var club = (localStorage.email).split('@')[0].toUpperCase();
+        var club = (sessionStorage.email).split('@')[0].toUpperCase();
         var server = "http://127.0.0.1:5000";
         $.ajax({
             method: "POST",

@@ -2,13 +2,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<!--  -->
+<link rel="stylesheet" href="../style/attendance.css">
 
 <body>
     <div class="container">
 
         <h2>Create Event</h2><br>
-        Event Name<br><input type="text" class="form-control" name="eventName" id="eventName" placehloder="Event Name"
-            required><br>
+        Event Name<br><input type="text" class="form-control" name="eventName" id="eventName" required><br>
         Date of Event<input type="date" class="form-control" placeholder="Date" id="date" required />
         <div class="table-responsive">
             <table id="myTable" class="myTable table table-hover dark ">
@@ -31,7 +32,7 @@
         <br /><button id="btnSearch">Click</button> -->
 
         <div style="overflow:auto;">
-            <input type="button" id="eventSubmit" class="btn-info" value="Submit">
+            <input type="button" id="eventSubmit" class="btn-primary" value="Submit">
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>

@@ -44,22 +44,7 @@ ul {
     margin-left: 20px;
 }
 
-/* .header .menu ul {
-    display: flex;
-}
 
-.header .menu a {
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    padding: 8px;
-    display: block;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-.header .menu a:hover {
-    color: deepskyblue;
-} */
 
 .header .sidemenu-toggler {
     position: absolute;

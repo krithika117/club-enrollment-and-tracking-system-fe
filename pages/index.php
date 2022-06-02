@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Attribuer | Home</title>
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
 	<?php include "navbar.php" ?>
@@ -17,7 +17,7 @@
 
 <body>
 
-	<section id="hoe">
+	<section id="home">
 		<h1>Club Enrollment and Tracking System<br>
 			<button class="button glass"><a href="login.php">Click here to login</a></button>
 			<button class="button glass"><a href="service-rec.php"> Recommender</a></button>

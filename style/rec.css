@@ -1,11 +1,12 @@
 /* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 * {
     box-sizing: border-box;
   
   }
   
   body {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background: url("../dist/images/bgv.svg");
     background-position: top;
     background-size: cover;
@@ -22,7 +23,7 @@
     color: #ffffff;
     justify-content: center;
     padding: 30px;
-    border-bottom: 2px solid #620be5;
+    /* border-bottom: 2px solid #620be5; */
   }
   
   h2 {
@@ -61,7 +62,7 @@
     align-items: center;
     justify-content: center;
     display: inline;
-    font-family: 'questrial', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
     border-radius: 15px !important;
     cursor: pointer;
   }

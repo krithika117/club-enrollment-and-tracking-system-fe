@@ -26,7 +26,8 @@
         </h2>
              
         <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
-            <option value="all">All Department</option>
+        <option value="" selected hidden disabled>Select Department</option>
+            <option value="all">All Departments</option>
             <option value="IT">IT</option>
             <option value="CSE">CSE</option>
             <option value="EEE">EEE</option>
@@ -35,7 +36,8 @@
         </select>
         <br>
         <select name="year_filter" id="year_filter" class="form-control filter">
-            <option value="all">All Year</option>
+        <option value="" selected hidden disabled>Select Year</option>
+            <option value="all">All Years</option>
             <option value="I">I</option>
             <option value="II">II</option>
             <option value="III">III</option>
@@ -65,6 +67,7 @@
                 </thead>
                 <tbody></tbody>
             </table>
+            <div id="prompt"></div>
         </div>
         <br />
         <br />
@@ -75,8 +78,8 @@
          <div class="modal-dialog">
               <div class="modal-content">
                    <div class="modal-header">
-                        <h4 class="modal-title">Add Student</h4>    <button type="button" class="close"
-                        data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Add Student</h4>    
+                    <button type="button" class="close" data-dismiss="modal">×</button>
                        </div>
                    <div class="modal-body">
                         <div id="insert_form">
@@ -84,10 +87,10 @@
                         <!-- basic details -->
                         <!-- <div class="tab "> -->
                         <!-- <label for="firstName">First Name</label> -->
-                        <input type="text" class="form-control" placeholder="First Name" id="firstName" />
+                        <input type="text" class="form-control" placeholder="First Name" id="firstName"  required="">
 
                         <!-- <label for="lastName">Last Name</label> -->
-                        <input type="text" class="form-control" placeholder="Last Name" id="lastName" />
+                        <input type="text" class="form-control" placeholder="Last Name" id="lastName"  required="">
 
                         <!-- <label for="gender">Gender</label><br>
       Male<input type="radio" id="male" />
@@ -95,99 +98,92 @@
 
                         <!-- <label for="phoneNumber">Phone Number</label> -->
                         <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber"
-                            size="10" />
-                        <input type="email" class="form-control" placeholder="Email" id="email" />
+                            size="10"  required="">
+                        <input type="email" class="form-control" placeholder="Email" id="email"  required="">
                         <!-- 
       <label for="email">Email</label>
       <input type="email" class="form-control" placeholder="Email" id="email" /> -->
 
                         <!-- <label for="rollNo">Roll No.</label> -->
-                        <input type="text" class="form-control" placeholder="Roll No." id="rollNo" size="7" />
+                        <input type="text" class="form-control" placeholder="Roll No." id="rollNo" size="7" required="">
 
                         <!-- <label for="regNo">Register No.</label> -->
                         <input type="text" class="form-control" placeholder="Register No. if applicable" id="regNo"
-                            size="12" />
+                            size="12" required="">
 
                         <!-- <label for="department">Department</label> -->
-                        <div class="select form-control">
-                            <select id="department">
-                                <option value="" selected hidden disabled>&nbsp;Select Department</option>
-                                <option value="CSE">&nbsp;CSE</option>
-                                <option value="ECE">&nbsp;ECE</option>
-                                <option value="EEE">&nbsp;EEE</option>
-                                <option value="IT">&nbsp;IT</option>
-                                <option value="MECH">&nbsp;MECH</option>
-                            </select>
-                        </div>
+                        <!-- <div class="select form-control"> -->
+                        <select id="department" class="form-control">
+                            <option value="" selected hidden disabled>&nbsp;Select Department</option>
+                            <option value="CSE">&nbsp;CSE</option>
+                            <option value="ECE">&nbsp;ECE</option>
+                            <option value="EEE">&nbsp;EEE</option>
+                            <option value="IT">&nbsp;IT</option>
+                            <option value="MECH">&nbsp;MECH</option>
+                        </select>
+                        <!-- </div> -->
                         <!-- <label for="yearOfStudy">Year of Study</label> -->
-                        <div class="select form-control">
-                            <select id="yearOfStudy">
-                                <option value="" disabled hidden selected>&nbsp;Select Year</option>
-                                <option value="I">&nbsp;I</option>
-                                <option value="II">&nbsp;II</option>
-                                <option value="III">&nbsp;III</option>
-                                <option value="IV">&nbsp;IV</option>
-                            </select>
-                        </div>
+                        <!-- <div class="select form-control"> -->
+                        <select id="yearOfStudy" class="form-control">
+                            <option value="" disabled hidden selected>&nbsp;Select Year</option>
+                            <option value="I">&nbsp;I</option>
+                            <option value="II">&nbsp;II</option>
+                            <option value="III">&nbsp;III</option>
+                            <option value="IV">&nbsp;IV</option>
+                        </select>
+                        <!-- </div> -->
                         <!-- service club choice -->
                         <!-- <div class="tab "> -->
                         <!-- <label for="serviceClubChoice">Service Club</label> -->
-                        <div class="select form-control">
-                            <select id="serviceClubChoice">
-                                <option value="" selected hidden disabled>&nbsp;Select Club</option>
-                                <option value="NCC">&nbsp;NCC</option>
-                                <option value="NSS">&nbsp;NSS</option>
-                                <option value="YRC">&nbsp;YRC</option>
-                                <option value="ROTARACT">&nbsp;Rotaract</option>
-                                <option value="NSO">&nbsp;NSO</option>
-                            </select>
-                        </div>
+                        <!-- <div class="select form-control"> -->
+                        <select id="serviceClubChoice" class="form-control">
+                            <option value="" selected hidden disabled>&nbsp;Select Club</option>
+                            <option value="NCC">&nbsp;NCC</option>
+                            <option value="NSS">&nbsp;NSS</option>
+                            <option value="YRC">&nbsp;YRC</option>
+                            <option value="ROTARACT">&nbsp;Rotaract</option>
+                            <option value="NSO">&nbsp;NSO</option>
+                        </select>
+                        <!-- </div> -->
                         <!-- Vacancy check we need to write some code -->
                         <!-- </div> -->
                         <!-- tech club choice -->
                         <!-- <div class="tab "> -->
                         <!-- <label for="techClubChoice1">Technical Club</label> -->
-                        <div class="select form-control">
-                            <select id="techClubChoice1">
-                                <option value="" selected hidden disabled>&nbsp;Select Club</option>
-                                <option value="Pattarai">&nbsp;Pattarai</option>
-                                <option value="IIC">&nbsp;IIC</option>
-                                <option value="BEAT">&nbsp;BEAT</option>
-                                <option value="Turbonites">&nbsp;Rotaract</option>
-                                <option value="MAD">&nbsp;MAD Club</option>
-                                <option value="ECEClub">&nbsp;ECE Club</option>
-                            </select>
-                            <!-- </div> -->
-                        </div>
+                        <!-- <div class="select form-control"> -->
+                        <select id="techClubChoice1" class="form-control">
+                            <option value="" selected hidden disabled>&nbsp;Select Club</option>
+
+                            <option value="IIC">&nbsp;IIC</option>
+                            <option value="BEAT">&nbsp;BEAT</option>
+                            <option value="Turbonites">&nbsp;Rotaract</option>
+                            <option value="MAD">&nbsp;MAD Club</option>
+                            <option value="ECEClub">&nbsp;ECE Club</option>
+                        </select>
+                        <!-- </div> -->
+                        <!-- </div> -->
                         <!-- <label for="techClubChoice2">Technical Club</label> -->
-                        <div class="select form-control">
-                            <select id="techClubChoice2">
-                                <option value="" selected hidden disabled>&nbsp;Select Club</option>
-                                <option value="Nil">&nbsp;NA</option>
-                                <option value="PATTARAI">&nbsp;Pattarai</option>
-                                <option value="IIC">&nbsp;IIC</option>
-                                <option value="BEAT">&nbsp;BEAT</option>
-                                <option value="TURBONITES">&nbsp;TURBONITES</option>
-                                <option value="MAD">&nbsp;MAD Club</option>
-                                <option value="ECECLUB">&nbsp;ECE Club</option>
-                            </select>
-                        </div>
+                        <!-- <div class="select form-control"> -->
+                        <select id="techClubChoice2" class="form-control">
+                            <option value="" selected hidden disabled>&nbsp;Select Club</option>
+                            <option value="Nil">&nbsp;NA</option>
+
+                            <option value="IIC">&nbsp;IIC</option>
+                            <option value="BEAT">&nbsp;BEAT</option>
+                            <option value="TURBONITES">&nbsp;TURBONITES</option>
+                            <option value="MAD">&nbsp;MAD Club</option>
+                            <option value="ECECLUB">&nbsp;ECE Club</option>
+                        </select>
+                        <!-- </div> -->
 
                         <div style="overflow:auto;">
                             <!-- <div style="float:right;"> -->
                             <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
-                            <input type="button" id="signupSubmit" class="btn-info" value="Submit">
+                            <input type="button" id="signupSubmit" class="btn-primary" value="Submit">
 
-                            <!-- </div> -->
                         </div>
-                        <!-- Circles which indicates the steps of the form: -->
-                        <!-- <div style="text-align:center;margin-top:40px;">
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-    </div> -->
+
                     </div>
 
                        </div>

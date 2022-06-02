@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 * {
@@ -8,8 +8,8 @@
 }
 
 body {
-    background-image: url('../dist/images/bg2.svg');
-    font-family: 'Montserrat', 'sans-sarif';
+    background-image: url('../dist/images/bgmang.svg');
+    font-family: 'Nunito', 'sans-sarif';
     color: #ffffff !important;
     background-position: top;
     background-size: cover;
@@ -93,7 +93,7 @@ body {
     top: 50%;
     left: 50%;
     margin: 10px auto;
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     padding: 40px;
     width: 40%;
     min-width: 300px;
@@ -117,14 +117,14 @@ body {
 }
 
 #loginForm * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #ffffff;
     outline: none;
     border: none;
 }
 
 #loginForm h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 100;
     line-height: 32px;
@@ -194,12 +194,12 @@ select:required:invalid {
 
 ::placeholder {
     color: #e5e5e5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 button {
     margin-top: 40px !important;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;

@@ -17,7 +17,8 @@
     <br />
     <h2 align="center">Students</h2><br />
     <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
-      <option value="all">All Department</option>
+    <option value="" selected hidden disabled>Select Department</option>  
+    <option value="all">All Department</option>
       <option value="IT">IT</option>
       <option value="CSE">CSE</option>
       <option value="EEE">EEE</option>
@@ -26,6 +27,7 @@
     </select>
     <br>
     <select name="year_filter" id="year_filter" class="form-control filter">
+    <option value="" selected hidden disabled>Select Year</option>
       <option value="all">All Year</option>
       <option value="I">I</option>
       <option value="II">II</option>
@@ -49,8 +51,10 @@
             <th>Technical Club 2</th>
           </tr>
         </thead>
+        
         <tbody></tbody>
       </table>
+      <div id="prompt"></div>
     </div>
     <br />
     <br />
