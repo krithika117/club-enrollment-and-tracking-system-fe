@@ -3,8 +3,8 @@ firebase.auth().onAuthStateChanged((user) => {
     location.replace("login.php")
   } else {
     email = firebase.auth().currentUser.email;
-    document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0];
-    document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0];
+    document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0] +" :)";
+    document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0] +" :)";
   }
 })
 

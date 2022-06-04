@@ -44,7 +44,7 @@ $(document).ready(function () {
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
+            console.log('Error: ' + textStatus + ' - ' + errorThrown);
         }
 
     });
@@ -123,8 +123,8 @@ $(document).ready(function () {
         }).get();
 
 
-        alert(data1);
-        // console.log(data1);
+        // alert(data1);
+        
 
         $.ajax({
             method: "POST",
@@ -135,7 +135,6 @@ $(document).ready(function () {
                 'eventName': eventName,
                 'date': date,
                 'club': club
-
             }),
             dataType: "json",
             success: function (data) {

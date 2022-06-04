@@ -116,14 +116,18 @@
   <div class="wrapper d-none">
     <h2 id="user1"></h2>
     <div class="container">
-      Thank you for using Attribuer.<br>
+      Thank you for using Attribuer.
+      You've enrolled to the following clubs.<br><br>
+      Service Club: <span id="scView"></span><br>
+      Technical Club 1: <span id="tcView1"></span><br>
+      Technical Club 2: <span id="tcView2"></span><br><br>
       Please check your mail for the enrollment confirmation.
     </div>
   </div>
   </div>
 
   <div class="wrapper-admin d-none">
-    <h2 id="user2">Welcome!</h2>
+    <h2 id="user2">Welcome :)</h2>
     <div class="container">
       This is Attribuer, LICET's Club Enrollment and Teacking System<br>
       Visit the Members section to view student list.<br>

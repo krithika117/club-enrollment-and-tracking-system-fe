@@ -41,13 +41,13 @@ $(document).ready(() => {
                     sessionStorage.email = ''
                     sessionStorage.stat = ''
                     sessionStorage.clear()
+
                   }
-                  // if ((location.href.split('/').pop()) == 'edit-members.php') {
-                  //   logout();
-                  //   sessionStorage.email = ''
-                  //   sessionStorage.stat = ''
-                  //   sessionStorage.clear()
-                  // }
+                  if ((location.href.split('/').pop()) == 'home.php') {
+                    document.getElementById('scView').innerHTML = response.serviceClubChoice;
+                    document.getElementById('tcView1').innerHTML = response.techClubChoice1;
+                    document.getElementById('tcView2').innerHTML = response.techClubChoice2;
+                  }
 
                   document.querySelector('#regForm').classList.add('d-none');
                   // document.querySelector('#listForm').classList.add('d-none');

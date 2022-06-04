@@ -42,7 +42,7 @@ input {
     font-size: 14px;
     font-weight: 300; */
 }
-#event_filter, #date,
+#event_filter,#club_filter, #date,
 option {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
