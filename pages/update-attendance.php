@@ -43,6 +43,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Reg No.</th>
+                        <th>Email</th>
                         <th>Department</th>
                         <th>Year of Study</th>
                         <th>Attendance</th>

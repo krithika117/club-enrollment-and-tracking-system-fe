@@ -51,6 +51,8 @@ $(document).ready(function () {
                         '</td><td>' +
                         data.response[i].regNo +
                         '</td><td>' +
+                        data.response[i].email +
+                        '</td><td>' +
                         data.response[i].department +
                         '</td><td>' +
                         data.response[i].yearOfStudy +
@@ -83,12 +85,13 @@ $(document).ready(function () {
             return {
                 name: data1.eq(0).text().trim(),
                 regNo: data1.eq(1).text().trim(),
-                department: data1.eq(2).text().trim(),
-                yearOfStudy: data1.eq(3).text().trim(),
+                email: data1.eq(2).text().trim(),
+                department: data1.eq(3).text().trim(),
+                yearOfStudy: data1.eq(4).text().trim(),
                 eventName: eventName,
                 date: date,
                 club: club,
-                attendance: data1.eq(4).find("input").val()
+                attendance: data1.eq(5).find("input").val()
             }
         }).get();
 

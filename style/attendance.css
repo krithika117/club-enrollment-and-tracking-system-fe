@@ -59,6 +59,7 @@ option {
   
 
 #myTable {
+    /* border: none,  !important; */
     font-family: 'Nunito', sans-serif;
     color: hsl(0, 0%, 100%);
     outline: none;

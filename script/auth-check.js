@@ -47,12 +47,11 @@ $(document).ready(() => {
                     document.getElementById('scView').innerHTML = response.serviceClubChoice;
                     document.getElementById('tcView1').innerHTML = response.techClubChoice1;
                     document.getElementById('tcView2').innerHTML = response.techClubChoice2;
+                 
+                    document.querySelector('#regForm').classList.add('d-none');
+                    document.querySelector('.wrapper').classList.remove('d-none');
                   }
 
-                  document.querySelector('#regForm').classList.add('d-none');
-                  // document.querySelector('#listForm').classList.add('d-none');
-                  // document.querySelector('#fac').classList.add('d-none');
-                  document.querySelector('.wrapper').classList.remove('d-none');
                 }
 
                 // Admin

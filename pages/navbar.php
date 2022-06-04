@@ -33,6 +33,7 @@
                         <li id="signIn"><a href="login.php">Sign In</a></li>
                         <li id="homeNav"><a href="home.php">Home</a></li>
                         <li id="viewMembers" class="d-none"><a href="view.php">View Members</a></li>
+                        <li id="participation" class=""><a href="participation.php">Participated Events</a></li>
                         <li id="editMembers" class="d-none"><a href="edit-members.php">Edit Members</a></li>
                         <li id="recom"><a href="rec.php">Recommender</a></li>
                         <li id="createEvents" class="d-none"><a href="eventlist.php">Create Events</a></li>
