@@ -135,7 +135,7 @@ h3 {
 section {
     /* height: 100vh; */
     width: auto;
-    margin: 28vh 0 30vh 0;
+    margin: 25vh 0 30vh 0;
 }
 
 #home {
@@ -150,9 +150,16 @@ section {
     margin-left: auto !important;
     margin-right: auto !important;
 }
-
+.vertical-line {
+    height: 0.5px;
+    background-color: #fff;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 h1 {
-
+    letter-spacing: 1.5rem;
     align-items: center;
     text-align: center !important;
     justify-content: center;
@@ -169,7 +176,7 @@ h1 {
     body {
         /* linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),  */
         font-family: 'Nunito', sans-serif;
-        background-image: url('../dist/images/bgy.svg');
+        background-image: url('../dist/images/bg2.svg');
         background-position: top;
         /* background-size: cover; */
         color: #ffffff;

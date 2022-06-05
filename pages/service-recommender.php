@@ -26,7 +26,6 @@
     <div class="mySlides">
       <h2>1. How frequently do you prefer to participate in club activities?</h2>
 
-      <!-- <button id="clear-q1" class="clear">↻</button></h2> -->
       <div class="question">
 
         <div class="answer-choice">
@@ -35,7 +34,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbass.jpg?v=1597270130301"
             alt="bass"
           /> -->
-            <div class="desc">Bass</div>
+            <div class="desc">Weekly</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -44,7 +43,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fvocal.jp2?v=1597261677869"
             alt="vocals"
           /> -->
-            <div class="desc">Vocals</div>
+            <div class="desc">Monthly</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -53,7 +52,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpiano.jp2?v=1597261584113"
             alt="piano"
           /> -->
-            <div class="desc">Piano</div>
+            <div class="desc">Quarterly</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -62,7 +61,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
             alt="guitar"
           /> -->
-            <div class="desc">Guitar</div>
+            <div class="desc">Annually</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -71,7 +70,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
             alt="guitar"
           /> -->
-            <div class="desc">Guitar</div>
+            <div class="desc">Never</div>
           </button>
         </div>
 
@@ -85,27 +84,27 @@
       <div class="question">
         <div class="answer-choice">
           <button id="q2a1">
-            <div class="desc">Guitar</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q2a2">
-            <div class="desc">Guitar</div>
+            <div class="desc">Mostly Indoors</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q2a3">
-            <div class="desc">Guitar</div>
+            <div class="desc">Mostly Outdoors</div>
+          </button>
+        </div>
+        <div class="answer-choice">
+          <button id="q2a2">
+            <div class="desc">Rarely indoors</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q2a4">
-            <div class="desc">Guitar</div>
+            <div class="desc">Rarely outdoors</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q2a5">
-            <div class="desc">Guitar</div>
+            <div class="desc">All of the above</div>
           </button>
         </div>
       </div>
@@ -121,7 +120,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Ffire.jpg?v=1597299667685"
             alt="fire"
           /> -->
-            <div class="desc">Fire</div>
+            <div class="desc">Social-based services</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -130,7 +129,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fair.jpg?v=1597299901769"
             alt="air"
           /> -->
-            <div class="desc">Air</div>
+            <div class="desc">Humanitarian services</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -139,16 +138,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwater.jpg?v=1597299934501"
             alt="water"
           /> -->
-            <div class="desc">Water</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q3a4">
-            <!-- <img
-            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
-            alt="earth"
-          /> -->
-            <div class="desc">Earth</div>
+            <div class="desc">Cadet-based services</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -157,9 +147,19 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
             alt="earth"
           /> -->
-            <div class="desc">Earth</div>
+            <div class="desc">Community services</div>
           </button>
         </div>
+        <div class="answer-choice">
+          <button id="q3a4">
+            <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
+            alt="earth"
+          /> -->
+            <div class="desc">All of the above</div>
+          </button>
+        </div>
+
       </div>
     </div>
     <div class="mySlides">
@@ -167,7 +167,9 @@
       <!-- <button id="clear-q4" class="clear">↻</button></h2> -->
       <div class="question">
         <div class="answer-choice">
-          <button id="q4a1">
+          <button id="q4a5">
+            <div class="desc">
+              1 hour</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbright-colours.png?v=1597328002113"
             alt="bright colours"
@@ -175,7 +177,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a2">
+          <button id="q4a4">
+            <div class="desc">
+              2 hours</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fmuted-colours.png?v=1597328231356"
             alt="muted colours"
@@ -184,6 +188,8 @@
         </div>
         <div class="answer-choice">
           <button id="q4a3">
+            <div class="desc">
+              3 hours</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fcool-colours.png?v=1597328091906"
             alt="cool-toned colours"
@@ -191,7 +197,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a4">
+          <button id="q4a2">
+            <div class="desc">
+              4 hours</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
             alt="warm-toned colours"
@@ -199,7 +207,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a5">
+          <button id="q4a1">
+            <div class="desc">
+              5 hours</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
             alt="warm-toned colours"
@@ -218,7 +228,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpartying.jpg?v=1597331695599"
             alt="partying"
           /> -->
-            <div class="desc">Attending Parties</div>
+            <div class="desc">Organize events</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -227,7 +237,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fstudying.jpg?v=1597331730558"
             alt="studying/working"
           /> -->
-            <div class="desc">Studying/Working</div>
+            <div class="desc">Volunteering to almost every event</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -236,7 +246,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwatchingmovie.jp2?v=1597331749164"
             alt="watching a movie"
           /> -->
-            <div class="desc">Watching a movie</div>
+            <div class="desc">Sufficiently productive</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -245,7 +255,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
             alt="On a road trip"
           /> -->
-            <div class="desc">On a road trip</div>
+            <div class="desc">Time invested</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -254,7 +264,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
             alt="On a road trip"
           /> -->
-            <div class="desc">On a road trip</div>
+            <div class="desc">Complete tasks as a team</div>
           </button>
         </div>
       </div>

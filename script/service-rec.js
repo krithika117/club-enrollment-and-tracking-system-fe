@@ -233,7 +233,7 @@ function updateResult() {
     if ((nssScore == 2 && nccScore == 2) && (rotaractScore == 2 || leafScore == 2)) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "NCC",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -267,7 +267,7 @@ function updateResult() {
     } else if (nssScore == 3 && rotaractScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Rotaract Club of LICET",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -277,7 +277,7 @@ function updateResult() {
     } else if (nssScore == 3 && leafScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "LEAF",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -287,7 +287,7 @@ function updateResult() {
     } else if (nssScore == 3 && yrcScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Youth Red Cross",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -299,7 +299,7 @@ function updateResult() {
     else if (nccScore == 3 && rotaractScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "NCC",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -309,7 +309,7 @@ function updateResult() {
     } else if (nccScore == 3 && yrcScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "NCC",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -319,7 +319,7 @@ function updateResult() {
     } else if (nccScore == 3 && leafScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "LEAF",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -331,7 +331,7 @@ function updateResult() {
     else if (rotaractScore == 3 && yrcScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Youth Red Cross",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -341,7 +341,7 @@ function updateResult() {
     } else if (rotaractScore == 3 && leafScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Rotaract Club of LICET",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -353,7 +353,7 @@ function updateResult() {
     else if (yrcScore == 3 && leafScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "LEAF",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -363,7 +363,7 @@ function updateResult() {
     }
 
     //Individual scoring
-    else if (nssScore >= 3) {
+    else if (nssScore >= 2) {
         // swal("Your result is... bad guy!","success");
         swal({
             title: "Attribuer Recommends",
@@ -375,10 +375,10 @@ function updateResult() {
             }
         });
 
-    } else if (nccScore >= 3) {
+    } else if (nccScore >= 2) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "NCC",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -386,11 +386,11 @@ function updateResult() {
             }
         });
 
-    } else if (rotaractScore >= 3) {
+    } else if (rotaractScore >= 2) {
         // swal("Your result is... rotaract ft. Khalid!</i>","success");
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Rotaract Club of LICET",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -399,20 +399,20 @@ function updateResult() {
         });
         // swal("Attribuer Recommends", "Rotaract Club of LICET", "success");
         refresh();
-    } else if (leafScore >= 3) {
+    } else if (leafScore >= 2) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "LEAF",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (yrcScore >= 3) {
+    } else if (yrcScore >= 2) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Youth Red Cross",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -422,7 +422,7 @@ function updateResult() {
     } else {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Youth Red Cross",
             type: "success"
         }).then(okay => {
             if (okay) {

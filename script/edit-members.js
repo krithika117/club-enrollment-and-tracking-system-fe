@@ -132,6 +132,7 @@ $(document).ready(function () {
         $('#msg').html('<span style="color: red;">Invalid email address</span>');
       } else if (email == "" || firstName == "" || lastName == "" || phoneNumber == "" || rollNo == "" || department == "" || yearOfStudy == "" || serviceClubChoice == "" || techClubChoice1 == "") {
         alert("Please fill all details.");
+
       } else {
         $.ajax({
           method: "POST",
@@ -187,8 +188,7 @@ $(document).ready(function () {
                   console.log(err);
                 }
               });
-            }
-            else{
+            } else {
               alert("User Mail ID Already Exists.");
             }
             // AJAXEnd

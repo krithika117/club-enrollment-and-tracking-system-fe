@@ -17,7 +17,8 @@
         <header class="header">
             <div class="wrap d-flex">
                 <h2 class="logo">
-                    <a href="index.php"><img src="../dist/images/licet.png" alt=""></a>
+                    <!-- <a href="index.php"><img src="../dist/images/licet.png" alt=""></a> -->
+                    <a href="index.php"><img src="../dist/images/attlog.svg" alt=""></a>
                 </h2>
             </div>
             <a href="javascript:void(0);" class="sidemenu-toggler">
