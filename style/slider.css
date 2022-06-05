@@ -43,7 +43,22 @@ button:hover {
     position: relative;
     margin: 60px 0;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
 
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #54545496;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #58585896;
+}
 .carousel-control.left,
 .carousel-control.right {
     background: transparent;

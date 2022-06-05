@@ -22,11 +22,11 @@
                     <th>Event Name</th>
                     <th>Club</th>
                     <th>Attendance</th>
-                    
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
+        <div id="prompt"></div>
     </div>
     <br />
     <br />

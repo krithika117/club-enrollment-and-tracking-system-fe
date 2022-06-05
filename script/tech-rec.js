@@ -70,18 +70,6 @@ var q5a3 = document.getElementById("q5a3");
 var q5a4 = document.getElementById("q5a4");
 var q5a5 = document.getElementById("q5a5");
 
-var q6a1 = document.getElementById("q6a1");
-var q6a2 = document.getElementById("q6a2");
-var q6a3 = document.getElementById("q6a3");
-var q6a4 = document.getElementById("q6a4");
-var q6a5 = document.getElementById("q6a5");
-
-// var clear1 = document.getElementById("clear-q1");
-// var clear2 = document.getElementById("clear-q2");
-// var clear3 = document.getElementById("clear-q3");
-// var clear4 = document.getElementById("clear-q4");
-// var clear5 = document.getElementById("clear-q5");
-// var clear6 = document.getElementById("clear-q6");
 
 var result = document.getElementById("result");
 var restart = document.getElementById("restart");
@@ -143,25 +131,11 @@ q5a3.addEventListener("click", disableBtn5);
 q5a4.addEventListener("click", disableBtn5);
 q5a5.addEventListener("click", disableBtn5);
 
-q6a1.addEventListener("click", nss);
-q6a2.addEventListener("click", ncc);
-q6a3.addEventListener("click", rotaract);
-q6a4.addEventListener("click", leaf);
-q6a5.addEventListener("click", yrc);
-q6a1.addEventListener("click", disableBtn6);
-q6a2.addEventListener("click", disableBtn6);
-q6a3.addEventListener("click", disableBtn6);
-q6a4.addEventListener("click", disableBtn6);
-q6a5.addEventListener("click", disableBtn6);
+
 
 restart.addEventListener("click", refresh);
 
-// clear1.addEventListener("click",reset1);
-// clear2.addEventListener("click",reset2);
-// clear3.addEventListener("click",reset3);
-// clear4.addEventListener("click",reset4);
-// clear5.addEventListener("click",reset5);
-// clear6.addEventListener("click",reset6);
+
 
 //#TODO: Define quiz functions here
 function disableBtn1() {
@@ -204,19 +178,12 @@ function disableBtn5() {
     document.getElementById("q5a5").disabled = true;
 }
 
-function disableBtn6() {
-    document.getElementById("q6a1").disabled = true;
-    document.getElementById("q6a2").disabled = true;
-    document.getElementById("q6a3").disabled = true;
-    document.getElementById("q6a4").disabled = true;
-    document.getElementById("q6a5").disabled = true;
-}
 
 function nss() {
     nssScore += 1;
     questionCount += 1;
     //alert("One point to bad guy!");
-    if (questionCount >= 6) {
+    if (questionCount >= 5) {
         updateResult();
 
     }
@@ -226,7 +193,7 @@ function ncc() {
     nccScore += 1;
     questionCount += 1;
     //alert("One point to when the party's over!");
-    if (questionCount >= 6) {
+    if (questionCount >= 5) {
         updateResult();
 
     }
@@ -236,7 +203,7 @@ function rotaract() {
     rotaractScore += 1;
     questionCount += 1;
     //alert("One point to rotaract");
-    if (questionCount >= 6) {
+    if (questionCount >= 5) {
         updateResult();
 
     }
@@ -246,7 +213,7 @@ function leaf() {
     leafScore += 1;
     questionCount += 1;
     //alert("One point to leaf!");
-    if (questionCount >= 6) {
+    if (questionCount >= 5) {
         updateResult();
 
     }
@@ -256,7 +223,7 @@ function yrc() {
     yrcScore += 1;
     questionCount += 1;
     //alert("One point to yrc");
-    if (questionCount >= 6) {
+    if (questionCount >= 5) {
         updateResult();
 
     }
@@ -265,7 +232,7 @@ function yrc() {
 function updateResult() {
     if ((nssScore == 2 && nccScore == 2) && (rotaractScore == 2 || leafScore == 2)) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -275,7 +242,7 @@ function updateResult() {
         });
     } else if ((rotaractScore == 2 && leafScore == 2) && (nssScore == 2 || nccScore == 2)) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -289,7 +256,7 @@ function updateResult() {
     //NSS Combos
     else if (nssScore == 3 && nccScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -299,7 +266,7 @@ function updateResult() {
         });
     } else if (nssScore == 3 && rotaractScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -309,7 +276,7 @@ function updateResult() {
         });
     } else if (nssScore == 3 && leafScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -319,7 +286,7 @@ function updateResult() {
         });
     } else if (nssScore == 3 && yrcScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -331,7 +298,7 @@ function updateResult() {
     //NCC Combos
     else if (nccScore == 3 && rotaractScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -341,7 +308,7 @@ function updateResult() {
         });
     } else if (nccScore == 3 && yrcScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -351,7 +318,7 @@ function updateResult() {
         });
     } else if (nccScore == 3 && leafScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -363,7 +330,7 @@ function updateResult() {
     //Rotaract combos
     else if (rotaractScore == 3 && yrcScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -373,7 +340,7 @@ function updateResult() {
         });
     } else if (rotaractScore == 3 && leafScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -385,7 +352,7 @@ function updateResult() {
     //yrc combos
     else if (yrcScore == 3 && leafScore == 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -399,7 +366,7 @@ function updateResult() {
     else if (nssScore >= 3) {
         // swal("Your result is... bad guy!","success");
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -410,7 +377,7 @@ function updateResult() {
 
     } else if (nccScore >= 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -422,7 +389,7 @@ function updateResult() {
     } else if (rotaractScore >= 3) {
         // swal("Your result is... rotaract ft. Khalid!</i>","success");
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -430,11 +397,11 @@ function updateResult() {
                 refresh()
             }
         });
-        // swal("We Recommend", "Rotaract Club of LICET", "success");
+        // swal("Attribuer Recommends", "Rotaract Club of LICET", "success");
         refresh();
     } else if (leafScore >= 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -444,7 +411,7 @@ function updateResult() {
         });
     } else if (yrcScore >= 3) {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -454,7 +421,7 @@ function updateResult() {
         });
     } else {
         swal({
-            title: "We Recommend",
+            title: "Attribuer Recommends",
             text: "NSS",
             type: "success"
         }).then(okay => {
@@ -506,11 +473,6 @@ function refresh() {
     document.getElementById("q5a4").disabled = false;
     document.getElementById("q5a5").disabled = false;
 
-    document.getElementById("q6a1").disabled = false;
-    document.getElementById("q6a2").disabled = false;
-    document.getElementById("q6a3").disabled = false;
-    document.getElementById("q6a4").disabled = false;
-    document.getElementById("q6a5").disabled = false;
 
     // slideIndex = 1;
     showSlides(slideIndex = 1);

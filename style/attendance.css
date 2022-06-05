@@ -8,12 +8,32 @@
 
     /* font-family:var(--bs-font-sans-serif); */
 }
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
 
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #54545496;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #58585896;
+}
 body {
     /* linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),  */
     background-image: url('../dist/images/bgpink.svg');
-    background-position: top;
+    background-position: center;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    color: #ffffff;
     margin: 0;
     padding-left:3rem;
     padding-right:3rem;
@@ -26,7 +46,12 @@ h2 {
     text-align: center;
     padding: 30px;
 }
-
+#prompt{
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
 input {
     /* display: block; */
     /* height: 50px; */

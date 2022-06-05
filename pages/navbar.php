@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/navbar.css">
@@ -35,9 +35,11 @@
                         <li id="viewMembers" class="d-none"><a href="view.php">View Members</a></li>
                         <li id="participation" class=""><a href="participation.php">Participated Events</a></li>
                         <li id="editMembers" class="d-none"><a href="edit-members.php">Edit Members</a></li>
-                        <li id="recom"><a href="rec.php">Recommender</a></li>
+
+                        <li id="fac-att" class="d-none"><a href="fac-events.php">View Events</a></li>
                         <li id="createEvents" class="d-none"><a href="eventlist.php">Create Events</a></li>
                         <li id="viewAtt" class="d-none"><a href="update-attendance.php">View/Update Attendance</a></li>
+                        <li id="recom"><a href="rec.php">Recommender</a></li>
                         <li id="quit"><a href="" onclick="javascript:logout()">Sign out</a></li>
                     </ul>
                 </nav>
@@ -48,7 +50,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="../script/navbar.js"></script>
 
-    
+
 </body>
 
 </html>

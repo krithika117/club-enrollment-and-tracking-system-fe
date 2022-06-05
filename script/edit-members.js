@@ -110,6 +110,7 @@ $(document).ready(function () {
   $('#signupSubmit').on('click', function (e) {
     e.preventDefault();
     $('#loading').show();
+
     var firstName = $('#firstName').val();
     var lastName = $('#lastName').val();
     var phoneNumber = $('#phoneNumber').val();
@@ -134,47 +135,69 @@ $(document).ready(function () {
       } else {
         $.ajax({
           method: "POST",
-          url: server + '/register',
-          contentType: 'application/json;charset=UTF-8',
-          data: JSON.stringify({
-            'firstName': firstName,
-            'lastName': lastName,
-            'phoneNumber': phoneNumber,
+          url: server + '/validate',
+          crossDomain: true,
+          data: {
+            // 'name': name,
             'email': email,
-            'rollNo': rollNo,
-            'regNo': regNo,
-            'department': department,
-            'yearOfStudy': yearOfStudy,
-            'serviceClubChoice': serviceClubChoice,
-            'techClubChoice1': techClubChoice1,
-            'techClubChoice2': techClubChoice2,
-          }),
-          dataType: "json",
-          success: function (data) {
-            // $('#signupform').hide();
-            // $('#loading').hide();
-            // $('#msg').html('<span style="color: green;">You are registered successfully</span>');
-            console.log('done!')
-            location.replace('view.php')
+            // 'stat': sessionStorage.stat;
+            // 'password': pwd
           },
-          statusCode: {
-            400: function () {
-              // $('#loading').hide();
-              console.log('<span style="color: red;">Bad request parameters</span>');
-            },
-            409: function () {
-              // $('#loading').hide();
-              console.log('<span style="color: red;">You are already registered user</span>');
+
+          success: function (response) {
+            // Start
+            if (response.message == "clear") {
+              $.ajax({
+                method: "POST",
+                url: server + '/register',
+                contentType: 'application/json;charset=UTF-8',
+                data: JSON.stringify({
+                  'firstName': firstName,
+                  'lastName': lastName,
+                  'phoneNumber': phoneNumber,
+                  'email': email,
+                  'rollNo': rollNo,
+                  'regNo': regNo,
+                  'department': department,
+                  'yearOfStudy': yearOfStudy,
+                  'serviceClubChoice': serviceClubChoice,
+                  'techClubChoice1': techClubChoice1,
+                  'techClubChoice2': techClubChoice2,
+                }),
+                dataType: "json",
+                success: function (data) {
+                  // $('#signupform').hide();
+                  // $('#loading').hide();
+                  // $('#msg').html('<span style="color: green;">You are registered successfully</span>');
+                  console.log('done!')
+                  location.replace('view.php')
+                },
+                statusCode: {
+                  400: function () {
+                    // $('#loading').hide();
+                    console.log('<span style="color: red;">Bad request parameters</span>');
+                  },
+                  409: function () {
+                    // $('#loading').hide();
+                    console.log('<span style="color: red;">You are already registered user</span>');
+                  }
+
+                },
+                error: function (err) {
+                  console.log(err);
+                }
+              });
             }
+            else{
+              alert("User Mail ID Already Exists.");
+            }
+            // AJAXEnd
           },
           error: function (err) {
             console.log(err);
           }
         });
       }
-    } else {
-      $('#loading').hide();
-      $('#msg').html('<span style="color: red;">All fields are required</span>');
     }
   });
 

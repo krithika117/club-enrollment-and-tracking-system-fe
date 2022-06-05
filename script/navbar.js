@@ -24,6 +24,7 @@ if ((location.href.split('/').pop()) == 'index.php') {
 
 if (sessionStorage.stat == '1') { //Faculty Controls
     document.querySelector('#viewMembers').classList.remove('d-none');
+    document.querySelector('#fac-att').classList.remove('d-none');
     document.querySelector('#participation').classList.add('d-none');
 }
 
