@@ -24,9 +24,8 @@
     <!-- <div class="slideshow-container"> -->
 
     <div class="mySlides">
-      <h2>1. How frequently do you prefer to participate in club activities?</h2>
+      <h2>1. Would you like to join a club which </h2>
 
-      <!-- <button id="clear-q1" class="clear">↻</button></h2> -->
       <div class="question">
 
         <div class="answer-choice">
@@ -35,7 +34,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbass.jpg?v=1597270130301"
             alt="bass"
           /> -->
-            <div class="desc">Bass</div>
+            <div class="desc">Designs and develop a automobile product</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -44,7 +43,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fvocal.jp2?v=1597261677869"
             alt="vocals"
           /> -->
-            <div class="desc">Vocals</div>
+            <div class="desc">Improves innovation and entrepreneurship qualities</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -53,7 +52,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpiano.jp2?v=1597261584113"
             alt="piano"
           /> -->
-            <div class="desc">Piano</div>
+            <div class="desc">is a non official organization which involves artists, academicians</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -62,7 +61,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
             alt="guitar"
           /> -->
-            <div class="desc">Guitar</div>
+            <div class="desc">focuses on entrepreneurship and the power of it</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -71,7 +70,7 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fguitar.jp2?v=1597261480765"
             alt="guitar"
           /> -->
-            <div class="desc">Guitar</div>
+            <div class="desc">Involving and dealing with electronic devices</div>
           </button>
         </div>
 
@@ -85,43 +84,43 @@
       <div class="question">
         <div class="answer-choice">
           <button id="q2a1">
-            <div class="desc">Guitar</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q2a2">
-            <div class="desc">Guitar</div>
+            <div class="desc">Hardware implementation</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q2a3">
-            <div class="desc">Guitar</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q2a4">
-            <div class="desc">Guitar</div>
+            <div class="desc">Software implementation</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q2a5">
-            <div class="desc">Guitar</div>
+            <div class="desc">Electronic initiatives</div>
+          </button>
+        </div>
+        <div class="answer-choice">
+          <button id="q2a4">
+            <div class="desc">Business innovation</div>
+          </button>
+        </div>
+        <div class="answer-choice">
+          <button id="q2a2">
+            <div class="desc">All of the above</div>
           </button>
         </div>
       </div>
     </div>
 
     <div class="mySlides">
-      <h2>3. Which of the following would you appreciate the most?</h2>
+      <h2>3. What events would you like to attend?</h2>
       <!-- <button id="clear-q3" class="clear">↻</button></h2> -->
       <div class="question">
         <div class="answer-choice">
-          <button id="q3a1">
+          <button id="q3a4">
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Ffire.jpg?v=1597299667685"
             alt="fire"
           /> -->
-            <div class="desc">Fire</div>
+            <div class="desc">Workshops</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -130,44 +129,47 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fair.jpg?v=1597299901769"
             alt="air"
           /> -->
-            <div class="desc">Air</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q3a3">
-            <!-- <img
-            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwater.jpg?v=1597299934501"
-            alt="water"
-          /> -->
-            <div class="desc">Water</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q3a4">
-            <!-- <img
-            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
-            alt="earth"
-          /> -->
-            <div class="desc">Earth</div>
+            <div class="desc">Seminars</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q3a5">
             <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwater.jpg?v=1597299934501"
+            alt="water"
+          /> -->
+            <div class="desc">Hackathon</div>
+          </button>
+        </div>
+        <div class="answer-choice">
+          <button id="q3a1">
+            <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
             alt="earth"
           /> -->
-            <div class="desc">Earth</div>
+            <div class="desc">Symposium</div>
           </button>
         </div>
+        <div class="answer-choice">
+          <button id="q3a3">
+            <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fearth.jpg?v=1597299955549"
+            alt="earth"
+          /> -->
+            <div class="desc">All of the above</div>
+          </button>
+        </div>
+
       </div>
     </div>
     <div class="mySlides">
-      <h2>4. How many hours do you prefer to devote to club events as a volunteer?</h2>
+      <h2>4. What is your preferred mode of work?</h2>
       <!-- <button id="clear-q4" class="clear">↻</button></h2> -->
       <div class="question">
         <div class="answer-choice">
-          <button id="q4a1">
+          <button id="q4a4">
+            <div class="desc">
+            Online</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fbright-colours.png?v=1597328002113"
             alt="bright colours"
@@ -176,6 +178,8 @@
         </div>
         <div class="answer-choice">
           <button id="q4a2">
+            <div class="desc">
+            Offline</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fmuted-colours.png?v=1597328231356"
             alt="muted colours"
@@ -183,7 +187,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a3">
+          <button id="q4a1">
+            <div class="desc">
+            Working after college hours</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fcool-colours.png?v=1597328091906"
             alt="cool-toned colours"
@@ -191,7 +197,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a4">
+          <button id="q4a5">
+            <div class="desc">
+            Working during weekends</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
             alt="warm-toned colours"
@@ -199,7 +207,9 @@
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q4a5">
+          <button id="q4a3">
+            <div class="desc">
+            Any mode feasible</div>
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwarm-colours.png?v=1597328097654"
             alt="warm-toned colours"
@@ -209,34 +219,34 @@
       </div>
     </div>
     <div class="mySlides">
-      <h2>5. What do you consider to be your most important contribution to the club?</h2>
+      <h2>5. How many days/hours would you be willing to travel for camps/contests etc.?</h2>
       <!-- <button id="clear-q5" class="clear">↻</button></h2> -->
       <div class="question">
         <div class="answer-choice">
-          <button id="q5a1">
+          <button id="q5a3">
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fpartying.jpg?v=1597331695599"
             alt="partying"
           /> -->
-            <div class="desc">Attending Parties</div>
+            <div class="desc">One evening</div>
+          </button>
+        </div>
+        <div class="answer-choice">
+          <button id="q5a5">
+            <!-- <img
+            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fstudying.jpg?v=1597331730558"
+            alt="studying/working"
+          /> -->
+            <div class="desc">One day</div>
           </button>
         </div>
         <div class="answer-choice">
           <button id="q5a2">
             <!-- <img
-            src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fstudying.jpg?v=1597331730558"
-            alt="studying/working"
-          /> -->
-            <div class="desc">Studying/Working</div>
-          </button>
-        </div>
-        <div class="answer-choice">
-          <button id="q5a3">
-            <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Fwatchingmovie.jp2?v=1597331749164"
             alt="watching a movie"
           /> -->
-            <div class="desc">Watching a movie</div>
+            <div class="desc">Two days</div>
           </button>
         </div>
         <div class="answer-choice">
@@ -245,16 +255,16 @@
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
             alt="On a road trip"
           /> -->
-            <div class="desc">On a road trip</div>
+            <div class="desc">Three days</div>
           </button>
         </div>
         <div class="answer-choice">
-          <button id="q5a5">
+          <button id="q5a1">
             <!-- <img
             src="https://cdn.glitch.com/2b28f74a-8a02-4992-9bf6-c975d2b04cbb%2Froadtrip.jpg?v=1597331766126"
             alt="On a road trip"
           /> -->
-            <div class="desc">On a road trip</div>
+            <div class="desc">One week</div>
           </button>
         </div>
       </div>

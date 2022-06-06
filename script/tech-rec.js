@@ -33,11 +33,11 @@ function showSlides(n) {
 //Global Variables
 //Variables to track each possible quiz outcome.
 var questionCount = 0;
-var nssScore = 0;
-var nccScore = 0;
-var rotaractScore = 0;
-var leafScore = 0;
-var yrcScore = 0;
+var turbonitesScore = 0;
+var madScore = 0;
+var iicScore = 0;
+var beatScore = 0;
+var eceScore = 0;
 
 //Variables for each quiz question.
 var q1a1 = document.getElementById("q1a1");
@@ -75,11 +75,11 @@ var result = document.getElementById("result");
 var restart = document.getElementById("restart");
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", nss);
-q1a2.addEventListener("click", ncc);
-q1a3.addEventListener("click", rotaract);
-q1a4.addEventListener("click", leaf);
-q1a5.addEventListener("click", yrc);
+q1a1.addEventListener("click", turbonites);
+q1a2.addEventListener("click", mad);
+q1a3.addEventListener("click", iic);
+q1a4.addEventListener("click", beat);
+q1a5.addEventListener("click", ece);
 q1a1.addEventListener("click", disableBtn1);
 q1a2.addEventListener("click", disableBtn1);
 q1a3.addEventListener("click", disableBtn1);
@@ -87,44 +87,44 @@ q1a4.addEventListener("click", disableBtn1);
 q1a5.addEventListener("click", disableBtn1);
 
 
-q2a1.addEventListener("click", nss);
-q2a2.addEventListener("click", ncc);
-q2a3.addEventListener("click", rotaract);
-q2a4.addEventListener("click", leaf);
-q2a5.addEventListener("click", yrc);
+q2a1.addEventListener("click", turbonites);
+q2a2.addEventListener("click", mad);
+q2a3.addEventListener("click", iic);
+q2a4.addEventListener("click", beat);
+q2a5.addEventListener("click", ece);
 q2a1.addEventListener("click", disableBtn2);
 q2a2.addEventListener("click", disableBtn2);
 q2a3.addEventListener("click", disableBtn2);
 q2a4.addEventListener("click", disableBtn2);
 q2a5.addEventListener("click", disableBtn2);
 
-q3a1.addEventListener("click", nss);
-q3a2.addEventListener("click", ncc);
-q3a3.addEventListener("click", rotaract);
-q3a4.addEventListener("click", leaf);
-q3a5.addEventListener("click", yrc);
+q3a1.addEventListener("click", turbonites);
+q3a2.addEventListener("click", mad);
+q3a3.addEventListener("click", iic);
+q3a4.addEventListener("click", beat);
+q3a5.addEventListener("click", ece);
 q3a1.addEventListener("click", disableBtn3);
 q3a2.addEventListener("click", disableBtn3);
 q3a3.addEventListener("click", disableBtn3);
 q3a4.addEventListener("click", disableBtn3);
 q3a5.addEventListener("click", disableBtn3);
 
-q4a1.addEventListener("click", nss);
-q4a2.addEventListener("click", ncc);
-q4a3.addEventListener("click", rotaract);
-q4a4.addEventListener("click", leaf);
-q4a5.addEventListener("click", yrc);
+q4a1.addEventListener("click", turbonites);
+q4a2.addEventListener("click", mad);
+q4a3.addEventListener("click", iic);
+q4a4.addEventListener("click", beat);
+q4a5.addEventListener("click", ece);
 q4a1.addEventListener("click", disableBtn4);
 q4a2.addEventListener("click", disableBtn4);
 q4a3.addEventListener("click", disableBtn4);
 q4a4.addEventListener("click", disableBtn4);
 q4a5.addEventListener("click", disableBtn4);
 
-q5a1.addEventListener("click", nss);
-q5a2.addEventListener("click", ncc);
-q5a3.addEventListener("click", rotaract);
-q5a4.addEventListener("click", leaf);
-q5a5.addEventListener("click", yrc);
+q5a1.addEventListener("click", turbonites);
+q5a2.addEventListener("click", mad);
+q5a3.addEventListener("click", iic);
+q5a4.addEventListener("click", beat);
+q5a5.addEventListener("click", ece);
 q5a1.addEventListener("click", disableBtn5);
 q5a2.addEventListener("click", disableBtn5);
 q5a3.addEventListener("click", disableBtn5);
@@ -179,8 +179,8 @@ function disableBtn5() {
 }
 
 
-function nss() {
-    nssScore += 1;
+function turbonites() {
+    turbonitesScore += 1;
     questionCount += 1;
     //alert("One point to bad guy!");
     if (questionCount >= 5) {
@@ -189,8 +189,8 @@ function nss() {
     }
 }
 
-function ncc() {
-    nccScore += 1;
+function mad() {
+    madScore += 1;
     questionCount += 1;
     //alert("One point to when the party's over!");
     if (questionCount >= 5) {
@@ -199,30 +199,30 @@ function ncc() {
     }
 }
 
-function rotaract() {
-    rotaractScore += 1;
+function iic() {
+    iicScore += 1;
     questionCount += 1;
-    //alert("One point to rotaract");
+    //alert("One point to iic");
     if (questionCount >= 5) {
         updateResult();
 
     }
 }
 
-function leaf() {
-    leafScore += 1;
+function beat() {
+    beatScore += 1;
     questionCount += 1;
-    //alert("One point to leaf!");
+    //alert("One point to beat!");
     if (questionCount >= 5) {
         updateResult();
 
     }
 }
 
-function yrc() {
-    yrcScore += 1;
+function ece() {
+    eceScore += 1;
     questionCount += 1;
-    //alert("One point to yrc");
+    //alert("One point to ece");
     if (questionCount >= 5) {
         updateResult();
 
@@ -230,20 +230,20 @@ function yrc() {
 }
 
 function updateResult() {
-    if ((nssScore == 2 && nccScore == 2) && (rotaractScore == 2 || leafScore == 2)) {
+    if ((turbonitesScore == 2 && madScore == 2) && (iicScore == 2 || beatScore == 2)) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "BEAT",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if ((rotaractScore == 2 && leafScore == 2) && (nssScore == 2 || nccScore == 2)) {
+    } else if ((iicScore == 2 && beatScore == 2) && (turbonitesScore == 2 || madScore == 2)) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "IIC",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -252,74 +252,42 @@ function updateResult() {
         });
     }
 
-    //Pair scoring {ncc,nss,rot,yrc,leaf}
-    //NSS Combos
-    else if (nssScore == 3 && nccScore == 3) {
+    //Pair scoring {mad,turbonites,rot,ece,beat}
+    //turbonites Combos
+    else if (turbonitesScore == 3 && madScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Team Turbonites",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (nssScore == 3 && rotaractScore == 3) {
+    } else if (turbonitesScore == 3 && iicScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "IIC",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (nssScore == 3 && leafScore == 3) {
+    } else if (turbonitesScore == 3 && beatScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "BEAT",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (nssScore == 3 && yrcScore == 3) {
+    } else if (turbonitesScore == 3 && eceScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
-            type: "success"
-        }).then(okay => {
-            if (okay) {
-                refresh()
-            }
-        });
-    }
-    //NCC Combos
-    else if (nccScore == 3 && rotaractScore == 3) {
-        swal({
-            title: "Attribuer Recommends",
-            text: "NSS",
-            type: "success"
-        }).then(okay => {
-            if (okay) {
-                refresh()
-            }
-        });
-    } else if (nccScore == 3 && yrcScore == 3) {
-        swal({
-            title: "Attribuer Recommends",
-            text: "NSS",
-            type: "success"
-        }).then(okay => {
-            if (okay) {
-                refresh()
-            }
-        });
-    } else if (nccScore == 3 && leafScore == 3) {
-        swal({
-            title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Electronics Club",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -327,21 +295,31 @@ function updateResult() {
             }
         });
     }
-    //Rotaract combos
-    else if (rotaractScore == 3 && yrcScore == 3) {
+    //mad Combos
+    else if (madScore == 3 && iicScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "IIC",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (rotaractScore == 3 && leafScore == 3) {
+    } else if (madScore == 3 && eceScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "MAD Club",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
+    } else if (madScore == 3 && beatScore == 3) {
+        swal({
+            title: "Attribuer Recommends",
+            text: "MAD Club",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -349,11 +327,33 @@ function updateResult() {
             }
         });
     }
-    //yrc combos
-    else if (yrcScore == 3 && leafScore == 3) {
+    //iic combos
+    else if (iicScore == 3 && eceScore == 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "IIC",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
+    } else if (iicScore == 3 && beatScore == 3) {
+        swal({
+            title: "Attribuer Recommends",
+            text: "BEAT",
+            type: "success"
+        }).then(okay => {
+            if (okay) {
+                refresh()
+            }
+        });
+    }
+    //ece combos
+    else if (eceScore == 3 && beatScore == 3) {
+        swal({
+            title: "Attribuer Recommends",
+            text: "Electronics Club",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -363,11 +363,11 @@ function updateResult() {
     }
 
     //Individual scoring
-    else if (nssScore >= 3) {
+    else if (turbonitesScore >= 3) {
         // swal("Your result is... bad guy!","success");
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Team Turbonites",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -375,10 +375,10 @@ function updateResult() {
             }
         });
 
-    } else if (nccScore >= 3) {
+    } else if (madScore >= 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "MAD Club",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -386,33 +386,33 @@ function updateResult() {
             }
         });
 
-    } else if (rotaractScore >= 3) {
-        // swal("Your result is... rotaract ft. Khalid!</i>","success");
+    } else if (iicScore >= 3) {
+        // swal("Your result is... iic ft. Khalid!</i>","success");
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "IIC",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-        // swal("Attribuer Recommends", "Rotaract Club of LICET", "success");
+        // swal("Attribuer Recommends", "iic Club of LICET", "success");
         refresh();
-    } else if (leafScore >= 3) {
+    } else if (beatScore >= 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "BEAT",
             type: "success"
         }).then(okay => {
             if (okay) {
                 refresh()
             }
         });
-    } else if (yrcScore >= 3) {
+    } else if (eceScore >= 3) {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Electronics Club",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -422,7 +422,7 @@ function updateResult() {
     } else {
         swal({
             title: "Attribuer Recommends",
-            text: "NSS",
+            text: "Team Turbonites",
             type: "success"
         }).then(okay => {
             if (okay) {
@@ -438,11 +438,11 @@ function refresh() {
 
     // swal("Your result is...", "success");
     var questionCount = 0;
-    var nssScore = 0;
-    var nccScore = 0;
-    var rotaractScore = 0;
-    var yrcScore = 0;
-    var leafScore = 0;
+    var turbonitesScore = 0;
+    var madScore = 0;
+    var iicScore = 0;
+    var eceScore = 0;
+    var beatScore = 0;
     document.getElementById("q1a1").disabled = false;
     document.getElementById("q1a2").disabled = false;
     document.getElementById("q1a3").disabled = false;
