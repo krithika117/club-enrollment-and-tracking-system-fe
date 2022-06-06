@@ -19,11 +19,11 @@
 
 	<section id="home">
 		<h1>ATTRIBUER</h1>
-<div class="vertical-line"></div>
-		<p>		Club Enrollment & Tracking System<br></p>
-			<button class="button glass"><a href="login.php">Click here to login</a></button>
-			<button class="button glass"><a href="rec.php">Recommender</a></button>
-		
+		<div class="vertical-line"></div>
+		<!-- <p>		Club Enrollment & Tracking System<br></p> -->
+		<button class="button glass"><a href="login.php">Click here to login</a></button>
+		<button class="button glass"><a href="rec.php">Recommender</a></button>
+
 		<!-- <button class="glass">Click here to enroll</button>
     <button class="glass">Get club suggestion</button> -->
 	</section>

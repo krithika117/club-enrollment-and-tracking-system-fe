@@ -35,7 +35,7 @@
                         <li id="homeNav"><a href="home.php">Home</a></li>
                         <li id="viewMembers" class="d-none"><a href="view.php">View Members</a></li>
                         <li id="participation" class=""><a href="participation.php">Participated Events</a></li>
-                        <li id="editMembers" class="d-none"><a href="edit-members.php">Edit Members</a></li>
+                        <li id="editMembers" class="d-none"><a href="edit-members.php">Add/Delete Students</a></li>
 
                         <li id="fac-att" class="d-none"><a href="fac-events.php">View Events</a></li>
                         <li id="createEvents" class="d-none"><a href="eventlist.php">Create Events</a></li>

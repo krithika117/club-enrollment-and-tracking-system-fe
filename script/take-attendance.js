@@ -96,7 +96,7 @@ $(document).ready(function () {
         }).get();
 
 
-        alert(data1);
+        // alert(data1);
         // console.log(data1);
 
         $.ajax({

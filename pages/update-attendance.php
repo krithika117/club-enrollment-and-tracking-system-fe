@@ -21,7 +21,8 @@
 
         <h2>Update Event</h2>
         <select name="event_filter" id="event_filter" class="form-control">
-            <!-- <option value="all">All Department</option>
+        <option value="" selected hidden disabled>Select Event</option>    
+        <!-- <option value="all">All Department</option>
             <option value="IT">IT</option>
             <option value="CSE">CSE</option>
             <option value="EEE">EEE</option>

@@ -112,21 +112,24 @@ $(document).ready(function () {
         var data1 = $("table tbody tr").map(function (i, row) {
             var data1 = $('td', row);
             // var attendance = '0'
+            // [('Allen', '311119205028', 'krithikanithyanandam@gmail.com', 'CSE', 'I', 'Test Event 1', '2022-04-25', 'NSS', '0'), ('Andrea', '311119205028', 'andreasharon.23it@licet.ac.in', 'ECE', 'II', 'Test Event 1', '2022-04-25', 'NSS', '0')]
             return {
-                name: data1.eq(0).text().trim(),
-                regNo: data1.eq(1).text().trim(),
-                email: data1.eq(2).text().trim(),
-                department: data1.eq(3).text().trim(),
-                yearOfStudy: data1.eq(4).text().trim(),
-                eventName: eventName,
+                // name: data1.eq(0).text().trim(),
+                // regNo: data1.eq(1).text().trim(),
+                
+                // department: data1.eq(3).text().trim(),
+                // yearOfStudy: data1.eq(4).text().trim(),
                 date: date,
+                attendance: data1.eq(5).find("input").val(),
+                eventName: eventName,
+                email: data1.eq(2).text().trim(),
                 club: club,
-                attendance: data1.eq(5).find("input").val()
             }
         }).get();
 
 
         // alert(data1);
+
         
 
         $.ajax({
@@ -135,15 +138,16 @@ $(document).ready(function () {
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
                 'data': data1,
-                'eventName': eventName,
                 'date': date,
-                'club': club
+                'club': club,
+                'eventName': eventName,
+                
             }),
             dataType: "json",
             success: function (data) {
                 console.log('done!')
                 location.replace('eventlist.php')
-                alert('updated');
+                console.log('Updated');
             },
             statusCode: {
                 400: function () {

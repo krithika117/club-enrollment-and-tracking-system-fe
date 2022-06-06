@@ -21,8 +21,7 @@
 <body>
     <div class="container">
 
-        <h2>Students
-
+        <h2>Add/Delete Students
         </h2>
              
         <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
