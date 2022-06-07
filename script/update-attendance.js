@@ -5,7 +5,10 @@ firebase.auth().onAuthStateChanged((user) => {
     }
     
   })
-  
+  function dateConv(d){
+    return new Intl.DateTimeFormat('en-IN').format(new Date(d));
+    }
+    
   function logout() {
     firebase.auth().signOut()
     sessionStorage.email = '';
@@ -74,7 +77,8 @@ $(document).ready(function () {
                 // console.log(new Date(data.response[0].date));
                 // var today = new Date(data.response[0].date);
                 // $('#date').val(today);
-                document.getElementById("date").valueAsDate = new Date(data.response[0].date);                 
+                // document.getElementById("date").innerHTML = dateConv(data.response[0].date);                 
+                
                 for (var i = 0; i < data.response.length; i++) {
                     var row = $('<tr><td>' +
                         data.response[i].name +
@@ -86,6 +90,8 @@ $(document).ready(function () {
                         data.response[i].department +
                         '</td><td>' +
                         data.response[i].yearOfStudy +
+                        '</td><td>' +
+                        dateConv(data.response[0].date)+
                         '</td><td>' +
                         '<input type="number" name="attcheck" value="'+parseInt(data.response[i].attendance)+'" id="attcheck"  min="0" max="1"/>' +
                         '</td></tr>');
@@ -119,8 +125,8 @@ $(document).ready(function () {
                 
                 // department: data1.eq(3).text().trim(),
                 // yearOfStudy: data1.eq(4).text().trim(),
-                date: date,
-                attendance: data1.eq(5).find("input").val(),
+                // date: date,
+                attendance: parseInt(data1.eq(6).find("input").val()),
                 eventName: eventName,
                 email: data1.eq(2).text().trim(),
                 club: club,
@@ -138,7 +144,7 @@ $(document).ready(function () {
             contentType: 'application/json;charset=UTF-8',
             data: JSON.stringify({
                 'data': data1,
-                'date': date,
+                // 'date': date,
                 'club': club,
                 'eventName': eventName,
                 

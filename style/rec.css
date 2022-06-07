@@ -8,7 +8,7 @@
 
 body {
   
-  background: url("../dist/images/bgv.svg");
+  background: url("../dist/images/bgv.svg") no-repeat center center fixed; 
   background-position: center;
   background-size: contain;
   -webkit-background-size: cover;

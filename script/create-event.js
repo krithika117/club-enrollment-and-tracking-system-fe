@@ -6,6 +6,10 @@ firebase.auth().onAuthStateChanged((user) => {
 
 })
 
+function dateConv(d) {
+    return new Intl.DateTimeFormat('en-IN').format(new Date(d));
+}
+
 function logout() {
     firebase.auth().signOut()
     sessionStorage.email = '';
@@ -20,7 +24,7 @@ if (sessionStorage.stat != '2') {
     sessionStorage.stat = '';
     sessionStorage.clear()
 }
-
+var club = (sessionStorage.email).split('@')[0].toUpperCase();
 $(document).ready(function () {
     load_event_data();
 
@@ -48,8 +52,8 @@ $(document).ready(function () {
 
                     for (var i = 0; i < data.response.length; i++) {
                         var row = $('<tr><td>' + data.response[i].event + '</td><td>' +
-                            data.response[i].date + '</td><td>' + data.response[i].club +
-                            '</td></tr>');
+                            dateConv(data.response[i].date) + '</td><td>' + data.response[i].club + '</td><td>' +
+                            '<a title="Delete" class="delete1" data-toggle="tooltip"  id="' + data.response[i].event + '"><i class="fa fa-trash-o"></i></a></td></tr>');
                         $('tbody').append(row);
                         console.log('done')
                     }
@@ -110,5 +114,38 @@ $(document).ready(function () {
             $('#loading').hide();
             $('#msg').html('<span style="color: red;">All fields are required</span>');
         }
+    });
+
+    $(document).on("click", '.delete1', function (e) {
+        e.preventDefault();
+        // var firstName = $('#firstName').val();
+        // $(this).parents("tr").remove();
+        // $(".add-new").removeAttr("disabled");
+        var event = $(this).attr("id");
+        console.log(event);
+        // var string = id;
+        var server = "http://127.0.0.1:5000";
+        if (confirm("Are you sure you wanna delete?") == true) {
+            $.ajax({
+                method: "POST",
+                url: server + "/delete/event",
+                contentType: 'application/json;charset=UTF-8',
+                data: JSON.stringify({
+                    'event': event,
+                    'club': club,
+                }),
+                dataType: 'json',
+                success: function (data) {
+                    // alert("Deleted");
+                    location.replace('eventlist.php')
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+        } else {
+
+        }
+
     });
 });

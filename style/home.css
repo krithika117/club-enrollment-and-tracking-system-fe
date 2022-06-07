@@ -8,8 +8,9 @@
 }
 
 body {
-    background-image: url('../dist/images/bgmang.svg');
     margin: 0;
+    background:  url('../dist/images/bgmang.svg') no-repeat center center fixed; 
+    
     background-position: center;
     background-size: contain;
     -webkit-background-size: cover;

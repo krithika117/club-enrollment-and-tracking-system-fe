@@ -35,7 +35,8 @@
         <br>
         <!-- Event Name<br><input type="text" class="form-control" name="eventName" id="eventName" placehloder="Event Name"
             required><br> -->
-        Date of Event<input type="date" class="form-control" placeholder="Date" id="date" required />
+        <!-- Date of Event<input type="date" class="form-control" placeholder="Date" id="date" required /> -->
+        <!-- Date of Event <div id="date"></div> -->
         <div class="table-responsive">
             <table id="myTable" class="myTable table table-hover dark ">
                 <br />
@@ -47,6 +48,7 @@
                         <th>Email</th>
                         <th>Department</th>
                         <th>Year of Study</th>
+                        <th>Date of Event</th>
                         <th>Attendance</th>
                     </tr>
                 </thead>

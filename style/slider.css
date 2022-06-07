@@ -2,7 +2,7 @@
 body {
     /* linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),  */
     font-family: 'Nunito', sans-serif;
-    background-image: url('../dist/images/bg2.svg');
+    background: url('../dist/images/bg2.svg') no-repeat center center fixed; 
     background-position: top;
     background-size: cover;
     color: #ffffff;

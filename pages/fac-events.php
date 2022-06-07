@@ -29,9 +29,9 @@
             <option value="NSO">&nbsp;NSO</option>
             <option value="IIC">&nbsp;IIC</option>
             <option value="BEAT">&nbsp;BEAT</option>
-            <option value="TURBONITES">&nbsp;TURBONITES</option>
+            <option value="TEAMTURBONITES">&nbsp;TURBONITES</option>
             <option value="MAD">&nbsp;MAD Club</option>
-            <option value="ECECLUB">&nbsp;ECE Club</option>
+            <option value="ELECTRONICS">&nbsp;Electronics Club</option>
         </select>
         <br>
 
