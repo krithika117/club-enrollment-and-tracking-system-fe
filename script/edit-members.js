@@ -34,7 +34,7 @@ function logout() {
 
 
 function prompt_val() {
-  $('#prompt').append("<img src='../dist/images/img.svg'><br>Please use the filter to view data.");
+  $('#prompt').append("<img src='../dist/images/img.svg'><br>Please use the filters to view data.");
 }
 email = sessionStorage.email;
 $(document).ready(function () {
@@ -129,7 +129,10 @@ $(document).ready(function () {
 
     if (email != "") {
       if (!regex.test(email)) {
-        $('#msg').html('<span style="color: red;">Invalid email address</span>');
+        // $('#msg').html('<span style="color: red;">Invalid email address</span>');
+
+      } else if ((email.split('@').pop()) != 'licet.ac.in') {
+        alert("Please use valid LICET Mail alone.");
       } else if (email == "" || firstName == "" || lastName == "" || phoneNumber == "" || rollNo == "" || department == "" || yearOfStudy == "" || serviceClubChoice == "" || techClubChoice1 == "") {
         alert("Please fill all details.");
 

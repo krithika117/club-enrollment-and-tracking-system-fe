@@ -36,7 +36,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 function prompt_val() {
-    $('#prompt').append("<img src='../dist/images/img.svg'><br>Please use the filter to view data.");
+    $('#prompt').append("<img src='../dist/images/img.svg'><br>Please use the filters to view data.");
 }
 
 email = sessionStorage.email;

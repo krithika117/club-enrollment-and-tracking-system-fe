@@ -20,7 +20,7 @@ if (sessionStorage.stat != '1') {
 }
 
 function prompt_val() {
-    $('#prompt').append("<img src='../dist/images/pinkfil.svg'><br>Please use the filter to view data.");
+    $('#prompt').append("<img src='../dist/images/pinkfil.svg'><br>Please use the filters to view data.");
 }
 
 $(document).ready(function () {

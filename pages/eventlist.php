@@ -35,6 +35,7 @@
             </thead>
             <tbody></tbody>
         </table>
+        <div id="prompt"></div>
     </div>
     <br />
     <br />

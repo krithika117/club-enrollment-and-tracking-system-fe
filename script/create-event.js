@@ -37,14 +37,22 @@ $(document).ready(function () {
             }),
             dataType: 'json',
             success: function (data) {
-                console.log(data.response)
                 $('tbody').empty();
-                for (var i = 0; i < data.response.length; i++) {
-                    var row = $('<tr><td>' + data.response[i].event + '</td><td>' +
-                        data.response[i].date + '</td><td>' + data.response[i].club +
-                        '</td></tr>');
-                    $('tbody').append(row);
-                    console.log('done')
+                console.log(data.response)
+                if (data.response.length == 0) {
+                    document.querySelector('#prompt').classList.remove('d-none');
+                    $('#prompt').empty();
+                    $('#prompt').append("<img src='../dist/images/smilep.svg' width='150'><br>Looks like you're yet to create an event :)");
+                } else {
+                    document.querySelector('#prompt').classList.add('d-none');
+
+                    for (var i = 0; i < data.response.length; i++) {
+                        var row = $('<tr><td>' + data.response[i].event + '</td><td>' +
+                            data.response[i].date + '</td><td>' + data.response[i].club +
+                            '</td></tr>');
+                        $('tbody').append(row);
+                        console.log('done')
+                    }
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {

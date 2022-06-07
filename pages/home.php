@@ -75,9 +75,9 @@
         <!-- <option value="PATTARAI">&nbsp;Pattarai</option> -->
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
-        <option value="TURBONITES">&nbsp;TURBONITES</option>
+        <option value="TEAMTURBONITES">&nbsp;Team Turbonites</option>
         <option value="MAD">&nbsp;MAD Club</option>
-        <option value="ECECLUB">&nbsp;ECE Club</option>
+        <option value="ELECTRONICS">&nbsp;Electronics Club</option>
       </select>
       <!-- </div> -->
     </div>
@@ -89,9 +89,9 @@
         <!-- <option value="PATTARAI">&nbsp;Pattarai</option> -->
         <option value="IIC">&nbsp;IIC</option>
         <option value="BEAT">&nbsp;BEAT</option>
-        <option value="TURBONITES">&nbsp;TURBONITES</option>
+        <option value="TEAMTURBONITES">&nbsp;Team Turbonites</option>
         <option value="MAD">&nbsp;MAD Club</option>
-        <option value="ECECLUB">&nbsp;ECE Club</option>
+        <option value="ELECTRONICS">&nbsp;Electronics Club</option>
       </select>
     </div>
 
@@ -111,7 +111,7 @@
       <span class="step"></span>
       <span class="step"></span>
     </div> -->
-</form>
+  </form>
 
   <div class="wrapper d-none">
     <h2 id="user1"></h2>
@@ -131,7 +131,7 @@
     <div class="container">
       This is Attribuer, LICET's Club Enrollment and Teacking System<br>
       Visit the Members section to view student list.<br>
-      <button class="button btn-primary" ><a href="view.php">Student List</a></button>
+      <button class="button btn-primary"><a href="view.php">Student List</a></button>
     </div>
   </div>
   </div>

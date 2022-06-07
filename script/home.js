@@ -3,8 +3,8 @@ firebase.auth().onAuthStateChanged((user) => {
     location.replace("login.php")
   } else {
     email = firebase.auth().currentUser.email;
-    document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0] +" :)";
-    document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0] +" :)";
+    document.getElementById('user').innerHTML = "Hello, " + email.split('@')[0] + " :)";
+    document.getElementById('user1').innerHTML = "Hello, " + email.split('@')[0] + " :)";
   }
 })
 
@@ -47,16 +47,20 @@ $(document).ready(function () {
     // console.log(serviceClubChoice)
     // console.log(techClubChoice1)
     // console.log(techClubChoice2)
-    
+
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/i;
 
     if (email != "") {
       if (!regex.test(email)) {
         $('#msg').html('<span style="color: red;">Invalid email address</span>');
-      } else if (email== "" || firstName== "" || lastName== "" || phoneNumber== "" || rollNo== "" || department== "" || yearOfStudy== "" || serviceClubChoice== "" || techClubChoice1== "" ) {
-        alert("Please fill all details.");
+        // LICET Domain Validation
+      } 
+      else if ((email.split('@').pop()) != 'licet.ac.in') {
+        alert("Please use valid LICET Mail alone.");
       }
-      else {
+      else if (email == "" || firstName == "" || lastName == "" || phoneNumber == "" || rollNo == "" || department == "" || yearOfStudy == "" || serviceClubChoice == "" || techClubChoice1 == "") {
+        alert("Please fill all details.");
+      } else {
         $.ajax({
           method: "POST",
           url: server + '/register',

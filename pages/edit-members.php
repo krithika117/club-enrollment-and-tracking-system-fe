@@ -25,7 +25,7 @@
         </h2>
              
         <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
-        <option value="" selected hidden disabled>Select Department</option>
+            <option value="" selected hidden disabled>Select Department</option>
             <option value="all">All Departments</option>
             <option value="IT">IT</option>
             <option value="CSE">CSE</option>
@@ -35,7 +35,7 @@
         </select>
         <br>
         <select name="year_filter" id="year_filter" class="form-control filter">
-        <option value="" selected hidden disabled>Select Year</option>
+            <option value="" selected hidden disabled>Select Year</option>
             <option value="all">All Years</option>
             <option value="I">I</option>
             <option value="II">II</option>
@@ -86,19 +86,19 @@
                         <!-- basic details -->
                         <!-- <div class="tab "> -->
                         <!-- <label for="firstName">First Name</label> -->
-                        <input type="text" class="form-control" placeholder="First Name" id="firstName"  required="">
+                        <input type="text" class="form-control" placeholder="First Name" id="firstName" required="">
 
                         <!-- <label for="lastName">Last Name</label> -->
-                        <input type="text" class="form-control" placeholder="Last Name" id="lastName"  required="">
+                        <input type="text" class="form-control" placeholder="Last Name" id="lastName" required="">
 
                         <!-- <label for="gender">Gender</label><br>
       Male<input type="radio" id="male" />
       Female<input type="radio" id="female" /> -->
 
                         <!-- <label for="phoneNumber">Phone Number</label> -->
-                        <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber"
-                            size="10"  required="">
-                        <input type="email" class="form-control" placeholder="Email" id="email"  required="">
+                        <input type="text" class="form-control" placeholder="ex. 9876543210" id="phoneNumber" size="10"
+                            required="">
+                        <input type="email" class="form-control" placeholder="Email" id="email" required="">
                         <!-- 
       <label for="email">Email</label>
       <input type="email" class="form-control" placeholder="Email" id="email" /> -->
@@ -155,9 +155,9 @@
 
                             <option value="IIC">&nbsp;IIC</option>
                             <option value="BEAT">&nbsp;BEAT</option>
-                            <option value="Turbonites">&nbsp;Rotaract</option>
+                            <option value="TEAMTURBONITES">&nbsp;Team Turbonites</option>
                             <option value="MAD">&nbsp;MAD Club</option>
-                            <option value="ECEClub">&nbsp;ECE Club</option>
+                            <option value="ELECTRONICS">&nbsp;Electronics Club</option>
                         </select>
                         <!-- </div> -->
                         <!-- </div> -->
@@ -165,13 +165,13 @@
                         <!-- <div class="select form-control"> -->
                         <select id="techClubChoice2" class="form-control">
                             <option value="" selected hidden disabled>&nbsp;Select Club</option>
-                            <option value="Nil">&nbsp;NA</option>
+                            <option value="Nil">&nbsp;Nil</option>
 
                             <option value="IIC">&nbsp;IIC</option>
                             <option value="BEAT">&nbsp;BEAT</option>
-                            <option value="TURBONITES">&nbsp;TURBONITES</option>
+                            <option value="TEAMTURBONITES">&nbsp;Team Turbonites</option>
                             <option value="MAD">&nbsp;MAD Club</option>
-                            <option value="ECECLUB">&nbsp;ECE Club</option>
+                            <option value="ELECTRONICS">&nbsp;Electronics Club</option>
                         </select>
                         <!-- </div> -->
 
