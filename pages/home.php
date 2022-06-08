@@ -129,7 +129,7 @@
   <div class="wrapper-admin d-none">
     <h2 id="user2">Welcome :)</h2>
     <div class="container">
-      This is Attribuer, LICET's Club Enrollment and Teacking System<br>
+      This is Attribuer, LICET's Club Enrollment and Tracking System<br>
       Visit the Members section to view student list.<br>
       <button class="button btn-primary"><a href="view.php">Student List</a></button>
     </div>

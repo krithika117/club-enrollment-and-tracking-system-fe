@@ -58,6 +58,10 @@ $(document).ready(function () {
       else if ((email.split('@').pop()) != 'licet.ac.in') {
         alert("Please use valid LICET Mail alone.");
       }
+      else if(phoneNumber.length!=10){
+        alert("Please enter valid 10 digit Mobile Number.");
+
+      }
       else if (email == "" || firstName == "" || lastName == "" || phoneNumber == "" || rollNo == "" || department == "" || yearOfStudy == "" || serviceClubChoice == "" || techClubChoice1 == "") {
         alert("Please fill all details.");
       } else {
