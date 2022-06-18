@@ -65,7 +65,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="./dist/images/clublogos/Rotaract.png">
+								src="./dist/images/clublogos/ROTARACT.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Rotaract Club of LICET</h3>
