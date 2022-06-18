@@ -9,7 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
   <?php include "navbar.php" ?>
-  <link rel="stylesheet" href="../style/view.css">
+  <link rel="stylesheet" href="./style/view.css">
 </head>
 
 <body>

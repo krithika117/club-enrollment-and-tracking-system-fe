@@ -15,7 +15,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
 
     <?php include "navbar.php" ?>
-    <link rel="stylesheet" href="../style/edit-members.css">
+    <link rel="stylesheet" href="./style/edit-members.css">
 </head>
 
 <body>

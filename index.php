@@ -11,7 +11,7 @@
 	<?php include "navbar.php" ?>
 	<?php include "external.php" ?>
 
-	<link href="../style/slider.css" rel="stylesheet">
+	<link href="./style/slider.css" rel="stylesheet">
 
 </head>
 
@@ -42,7 +42,7 @@
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/NCC.png"></div>
+								src="./dist/images/clublogos/NCC.png"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>NCC</h3>
 							<p>National Cadet Corps is the youth wing of the Indian Armed Forces with its headquarters
@@ -53,7 +53,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/NSS.png">
+								src="./dist/images/clublogos/NSS.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>NSS</h3>
@@ -65,7 +65,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/Rotaract.png">
+								src="./dist/images/clublogos/Rotaract.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Rotaract Club of LICET</h3>
@@ -83,7 +83,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/LEAF.png"></div>
+								src="./dist/images/clublogos/LEAF.png"></div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>LEAF</h3>
 							<!--  -->
@@ -96,7 +96,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/YRC.png">
+								src="./dist/images/clublogos/YRC.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>YRC</h3>
@@ -134,7 +134,7 @@
 				<div class="carousel-inner glass" role="listbox">
 					<div class="item active">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/BEAT.png">
+								src="./dist/images/clublogos/BEAT.png">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>BEAT</h3>
@@ -148,7 +148,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/iic.svg">
+								src="./dist/images/clublogos/iic.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>IIC</h3>
@@ -162,7 +162,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/mad.svg">
+								src="./dist/images/clublogos/mad.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>MAD Club</h3>
@@ -176,7 +176,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/turb.svg">
+								src="./dist/images/clublogos/turb.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Team Turbonites</h3>
@@ -190,7 +190,7 @@
 					</div>
 					<div class="item">
 						<div class="imgBox animated bounceInRight" style="animation-delay: 0.5s"><img alt=""
-								src="../dist/images/clublogos/ece.svg">
+								src="./dist/images/clublogos/ece.svg">
 						</div>
 						<div class="carousel-caption animated bounceInLeft" style="animation-delay: 0.5s">
 							<h3>Electronics Club</h3>

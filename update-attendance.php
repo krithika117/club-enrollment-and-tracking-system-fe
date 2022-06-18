@@ -12,7 +12,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
 
     <?php include "navbar.php" ?>
-    <link rel="stylesheet" href="../style/attendance.css">
+    <link rel="stylesheet" href="./style/attendance.css">
 </head>
 
 <body>

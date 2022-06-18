@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="./style/navbar.css">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
         <header class="header">
             <div class="wrap d-flex">
                 <h2 class="logo">
-                    <!-- <a href="index.php"><img src="../dist/images/licet.png" alt=""></a> -->
-                    <a href="index.php"><img src="../dist/images/attlog.svg" alt=""></a>
+                    <!-- <a href="index.php"><img src="./dist/images/licet.png" alt=""></a> -->
+                    <a href="index.php"><img src="./dist/images/attlog.svg" alt=""></a>
                 </h2>
             </div>
             <a href="javascript:void(0);" class="sidemenu-toggler">

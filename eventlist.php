@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
     <?php include "navbar.php" ?>
-    <link rel="stylesheet" href="../style/attendance.css">
+    <link rel="stylesheet" href="./style/attendance.css">
     
     <body>
     <div class="table-responsive">
