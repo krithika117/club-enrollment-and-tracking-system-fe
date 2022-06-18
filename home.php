@@ -114,7 +114,7 @@
   </form>
 
   <div class="wrapper d-none">
-    <h2 id="user1"></h2>
+    <h5 id="user1"></h5>
     <div class="container">
       Thank you for using Attribuer.
       You've enrolled to the following clubs.<br><br>
@@ -127,7 +127,7 @@
   </div>
 
   <div class="wrapper-admin d-none">
-    <h2 id="user2">Welcome :)</h2>
+    <h5 id="user2">Welcome :)</h5>
     <div class="container">
       This is Attribuer, LICET's Club Enrollment and Tracking System<br>
       Visit the Members section to view student list.<br>
