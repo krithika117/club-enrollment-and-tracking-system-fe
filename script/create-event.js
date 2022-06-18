@@ -46,7 +46,7 @@ $(document).ready(function () {
                 if (data.response.length == 0) {
                     document.querySelector('#prompt').classList.remove('d-none');
                     $('#prompt').empty();
-                    $('#prompt').append("<img src='../dist/images/smilep.svg' width='150'><br>Looks like you're yet to create an event :)");
+                    $('#prompt').append("<img src='/dist/images/smilep.svg' width='150'><br>Looks like you're yet to create an event :)");
                 } else {
                     document.querySelector('#prompt').classList.add('d-none');
 
