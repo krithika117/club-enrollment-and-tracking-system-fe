@@ -26,7 +26,7 @@ $(document).ready(function () {
     // var email = "nss@gmail.com";
     var email = sessionStorage.email;
     var club = email.split('@')[0].toUpperCase();
-    var server = "http://127.0.0.1:5000";
+    var server = "https://attribuer.herokuapp.com";
     $.ajax({
 
         method: "POST",
@@ -60,7 +60,7 @@ $(document).ready(function () {
         console.log(query)
         // var email = "nss@gmail.com";
         var club = email.split('@')[0].toUpperCase();
-        var server = "http://127.0.0.1:5000";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/attendance/view",

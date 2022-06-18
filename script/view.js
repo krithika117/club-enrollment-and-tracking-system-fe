@@ -47,7 +47,7 @@ $(document).ready(function () {
     function load_fac_data(query = 'all') {
         console.log(query)
 
-        var server = "http://127.0.0.1:5000";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/dept",
@@ -90,7 +90,7 @@ $(document).ready(function () {
     }
 
     function load_admin_data(query1 = 'all', query2 = 'all') {
-        var server = "http://127.0.0.1:5000";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/admin",
@@ -138,7 +138,7 @@ $(document).ready(function () {
         document.querySelector('#prompt').classList.add('d-none');
         console.log(query)
         var club = email.split('@')[0].toUpperCase();
-        var server = "http://127.0.0.1:5000";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/club",

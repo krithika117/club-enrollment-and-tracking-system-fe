@@ -14,7 +14,7 @@ $(document).ready(() => {
     if (user) {
       //console.log('in')
       window.user = user;
-      var server = "http://127.0.0.1:5000";
+      var server = "https://attribuer.herokuapp.com";
       var email = firebase.auth().currentUser.email
 
       if (email != "") {

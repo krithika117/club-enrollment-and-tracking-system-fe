@@ -17,7 +17,7 @@ function logout() {
 }
 
 
-var server = "http://127.0.0.1:5000";
+var server = "https://attribuer.herokuapp.com";
 $(document).ready(function () {
   $('#signupSubmit').on('click', function (e) {
     e.preventDefault();

@@ -26,13 +26,13 @@ $(document).ready(function () {
     load_club_data();
 
     var count = 0;
-    var server = "http://127.0.0.1:5000";
+    var server = "https://attribuer.herokuapp.com";
 
     function load_club_data(query = "all") {
         console.log(query)
         var email = sessionStorage.email;
         var club = email.split('@')[0].toUpperCase();
-        var server = "http://127.0.0.1:5000";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/attendance/club",
