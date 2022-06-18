@@ -49,7 +49,7 @@
         </header>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="../script/navbar.js"></script>
+    <script src="./script/navbar.js"></script>
 
 
 </body>

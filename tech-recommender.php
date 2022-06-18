@@ -9,7 +9,7 @@
   <?php include "navbar.php" ?>
   <link rel="stylesheet" href="../style/rec.css">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="../script/tech-rec.js" defer></script>
+  <script src="./script/tech-rec.js" defer></script>
 
 </head>
 

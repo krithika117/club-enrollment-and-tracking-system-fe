@@ -47,6 +47,6 @@
 
 
 
-<script src="../script/login.js"></script>
+<script src="./script/login.js"></script>
 
 </html>

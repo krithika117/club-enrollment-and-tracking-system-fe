@@ -67,7 +67,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-    <script src="../script/config.js"></script>
-    <script src="../script/auth-check.js"></script>
-    <script src="../script/fac-events.js" defer></script>
+    <script src="./script/config.js"></script>
+    <script src="./script/auth-check.js"></script>
+    <script src="./script/fac-events.js" defer></script>
 </body>

@@ -8,7 +8,7 @@
   <title>Home</title>
   <?php include "navbar.php"?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../style/home.css">
+  <link rel="stylesheet" href="./style/home.css">
 </head>
 
 <body>
@@ -143,8 +143,8 @@
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 
 
-<script src="../script/config.js"></script>
-<script src="../script/auth-check.js"></script>
-<script src="../script/home.js"></script>
+<script src="./script/config.js"></script>
+<script src="./script/auth-check.js"></script>
+<script src="./script/home.js"></script>
 
 </html>

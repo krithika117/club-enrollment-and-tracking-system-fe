@@ -68,8 +68,8 @@
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 
 
-<script src="../script/config.js"></script>
-<script src="../script/auth-check.js"></script>
-<script src="../script/view.js"></script>
+<script src="./script/config.js"></script>
+<script src="./script/auth-check.js"></script>
+<script src="./script/view.js"></script>
 
 </html>
