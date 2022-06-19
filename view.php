@@ -63,7 +63,17 @@
             <th>Technical Club 2</th>
           </tr>
         </thead>
-        
+        <div class="lds-ellipsis d-none">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <tbody></tbody>
       </table>
       <div id="prompt"></div>
