@@ -4,7 +4,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 <!--  -->
 <link rel="stylesheet" href="./style/attendance.css">
-
+<link rel="icon" type="image/x-icon" href="./dist/images/favicon.svg">
 <body>
     <div class="container">
 

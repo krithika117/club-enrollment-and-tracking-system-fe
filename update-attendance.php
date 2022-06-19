@@ -2,15 +2,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Student List</title>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <link rel="icon" type="image/x-icon" href="./dist/images/favicon.svg">
     <?php include "navbar.php" ?>
     <link rel="stylesheet" href="./style/attendance.css">
 </head>
@@ -21,8 +21,8 @@
 
         <h2 id="ue">Update Event</h2>
         <select name="event_filter" id="event_filter" class="form-control">
-        <option value="" selected hidden disabled>Select Event</option>    
-        <!-- <option value="all">All Department</option>
+            <option value="" selected hidden disabled>Select Event</option>
+            <!-- <option value="all">All Department</option>
             <option value="IT">IT</option>
             <option value="CSE">CSE</option>
             <option value="EEE">EEE</option>
@@ -51,17 +51,18 @@
                         <th>Date of Event</th>
                         <th>Attendance</th>
                     </tr>
-                </thead><div class="lds-ellipsis d-none">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+                </thead>
+                <div class="lds-ellipsis d-none">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <tbody></tbody>
             </table>
         </div>
