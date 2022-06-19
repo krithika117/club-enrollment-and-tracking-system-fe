@@ -19,7 +19,7 @@
     <div class="container">
 
 
-        <h2>Update Event</h2>
+        <h2 id="ue">Update Event</h2>
         <select name="event_filter" id="event_filter" class="form-control">
         <option value="" selected hidden disabled>Select Event</option>    
         <!-- <option value="all">All Department</option>
@@ -51,7 +51,17 @@
                         <th>Date of Event</th>
                         <th>Attendance</th>
                     </tr>
-                </thead>
+                </thead><div class="lds-ellipsis d-none">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
                 <tbody></tbody>
             </table>
         </div>

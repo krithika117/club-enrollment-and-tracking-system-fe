@@ -146,7 +146,7 @@ $(document).ready(function () {
 
     function load_club_data(query = 'all') {
         document.querySelector('.lds-ellipsis').classList.remove('d-none');
-        document.querySelector('#prompt').classList.add('d-none');
+        // document.querySelector('#prompt').classList.add('d-none');
         console.log(query)
         var club = email.split('@')[0].toUpperCase();
         var server = "https://attribuer.herokuapp.com";

@@ -58,6 +58,7 @@ $(document).ready(function () {
 
     function load_event_data(query = "all") {
         console.log(query)
+        document.querySelector('.lds-ellipsis').classList.remove('d-none');
         // var email = "nss@gmail.com";
         var club = email.split('@')[0].toUpperCase();
         var server = "https://attribuer.herokuapp.com";
@@ -78,7 +79,7 @@ $(document).ready(function () {
                 // var today = new Date(data.response[0].date);
                 // $('#date').val(today);
                 // document.getElementById("date").innerHTML = dateConv(data.response[0].date);                 
-                
+                document.querySelector('.lds-ellipsis').classList.add('d-none');
                 for (var i = 0; i < data.response.length; i++) {
                     var row = $('<tr><td>' +
                         data.response[i].name +
