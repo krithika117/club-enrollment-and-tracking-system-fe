@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <br />
-    <h2 align="center">Students</h2><br />
+    <h2 id="studview" align="center">Students</h2><br />
     <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
     <option value="" selected hidden disabled>Select Department</option>  
     <option value="all">All Department</option>
