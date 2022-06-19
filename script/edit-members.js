@@ -44,6 +44,7 @@ $(document).ready(function () {
 
   function load_admin_data(query1 = 'all', query2 = 'all') {
     var server = "https://attribuer.herokuapp.com";
+    document.querySelector('.lds-ellipsis').classList.remove('d-none');
     $.ajax({
 
       method: "POST",
@@ -56,17 +57,21 @@ $(document).ready(function () {
       }),
       dataType: 'json',
       success: function (data) {
-
-        console.log(data.response)
+        $('#prompt').empty();
         $('tbody').empty();
+        console.log(data.response)
+
         if (data.response.length == 0) {
-          document.querySelector('#prompt').classList.remove('d-none');
-          $('#prompt').empty();
+          document.querySelector('tbody').classList.add('d-none');
+          document.querySelector('.lds-ellipsis').classList.add('d-none');
+          // document.querySelector('#prompt').classList.remove('d-none');
           $('#prompt').append("<img src='../dist/images/smile.svg'><br>No data found, please try another query.");
         } else {
-          document.querySelector('#prompt').classList.add('d-none');
+          document.querySelector('.lds-ellipsis').classList.add('d-none');
+          // document.querySelector('#prompt').classList.add('d-none');
+          document.querySelector('tbody').classList.remove('d-none');
           for (var i = 0; i < data.response.length; i++) {
-            document.querySelector('#prompt').classList.add('d-none');
+            // document.querySelector('#prompt').classList.add('d-none');
             var row = $('<tr><td>' + data.response[i].firstName + '</td><td>' +
               data.response[i]
               .department + '</td><td>' + data.response[i].yearOfStudy +

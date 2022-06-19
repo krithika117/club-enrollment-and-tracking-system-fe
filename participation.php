@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<h2>Events Attended</h2>
+<h3>Events Attended</h3>
     <div class="table-responsive">
         <table id="myTable" class="table table-hover dark ">
             <thead>

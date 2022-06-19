@@ -39,6 +39,17 @@
     <input type="hidden" name="hidden_value2" id="hidden_value2" />
     <div style="clear:both"></div>
     <br />
+    <div class="lds-ellipsis d-none">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     <div class="table-responsive">
       <table id="myTable" class="table table-hover dark ">
         <thead>

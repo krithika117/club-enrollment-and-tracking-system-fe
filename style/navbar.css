@@ -3,10 +3,6 @@ ul {
     list-style-type: none;
 }
 
-img {
-    max-width: 70;
-    height: auto;
-}
 
 ul {
     margin: 0;
@@ -23,9 +19,10 @@ ul {
     /* width: 1140px; */
     max-width: 100%;
     margin: auto;
-    padding: 0 15px;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 .header .logo {
@@ -39,9 +36,9 @@ ul {
 }
 
 .header .logo img {
-    width:9rem;
-    margin-left:  2.5rem!important;
-    margin-top: 2.2rem!important;
+    width: 9rem;
+    margin-left: 2.5rem !important;
+    margin-top: 2.2rem !important;
 }
 
 
@@ -129,14 +126,14 @@ ul {
 
 .header .sidemenu nav ul {
     padding-top: 30px;
-    
+
 }
 
 .header .sidemenu nav li,
 footer {
     padding-top: 30px;
-    
-    
+
+
 }
 
 .header .sidemenu nav a {

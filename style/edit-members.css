@@ -8,6 +8,7 @@
 
     /* font-family:var(--bs-font-sans-serif); */
 }
+
 ::-webkit-scrollbar {
     width: 5px;
     border-radius: 5px;
@@ -24,6 +25,66 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #58585896;
 }
+
+.lds-ellipsis {
+    align-items: center;
+    justify-content: center;
+    margin: 10% 50%;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
 body {
     /* linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.605)),  */
     background-image: url('../dist/images/bgn.svg');
@@ -42,7 +103,7 @@ body {
 
 h2 {
     text-align: center;
-    padding: 30px;
+
 }
 
 #dept_filter,
@@ -51,16 +112,19 @@ option {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
-    height: 40px!important;
-    font: 30px!important;
+    height: 40px !important;
+    font: 30px !important;
     border: none;
     color: white;
 }
 
 .d-none {
-    display: none!important;
-  }
-  
+    display: none !important;
+}
+
+#addhead {
+    padding: 3rem;
+}
 
 #myTable {
     font-family: 'Nunito', sans-serif;
@@ -77,7 +141,7 @@ option {
     min-width: 300px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
-    font: 5px!important;
+    font: 5px !important;
     padding: 50px 35px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -87,17 +151,20 @@ option {
 
 }
 
-#prompt{
+#prompt {
     align-items: center;
     text-align: center;
     font-size: 15px;
 }
-button, .btn, .btn-primary {
+
+button,
+.btn,
+.btn-primary {
     /* margin-top: 40px !important; */
     margin-top: 10px;
     font-family: 'Nunito', sans-serif !important;
     /* width: 100%; */
-    float:right;
+    float: right;
     background-color: #2d8b8bb3;
     color: #ffffff;
     padding: 10px;
@@ -110,11 +177,12 @@ button, .btn, .btn-primary {
 
 button:hover {
     background-color: rgba(9, 13, 21, 0.75);
-    color: rgb(245, 241, 241)!important;
+    color: rgb(245, 241, 241) !important;
 }
 
-.close{
-    float: left !important;;
+.close {
+    float: left !important;
+    ;
 }
 
 .table-hover tbody tr:hover td,
@@ -122,20 +190,20 @@ button:hover {
     background-color: rgba(4, 7, 11, 0.75);
 }
 
- .modal-content{
-     padding: 5px;
+.modal-content {
+    padding: 5px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75)!important;
-    font: 30px!important;
+    background-color: rgba(17, 25, 40, 0.75) !important;
+    font: 30px !important;
     border: none;
     color: white;
 }
 
-.modal-body .form-control{
-    margin-top:3px;
-    height:3rem;
-    border:none;
-    background: rgba(79, 81, 83, 0.498)!important;
+.modal-body .form-control {
+    margin-top: 3px;
+    height: 3rem;
+    border: none;
+    background: rgba(79, 81, 83, 0.498) !important;
     color: white;
 }

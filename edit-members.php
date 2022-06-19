@@ -21,7 +21,7 @@
 <body>
     <div class="container">
 
-        <h2>Add/Delete Students
+        <h2 id="addhead">Add/Delete Students
         </h2>
              
         <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
@@ -46,7 +46,17 @@
         <input type="hidden" name="hidden_value1" id="hidden_value1" />
         <input type="hidden" name="hidden_value2" id="hidden_value2" />
         <div style="clear:both"></div>
-
+        <div class="lds-ellipsis d-none">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="table-responsive">
             <table id="myTable" class="table table-hover dark ">
                 <br />
@@ -66,6 +76,7 @@
                 </thead>
                 <tbody></tbody>
             </table>
+
             <div id="prompt"></div>
         </div>
         <br />

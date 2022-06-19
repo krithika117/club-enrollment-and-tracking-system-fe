@@ -9,8 +9,8 @@
 
 body {
     margin: 0;
-    background:  url('../dist/images/bgmang.svg') no-repeat center center fixed; 
-    
+    background: url('../dist/images/bgmang.svg') no-repeat center center fixed;
+
     background-position: center;
     background-size: contain;
     -webkit-background-size: cover;
@@ -198,10 +198,11 @@ select:required:invalid {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
+
 .btn-primary {
     /* margin-top: 40px !important; */
     font-family: 'Nunito', sans-serif !important;
@@ -229,7 +230,8 @@ a{
     cursor: pointer;
 }
 
-button:hover, .btn-primary:hover {
+button:hover,
+.btn-primary:hover {
     background-color: #b5b4b4;
     color: rgb(46, 46, 46);
 }
@@ -259,12 +261,14 @@ button:hover, .btn-primary:hover {
     background-color: #04aa6d55;
 } */
 
-@media screen and (max-width: 991px) {.header .logo img {
-    width:70px;
-    margin-left:  2.5rem!important;
-    margin-top: 2.2rem!important;
-}
-h5{
-    font-size: 1rem;
-}
+@media screen and (max-width: 991px) {
+    .header .logo img {
+        width: 5rem;
+        margin-left: 0 !important;
+        margin-top: 2rem !important;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
 }
