@@ -32,6 +32,8 @@
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" autocomplete="off" required="">
 
+        <input type="checkbox" id="checkbox" onclick="showPass()" /> <label for="checkbox"> Show Password</label>
+
         <button type="submit">Log In</button>
         <p id="message-error"></p>
 

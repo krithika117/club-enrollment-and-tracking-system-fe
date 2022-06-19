@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background:  url('../dist/images/bgmang.svg') no-repeat center center fixed; 
-    
+    background: url('../dist/images/bgmang.svg') no-repeat center center fixed;
+
     background-position: center;
     background-size: contain;
     -webkit-background-size: cover;
@@ -23,7 +23,7 @@ body {
 
 
 #loginForm {
-    
+
     top: 50%;
     left: 50%;
     margin: 10px auto;
@@ -38,8 +38,8 @@ body {
 
     background-color: rgba(255, 255, 255, 0.06);
     -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-    
+    backdrop-filter: blur(20px);
+
     border-radius: 10px;
     background-color: rgba(42, 44, 46, 0.27);
     box-shadow: 0 8px 32px 0 rgba(11, 11, 11, 0.37);
@@ -72,7 +72,7 @@ label {
     font-weight: 500;
 }
 
-input, select {
+input {
     display: block;
     height: 50px;
     width: 100%;
@@ -83,33 +83,8 @@ input, select {
     font-size: 14px;
     font-weight: 300;
 }
-option {
-    height: 50px;
-    width: 100%;
-    background: rgb(70, 68, 68);
-    border-radius: 3px;
-    padding: 20px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
 
-/* Arrow */
-.select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0.5px;
-    right: 0.5px;
-    padding: 1em;
-    background: rgb(67, 67, 67);
-    transition: .25s all ease;
-    pointer-events: none;
-}
 
-/* Transition */
-.select:hover::after {
-    color: #323232;
-}
 
 ::placeholder {
     color: #e5e5e5;
@@ -121,6 +96,7 @@ input.invalid,
 select:required:invalid {
     background-color: #ffdddd6d;
 }
+
 .select {
     position: relative;
     display: flex;
@@ -144,7 +120,18 @@ button {
     cursor: pointer;
 }
 
+#checkbox {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
 button:hover {
     background-color: #d1cccc;
     color: rgb(46, 46, 46);
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
 }
