@@ -16,17 +16,7 @@
   <div class="container">
     <br />
     <h2 id="studview" align="center">Students</h2><br />
-    <div class="lds-ellipsis d-none">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    
     <select name="dept_filter" id="dept_filter" class="form-control filter d-none">
     <option value="" selected hidden disabled>Select Department</option>  
     <option value="all">All Department</option>

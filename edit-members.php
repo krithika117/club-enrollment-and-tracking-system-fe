@@ -46,7 +46,7 @@
         <input type="hidden" name="hidden_value1" id="hidden_value1" />
         <input type="hidden" name="hidden_value2" id="hidden_value2" />
         <div style="clear:both"></div>
-        
+
         <div class="table-responsive">
             <table id="myTable" class="table table-hover dark ">
                 <br />
@@ -63,17 +63,18 @@
                         <th>Technical Club 2</th>
                         <th>Actions</th>
                     </tr>
-                </thead><div class="lds-ellipsis d-none">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+                </thead>
+                <div class="lds-ellipsis d-none">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <tbody></tbody>
             </table>
 

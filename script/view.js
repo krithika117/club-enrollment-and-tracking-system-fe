@@ -67,7 +67,7 @@ $(document).ready(function () {
                     document.querySelector('tbody').classList.add('d-none');
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
                     // document.querySelector('#prompt').classList.remove('d-none');
-                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No data found, please try another query.");
+                    $('#prompt').append("<img id='sort' src='../dist/images/smile.svg'><br>No data found, please try another query.");
                 } else {
 
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
@@ -117,7 +117,7 @@ $(document).ready(function () {
                     document.querySelector('tbody').classList.add('d-none');
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
                     // document.querySelector('#prompt').classList.remove('d-none');
-                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No data found, please try another query.");
+                    $('#prompt').append("<img id='sort' src='../dist/images/smile.svg'><br>No data found, please try another query.");
                 } else {
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
                     // document.querySelector('#prompt').classList.add('d-none');
@@ -168,7 +168,7 @@ $(document).ready(function () {
                     document.querySelector('tbody').classList.add('d-none');
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
                     // document.querySelector('#prompt').classList.remove('d-none');
-                    $('#prompt').append("<img src='../dist/images/smile.svg'><br>No data found, please try another query.");
+                    $('#prompt').append("<img id='sort' src='../dist/images/smile.svg'><br>No data found, please try another query.");
                 } else {
                     document.querySelector('.lds-ellipsis').classList.add('d-none');
                     // document.querySelector('#prompt').classList.add('d-none');
