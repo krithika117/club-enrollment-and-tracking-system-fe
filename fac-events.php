@@ -19,7 +19,7 @@
     <div class="container">
 
 
-        <h2>View Events</h2>
+        <h3>View Events</h3>
         <select name="club_filter" id="club_filter" class="form-control filter">
             <option value="" selected hidden disabled>Select Club</option>
             <option value="NCC">&nbsp;NCC</option>

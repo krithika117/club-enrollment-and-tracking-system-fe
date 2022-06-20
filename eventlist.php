@@ -16,15 +16,14 @@
     <?php include "loader.php"?>
     <?php include "navbar.php" ?>
     <link rel="stylesheet" href="./style/attendance.css">
-    
-    <body>
+
+<body>
     <div class="table-responsive">
         <table id="myTable" class="table table-hover dark ">
             <br />
             <!-- <button type="button" data-toggle="modal" data-target="#add_data_Modal" class="btn"><i
                     class="fa fa-user-plus"></i> Add Events</button><br /> -->
-                    <button type="button" onclick="location.href='take-attendance.php';" class="btn"><i
-                    class="fa fa-user-plus"></i> Add Events</button><br />
+            <button type="button" onclick="location.href='take-attendance.php';" class="btn">Add Events</button><br />
 
             <thead>
                 <tr>

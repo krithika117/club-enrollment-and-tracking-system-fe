@@ -10,7 +10,7 @@
 <body>
     <div class="container">
 
-        <h2>Create Event</h2><br>
+        <h3>Create Event</h3><br>
         Event Name<br><input type="text" class="form-control" name="eventName" id="eventName" required><br>
         Date of Event<input type="date" class="form-control" placeholder="Date" id="date" required />
         <div class="table-responsive">

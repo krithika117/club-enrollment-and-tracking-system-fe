@@ -20,7 +20,7 @@
     <div class="container">
 
 
-        <h2 id="ue">Update Event</h2>
+        <h3 id="ue">Update Event</h3>
         <select name="event_filter" id="event_filter" class="form-control">
             <option value="" selected hidden disabled>Select Event</option>
             <!-- <option value="all">All Department</option>
