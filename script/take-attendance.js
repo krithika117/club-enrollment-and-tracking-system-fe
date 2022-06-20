@@ -57,7 +57,7 @@ $(document).ready(function () {
                         '</td><td>' +
                         data.response[i].yearOfStudy +
                         '</td><td>' +
-                        '<input type="number" name="attcheck" value="0" id="attcheck"  min="0" max="1"/>' +
+                        '<input type="number" name="attcheck" value="0" id="attcheck"  min="0" max="1" maxlength="1" />' +
                         '</td></tr>');
                     $('tbody').append(row);
                     console.log('done')

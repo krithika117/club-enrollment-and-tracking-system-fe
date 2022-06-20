@@ -94,7 +94,8 @@ $(document).ready(function () {
                         '</td><td>' +
                         dateConv(data.response[0].date)+
                         '</td><td>' +
-                        '<input type="number" name="attcheck" value="'+parseInt(data.response[i].attendance)+'" id="attcheck"  min="0" max="1"/>' +
+                        // <input id="num" type="text" min="0" max="1" name="num" maxlength="1" />
+                        '<input type="number" name="attcheck" value="'+parseInt(data.response[i].attendance)+'" id="attcheck"  min="0" max="1" maxlength="1" />' +
                         '</td></tr>');
                     $('tbody').append(row);
                     console.log('done')
