@@ -31,9 +31,10 @@ $(document).ready(() => {
           },
 
           success: function (response) {
-              //console.log(response)
+              
               sessionStorage.stat = response.isAdmin;
               sessionStorage.email = response.email;
+              
               if (response.message == "exists") {
                 if (response.isAdmin == '0') { //If student
                   if (((location.href.split('/').pop()) == 'view.php') || ((location.href.split('/').pop()) == 'edit-members.php') || ((location.href.split('/').pop()) == 'eventlist.php') || ((location.href.split('/').pop()) == 'take-attendance.php') || ((location.href.split('/').pop()) == 'update-attendance.php')) {
