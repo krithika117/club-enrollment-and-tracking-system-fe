@@ -1,19 +1,19 @@
 firebase.auth().onAuthStateChanged((user) => {
-    if (!user || sessionStorage.length == 0) {
+    if (!user || localStorage.length == 0) {
         logout()
     }
 })
 
 function logout() {
     firebase.auth().signOut()
-    sessionStorage.email = '';
-    sessionStorage.stat = ''
-    sessionStorage.clear()
+    localStorage.email = '';
+    localStorage.stat = ''
+    localStorage.clear()
     location.replace("login.php")
 }
 
 
-var email = sessionStorage.email;
+var email = localStorage.email;
 console.log(email)
 
 // var email;
@@ -39,7 +39,7 @@ function prompt_val() {
     $('#prompt').append("<img id='sort' src='../dist/images/img.svg'><br>Please use the filters to view data.");
 }
 
-email = sessionStorage.email;
+email = localStorage.email;
 $(document).ready(function () {
     // prompt_val();
     prompt_val();
@@ -202,11 +202,11 @@ $(document).ready(function () {
 
         var query1 = $('#hidden_value1').val();
         var query2 = $('#hidden_value2').val();
-        if (sessionStorage.stat == '1') {
+        if (localStorage.stat == '1') {
             load_fac_data(query2);
-        } else if (sessionStorage.stat == '3') {
+        } else if (localStorage.stat == '3') {
             load_admin_data(query1, query2);
-        } else if (sessionStorage.stat == '2') {
+        } else if (localStorage.stat == '2') {
             load_club_data(query2);
         }
 

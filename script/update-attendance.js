@@ -11,20 +11,20 @@ firebase.auth().onAuthStateChanged((user) => {
     
   function logout() {
     firebase.auth().signOut()
-    sessionStorage.email = '';
-    sessionStorage.stat = ''
-    sessionStorage.clear()
+    localStorage.email = '';
+    localStorage.stat = ''
+    localStorage.clear()
     location.replace("login.php")
   }
   
-  if(sessionStorage.stat!='2'){
+  if(localStorage.stat!='2'){
     logout();
   
 }
 
 $(document).ready(function () {
     // var email = "nss@gmail.com";
-    var email = sessionStorage.email;
+    var email = localStorage.email;
     var club = email.split('@')[0].toUpperCase();
     var server = "https://attribuer.herokuapp.com";
     $.ajax({

@@ -2,7 +2,7 @@
 
 function logout() {
     
-    sessionStorage.clear()
+    localStorage.clear()
 
   }
 
@@ -26,7 +26,7 @@ function login() {
         .then((userCredential) => {
             // Signed in
             window.user = userCredential.user;
-            sessionStorage.email = firebase.auth().currentUser.email;
+            localStorage.email = firebase.auth().currentUser.email;
             window.email = firebase.auth().currentUser.email;
             location.replace("home.php")
         })
