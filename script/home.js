@@ -11,9 +11,9 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function logout() {
   firebase.auth().signOut()
-  localStorage.email = ''
-  localStorage.stat = ''
-  localStorage.clear()
+  sessionStorage.email = ''
+  sessionStorage.stat = ''
+  sessionStorage.clear()
 }
 
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
     var techClubChoice1 = $("#techClubChoice1 :selected").val();
     var techClubChoice2 = $("#techClubChoice2 :selected").val();
 
-    localStorage.name = firstName;
+    sessionStorage.name = firstName;
 
     // console.log(firstName)
     // console.log(lastName)

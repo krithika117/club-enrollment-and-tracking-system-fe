@@ -8,17 +8,17 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function logout() {
     firebase.auth().signOut()
-    localStorage.email = '';
-    localStorage.stat = ''
-    localStorage.clear()
+    sessionStorage.email = '';
+    sessionStorage.stat = ''
+    sessionStorage.clear()
     location.replace("login.php")
 }
 
-if (localStorage.stat != '0') {
+if (sessionStorage.stat != '0') {
     logout();
 }
 
-var email = localStorage.email
+var email = sessionStorage.email
 $(document).ready(function () {
     // var email = "nss@gmail.com";
 

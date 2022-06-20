@@ -8,13 +8,13 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function logout() {
     firebase.auth().signOut()
-    localStorage.email = '';
-    localStorage.stat = ''
-    localStorage.clear()
+    sessionStorage.email = '';
+    sessionStorage.stat = ''
+    sessionStorage.clear()
     location.replace("login.php")
 }
 
-if (localStorage.stat != '1') {
+if (sessionStorage.stat != '1') {
     logout();
 
 }
@@ -27,7 +27,7 @@ $(document).ready(function () {
     prompt_val()
 
     function load_select(query) {
-        var email = localStorage.email;
+        var email = sessionStorage.email;
         var club = query;
         var server = "https://attribuer.herokuapp.com";
         $.ajax({
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     function load_event_data(query1, query2) {
 
-        var dept = (localStorage.email).split('@')[0];
+        var dept = (sessionStorage.email).split('@')[0];
 
         var server = "https://attribuer.herokuapp.com";
         $.ajax({

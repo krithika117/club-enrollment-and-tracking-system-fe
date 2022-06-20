@@ -1,8 +1,8 @@
 function logout() {
   firebase.auth().signOut()
-  localStorage.email = '';
-  localStorage.stat = ''
-  localStorage.clear()
+  sessionStorage.email = '';
+  sessionStorage.stat = ''
+  sessionStorage.clear()
   location.replace("login.php")
 }
 
@@ -26,21 +26,21 @@ $(document).ready(() => {
           data: {
             // 'name': name,
             'email': email,
-            // 'stat': localStorage.stat;
+            // 'stat': sessionStorage.stat;
             // 'password': pwd
           },
 
           success: function (response) {
               //console.log(response)
-              localStorage.stat = response.isAdmin;
-              localStorage.email = response.email;
+              sessionStorage.stat = response.isAdmin;
+              sessionStorage.email = response.email;
               if (response.message == "exists") {
                 if (response.isAdmin == '0') { //If student
                   if (((location.href.split('/').pop()) == 'view.php') || ((location.href.split('/').pop()) == 'edit-members.php') || ((location.href.split('/').pop()) == 'eventlist.php') || ((location.href.split('/').pop()) == 'take-attendance.php') || ((location.href.split('/').pop()) == 'update-attendance.php')) {
                     logout();
-                    localStorage.email = ''
-                    localStorage.stat = ''
-                    localStorage.clear()
+                    sessionStorage.email = ''
+                    sessionStorage.stat = ''
+                    sessionStorage.clear()
 
                   }
                   if ((location.href.split('/').pop()) == 'home.php') {
@@ -62,17 +62,17 @@ $(document).ready(() => {
                     if ((location.href.split('/').pop()) == 'edit-members.php') {
                       console.log('im workin')
                       logout();
-                      localStorage.email = ''
-                      localStorage.stat = ''
-                      localStorage.clear()
+                      sessionStorage.email = ''
+                      sessionStorage.stat = ''
+                      sessionStorage.clear()
                     }
                     if (response.isAdmin != '2') {
                       if (((location.href.split('/').pop()) == 'update-attendance.php') || ((location.href.split('/').pop()) == 'take-attendance.php' || ((location.href.split('/').pop()) == 'eventlist.php'))) {
                         console.log('im workin')
                         logout();
-                        localStorage.email = ''
-                        localStorage.stat = ''
-                        localStorage.clear()
+                        sessionStorage.email = ''
+                        sessionStorage.stat = ''
+                        sessionStorage.clear()
                       }
                     }
                   }
@@ -91,21 +91,21 @@ $(document).ready(() => {
                 //console.log('clear')
                 // if ((location.href.split('/').pop()) == 'view.php') {
                 //   logout();
-                //   localStorage.email = ''
-                //   localStorage.stat = ''
-                //   localStorage.clear()
+                //   sessionStorage.email = ''
+                //   sessionStorage.stat = ''
+                //   sessionStorage.clear()
                 // }
                 // if ((location.href.split('/').pop()) == 'edit-members.php') {
                 //   logout();
-                //   localStorage.email = ''
-                //   localStorage.stat = ''
-                //   localStorage.clear()
+                //   sessionStorage.email = ''
+                //   sessionStorage.stat = ''
+                //   sessionStorage.clear()
                 // }
                 if (((location.href.split('/').pop()) == 'view.php') || ((location.href.split('/').pop()) == 'edit-members.php') || ((location.href.split('/').pop()) == 'eventlist.php') || ((location.href.split('/').pop()) == 'take-attendance.php') || ((location.href.split('/').pop()) == 'update-attendance.php')) {
                   logout();
-                  localStorage.email = ''
-                  localStorage.stat = ''
-                  localStorage.clear()
+                  sessionStorage.email = ''
+                  sessionStorage.stat = ''
+                  sessionStorage.clear()
                 }
                 document.querySelector('#regForm').classList.remove('d-none');
                 document.querySelector('.wrapper').classList.add('d-none');

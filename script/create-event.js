@@ -12,25 +12,25 @@ function dateConv(d) {
 
 function logout() {
     firebase.auth().signOut()
-    localStorage.email = '';
-    localStorage.stat = '';
-    localStorage.clear()
+    sessionStorage.email = '';
+    sessionStorage.stat = '';
+    sessionStorage.clear()
 }
 
-if (localStorage.stat != '2') {
+if (sessionStorage.stat != '2') {
     logout();
     location.replace("login.php");
-    localStorage.email = '';
-    localStorage.stat = '';
-    localStorage.clear()
+    sessionStorage.email = '';
+    sessionStorage.stat = '';
+    sessionStorage.clear()
 }
-var club = (localStorage.email).split('@')[0].toUpperCase();
+var club = (sessionStorage.email).split('@')[0].toUpperCase();
 $(document).ready(function () {
     load_event_data();
 
     function load_event_data() {
         // console.log(query)
-        var club = (localStorage.email).split('@')[0].toUpperCase();
+        var club = (sessionStorage.email).split('@')[0].toUpperCase();
         var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",

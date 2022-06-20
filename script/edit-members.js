@@ -1,14 +1,14 @@
-var email = localStorage.email;
+var email = sessionStorage.email;
 console.log(email)
 
 // var email;
 // email = firebase.auth().currentUser.email;
 firebase.auth().onAuthStateChanged((user) => {
-  if (!user || localStorage.length == 0) {
-    // localStorage.email = '';
-    // localStorage.stat = ''
+  if (!user || sessionStorage.length == 0) {
+    // sessionStorage.email = '';
+    // sessionStorage.stat = ''
     logout()
-    localStorage.clear()
+    sessionStorage.clear()
 
   } else {
     if ((email.split('@')[0]) == "admin") {
@@ -26,9 +26,9 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function logout() {
   firebase.auth().signOut()
-  localStorage.email = '';
-  localStorage.stat = ''
-  localStorage.clear()
+  sessionStorage.email = '';
+  sessionStorage.stat = ''
+  sessionStorage.clear()
   location.replace("login.php")
 }
 
@@ -36,7 +36,7 @@ function logout() {
 function prompt_val() {
   $('#prompt').append("<img id='sort' src='../dist/images/img.svg'><br>Please use the filters to view data.");
 }
-email = localStorage.email;
+email = sessionStorage.email;
 $(document).ready(function () {
   prompt_val();
   // Load Faculty Data
@@ -102,11 +102,11 @@ $(document).ready(function () {
 
     var query1 = $('#hidden_value1').val();
     var query2 = $('#hidden_value2').val();
-    if (localStorage.stat == '1') {
+    if (sessionStorage.stat == '1') {
       load_fac_data(query2);
-    } else if (localStorage.stat == '3') {
+    } else if (sessionStorage.stat == '3') {
       load_admin_data(query1, query2);
-    } else if (localStorage.stat == '2') {
+    } else if (sessionStorage.stat == '2') {
       load_club_data(query2);
     }
 
@@ -129,7 +129,7 @@ $(document).ready(function () {
     var techClubChoice1 = $("#techClubChoice1 :selected").val();
     var techClubChoice2 = $("#techClubChoice2 :selected").val();
 
-    localStorage.name = firstName;
+    sessionStorage.name = firstName;
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/i;
 
     if (email != "") {
@@ -149,7 +149,7 @@ $(document).ready(function () {
           data: {
             // 'name': name,
             'email': email,
-            // 'stat': localStorage.stat;
+            // 'stat': sessionStorage.stat;
             // 'password': pwd
           },
 
