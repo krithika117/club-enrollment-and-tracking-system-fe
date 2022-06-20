@@ -27,7 +27,7 @@ $(document).ready(function () {
     function view_participation() {
 
 
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/participation/view",

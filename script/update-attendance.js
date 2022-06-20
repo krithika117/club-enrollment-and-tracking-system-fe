@@ -26,7 +26,7 @@ $(document).ready(function () {
     // var email = "nss@gmail.com";
     var email = sessionStorage.email;
     var club = email.split('@')[0].toUpperCase();
-    var server = "http://attribuer.herokuapp.com";
+    var server = "https://attribuer.herokuapp.com";
     $.ajax({
 
         method: "POST",
@@ -61,7 +61,7 @@ $(document).ready(function () {
         document.querySelector('.lds-ellipsis').classList.remove('d-none');
         // var email = "nss@gmail.com";
         var club = email.split('@')[0].toUpperCase();
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/attendance/view",

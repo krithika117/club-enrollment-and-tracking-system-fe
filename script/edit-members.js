@@ -40,10 +40,10 @@ email = sessionStorage.email;
 $(document).ready(function () {
   prompt_val();
   // Load Faculty Data
-  var server = "http://attribuer.herokuapp.com";
+  var server = "https://attribuer.herokuapp.com";
 
   function load_admin_data(query1 = 'all', query2 = 'all') {
-    var server = "http://attribuer.herokuapp.com";
+    var server = "https://attribuer.herokuapp.com";
     document.querySelector('.lds-ellipsis').classList.remove('d-none');
     $.ajax({
 
@@ -217,7 +217,7 @@ $(document).ready(function () {
     var emailDeletion = $(this).attr("id");
     console.log(emailDeletion);
     // var string = id;
-    var server = "http://attribuer.herokuapp.com";
+    var server = "https://attribuer.herokuapp.com";
     if (confirm("Are you sure you wanna delete?") == true) {
       $.ajax({
         method: "POST",

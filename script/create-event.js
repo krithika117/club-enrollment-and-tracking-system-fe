@@ -31,7 +31,7 @@ $(document).ready(function () {
     function load_event_data() {
         // console.log(query)
         var club = (sessionStorage.email).split('@')[0].toUpperCase();
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/viewevent",
@@ -77,7 +77,7 @@ $(document).ready(function () {
         var headcount = $('#headcount').val();
 
         if (eventName != "") {
-            var server = "http://attribuer.herokuapp.com";
+            var server = "https://attribuer.herokuapp.com";
             $.ajax({
                 method: "POST",
                 url: server + '/createevent',
@@ -124,7 +124,7 @@ $(document).ready(function () {
         var event = $(this).attr("id");
         console.log(event);
         // var string = id;
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         if (confirm("Are you sure you wanna delete?") == true) {
             $.ajax({
                 method: "POST",

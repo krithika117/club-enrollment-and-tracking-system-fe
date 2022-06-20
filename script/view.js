@@ -47,7 +47,7 @@ $(document).ready(function () {
     function load_fac_data(query = 'all') {
         console.log(query)
         document.querySelector('.lds-ellipsis').classList.remove('d-none');
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/dept",
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
     function load_admin_data(query1 = 'all', query2 = 'all') {
         document.querySelector('.lds-ellipsis').classList.remove('d-none');
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/admin",
@@ -149,7 +149,7 @@ $(document).ready(function () {
         // document.querySelector('#prompt').classList.add('d-none');
         console.log(query)
         var club = email.split('@')[0].toUpperCase();
-        var server = "http://attribuer.herokuapp.com";
+        var server = "https://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/fetchrecords/club",
