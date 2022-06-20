@@ -20,7 +20,7 @@ if (sessionStorage.stat != '1') {
 }
 
 function prompt_val() {
-    $('#prompt').append("<img src='../dist/images/pinkfil.svg'><br>Please use the filters to view data.");
+    $('#prompt').append("<img id='sort' src='../dist/images/pinkfil.svg'><br>Please use the filters to view data.");
 }
 
 $(document).ready(function () {
@@ -46,13 +46,13 @@ $(document).ready(function () {
                     document.querySelector('#prompt').classList.remove('d-none');
                     $('#prompt').empty();
                     $('#event_filter').empty();
-                    $('#prompt').append("<img src='../dist/images/empty.gif'><br>No events yet");
+                    $('#prompt').append("<img id='sort' src='../dist/images/empty.gif'><br>No events yet");
                     $('#event_filter').append('<option value="" selected hidden disabled>No events yet</option>');
                 } else {
                     var select = document.getElementById("event_filter");
                     $('#event_filter').empty();
                     $('#prompt').empty();
-                    $('#prompt').append("<img src='../dist/images/pinkfil.svg'><br>Select Event");
+                    $('#prompt').append("<img id='sort' src='../dist/images/pinkfil.svg'><br>Select Event");
                     $('#event_filter').append('<option value="" selected hidden disabled>Select Event</option>');
                     for (var i = 0; i < data.response.length; i++) {
                         var opt = $('<option value="' + data.response[i].event + '">' + data.response[i].event + '</option>');
@@ -91,7 +91,7 @@ $(document).ready(function () {
                 if (data.response.length == 0) {
                     document.querySelector('#prompt').classList.remove('d-none');
                     $('#prompt').empty();
-                    $('#prompt').append("<img src='../dist/images/empty.gif'><br>No data found, please try another query.");
+                    $('#prompt').append("<img id='sort' src='../dist/images/empty.gif'><br>No data found, please try another query.");
                 } else {
                     document.querySelector('#prompt').classList.add('d-none');
                     for (var i = 0; i < data.response.length; i++) {
