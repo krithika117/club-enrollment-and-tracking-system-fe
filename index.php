@@ -8,6 +8,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> -->
+	<?php include "loader.php"?>
 	<?php include "navbar.php" ?>
 	<?php include "external.php" ?>
 

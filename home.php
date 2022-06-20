@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <?php include "loader.php"?>
   <?php include "navbar.php"?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./style/home.css">
 </head>
 
 <body>
+
+
 
   <h1 id="user"></h1><br>
   <form id="regForm" class="d-none" method="POST">
