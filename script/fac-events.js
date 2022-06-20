@@ -29,7 +29,7 @@ $(document).ready(function () {
     function load_select(query) {
         var email = sessionStorage.email;
         var club = query;
-        var server = "https://attribuer.herokuapp.com";
+        var server = "http://attribuer.herokuapp.com";
         $.ajax({
 
             method: "POST",
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
         var dept = (sessionStorage.email).split('@')[0];
 
-        var server = "https://attribuer.herokuapp.com";
+        var server = "http://attribuer.herokuapp.com";
         $.ajax({
             method: "POST",
             url: server + "/attendance/fac/view",
